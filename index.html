@@ -70,7 +70,7 @@
 		<ul class="navbar-nav ">
 				<li class="nav-item form-inline">
 					<a class="btn btn-outline-success my-auto mr-1" href="login.html" role="button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</a>
-					<a class="btn btn-success my-auto d-flex" href="register.html" role="button">Register</a>
+					<a class="btn btn-success my-auto" href="register.html" role="button">Register</a>
 				</li>
 		</ul>
 	</div>
@@ -165,13 +165,13 @@
 	<div class="container">
 	<!-- START Card with Table -->
 
-	<div class="card text-center" data-toggle="modal" data-target="#nologinmodal">
+	<div class="card text-center d-flex ">
 	  <!-- START Tabs with Input & Button "Add" -->
-	  <div class="card-header">
-		<ul class="nav nav-tabs card-header-tabs d-flex">
+	  <div class="card-header form-inline pr-2 ">
+		<ul class="nav nav-tabs card-header-tabs flex-grow-1 my-auto"  data-toggle="modal" data-target="#nologinmodal">
 		
-		<div class="dropdown d-lg-none" data-toggle="modal" data-target="#nologinmodal">
-			<button class="btn btn-success btn-sm dropdown-toggle mt-1" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<div class="dropdown d-lg-none">
+			<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		Menu
 			</button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -192,38 +192,38 @@
 				  </li>
 			</div>
 		</div>
-		 <li class="nav-item d-none d-lg-block">
-			<a class="nav-link active" href="#"><font color="green"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> Schedule</a></font>
-		  </li>
-		  <li class="nav-item d-none d-lg-block">
-			<a class="nav-link" href="#"><font color="green"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i> Reports</a></font>
-		  </li>
-		  <li class="nav-item d-none d-lg-block">
-			 <a class="nav-link" href="#"><font color="green"><i class="fa fa-file-o fa-fw" aria-hidden="true"></i> Notes</a></font>
-		  </li>
-		  <li class="nav-item d-none d-lg-block">
-			<a class="nav-link" href="#"><font color="green"><i class="fa fa-key fa-fw" aria-hidden="true"></i> Auths</a></font>
-		  </li>
-		  <li class="nav-item d-none d-lg-block">
-			<a class="nav-link" href="#"><font color="green"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Contracts</a></font>
-		  </li>
-
-		  <li class="nav-item ml-auto">
-			<form class="form-inline my-1 my-lg-0 ">
-			  <div class="form-group mx-sm-2 mb-2 ">
-				<input class="form-control form-control-sm mr-sm-1 rounded-pill" size="15" type="text" placeholder="  Search or filter" aria-label="Search">
-			  </div>
-			  <button type="submit" class="btn btn-sm btn-success mb-2"><i class="fa fa-plus" aria-hidden="true"></i> 
-				Add
-			  </button>
-			</form>
-		  </li>
+				 <li class="nav-item d-none d-lg-block">
+					<a class="nav-link active" href="#"><font color="green"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> Schedule</a></font>
+				  </li>
+				  <li class="nav-item d-none d-lg-block">
+					<a class="nav-link" href="#"><font color="green"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i> Reports</a></font>
+				  </li>
+				  <li class="nav-item d-none d-lg-block">
+					 <a class="nav-link" href="#"><font color="green"><i class="fa fa-file-o fa-fw" aria-hidden="true"></i> Notes</a></font>
+				  </li>
+				  <li class="nav-item d-none d-lg-block">
+					<a class="nav-link" href="#"><font color="green"><i class="fa fa-key fa-fw" aria-hidden="true"></i> Auths</a></font>
+				  </li>
+				  <li class="nav-item d-none d-lg-block">
+					<a class="nav-link" href="#"><font color="green"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Contracts</a></font>
+				  </li> 
 		</ul>
+				
+				<div class="nav"  data-toggle="modal" data-target="#nologinmodal">
+					<li class="nav-item  form-inline">
+						<div class="form-group mx-sm-1 mb-1 my-auto" >
+							<input class="form-control form-control-sm mr-sm-1 rounded-pill" size="15" type="text" placeholder="  Search or filter" aria-label="Search">
+						</div>
+						<button type="submit" class="btn btn-sm btn-success my-auto"><i class="fa fa-plus" aria-hidden="true"></i> 
+							Add
+						</button>
+					</li>
+				</div>	
 	  </div>
 	</div>
 	  <!-- END Tabs with Input & Button "Add" -->
 	  <!-- START Table -->
-	  <table class="table mb-0 table-responsive-md">
+	  <table class="table mb-0 table-responsive-md border">
 		<thead> 
 		  <tr>
 			<th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</th></muted>
@@ -233,6 +233,7 @@
 			<th scope="col" class="align-middle"><small class="text-muted">Enrollment Date</th></muted>
 			<th scope="col" class="align-middle"><small class="text-muted">Termination Date</th></muted>
 			<th scope="col" class="align-middle"><small class="text-muted">Funder</th></muted>
+			<th scope="col" class="align-middle"><small class="text-muted"></th></muted>
 		  </tr>
 		</thead>
 		<tbody>
