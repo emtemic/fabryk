@@ -162,12 +162,12 @@
 	</div>
 	</div>
 	</div>
-	<div class="container">
+	<div class="container ">
 	<!-- START Card with Table -->
 
 	<div class="card text-center d-flex ">
 	  <!-- START Tabs with Input & Button "Add" -->
-	  <div class="card-header form-inline pr-2 ">
+	  <div class="card-header form-inline pr-1 pb-0 pt-1">
 		<ul class="nav nav-tabs card-header-tabs flex-grow-1 my-auto"  data-toggle="modal" data-target="#nologinmodal">
 		
 		<div class="dropdown d-lg-none">
@@ -176,7 +176,7 @@
 			</button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				 <li class="nav-item">
-					<a class="nav-link" href="#"><font color="green"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Schedule</a></font>
+					<a class="nav-link active" href="#"><font color="green"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Schedule</a></font>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link active" href="#"><font color="green"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>&nbsp; Reports</a></font>
@@ -211,10 +211,10 @@
 				
 				<div class="nav"  data-toggle="modal" data-target="#nologinmodal">
 					<li class="nav-item  form-inline">
-						<div class="form-group mx-sm-1 mb-1 my-auto" >
-							<input class="form-control form-control-sm mr-sm-1 rounded-pill" size="15" type="text" placeholder="  Search or filter" aria-label="Search">
+						<div class="form-group mx-1 my-auto" >
+							<input class="form-control form-control-sm rounded-pill" size="15" type="text" placeholder="  Search or filter" aria-label="Search">
 						</div>
-						<button type="submit" class="btn btn-sm btn-success my-auto"><i class="fa fa-plus" aria-hidden="true"></i> 
+						<button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus" aria-hidden="true"></i> 
 							Add
 						</button>
 					</li>
@@ -224,6 +224,7 @@
 	  <!-- END Tabs with Input & Button "Add" -->
 	  <!-- START Table -->
 	  <table class="table mb-0 table-responsive-md border">
+		<span class="border-0">
 		<thead> 
 		  <tr>
 			<th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</th></muted>
@@ -236,10 +237,11 @@
 			<th scope="col" class="align-middle"><small class="text-muted"></th></muted>
 		  </tr>
 		</thead>
+		</span>
 		<tbody>
 		  <tr>
-			<th scope="row" class="align-middle">
-			  <span class="badge badge-pill badge-light">
+			<th scope="row" class="align-middle ">
+			  <span class="badge badge-pill badge-light ">
 				Renewable
 			  </span>
 			</th>
@@ -276,7 +278,7 @@
 	  <!-- END Table -->
 	  <!-- START Footer with Pagination -->
 
-	  <div class="card-footer d-sm-flex" >
+	  <div class="card-footer d-sm-flex border" >
 		<div class=""><small class="text-muted align-self-start"><p class="text-center text-md-left">Showing 1 to 10 of 57 Entires</p></small></div>
 		<nav aria-label="Page navigation example" class="ml-auto" data-toggle="modal" data-target="#nologinmodal">
 			<ul class="pagination justify-content-center justify-content-md-end ">
