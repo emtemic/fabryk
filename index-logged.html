@@ -512,7 +512,9 @@
 			<td class="align-middle text-uppercase">8 dec 2014</td>
 			<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
 			<td class="align-middle">Eastern Douglas Development Group</td>
-			<td class="align-middle" data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td></div></a> <!-- data-toggle="modal" data-target="#editrow"-->
+			<td class="align-middle" data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td></div></a>
+
+<!-- data-toggle="modal" data-target="#editrow"-->
 		  </tr>
 		  <tr class="border-top">
 			<th scope="row" class="align-middle ">
@@ -558,13 +560,13 @@
 
 	  <div class="card-footer d-sm-flex m-0 p-2 px-3" >
 	  
-	  
+
 		
 		<div class="my-auto"><small class="text-muted align-self-start"><span class="text-center text-md-left">Showing 1 to 10 of 57 Entires</span></small></div>
 		
 		<nav aria-label="Page navigation example" class="ml-auto p-0">
 			<ul class="pagination justify-content-center justify-content-md-end my-auto">
-			  <li class="page-item"><a class="page-link" href="#"><font color="green"><</font></a></li>
+			  <li class="page-item"><a class="page-link" href="#"><font color="green">-</font></a></li>
 			  <li class="page-item"><a class="page-link" href="#"><font color="green">1</font></a></li>
 			  <li class="page-item"><a class="page-link" href="#"><font color="green">2</font></a></li>
 			  <li class="page-item"><a class="page-link" href="#"><font color="green">3</font></a></li>
@@ -618,8 +620,13 @@
 	</div>
 	
 	
-	
-	
+
+
+<script>   
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})	
+</script>
 </body>
 
 
