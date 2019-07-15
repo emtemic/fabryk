@@ -103,28 +103,8 @@
 		<div class="col-sm ml-3 d-flex justify-content-start justify-content-sm-end my-auto">
 			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#nologinmodal">
 			<i class="fa fa-pencil" aria-hidden="true"></i> Edit User</button>
-		</div>
+   </div>
 	
-	<!--
-	  <div class="card-footer d-sm-flex m-0 p-2 px-3" >
-	  
-	  
-		
-		<div class="my-auto"><small class="text-muted align-self-start"><span class="text-center text-md-left">Showing 1 to 10 of 57 Entires</span></small></div>
-		
-		<nav aria-label="Page navigation example" class="ml-auto p-0 " data-toggle="modal" data-target="#nologinmodal">
-			<ul class="pagination justify-content-center justify-content-md-end my-auto">
-			  <li class="page-item"><a class="page-link" href="#"><font color="green"><</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">1</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">2</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">3</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">4</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">5</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">></font></a></li>
-			</ul>
-		  </nav>
-	  </div>
-	-->
 
 <div class="row">
 	<div class="col-sm ml-3">
@@ -210,19 +190,19 @@
 			</button>
 			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				 <li class="nav-item">
-					<a class="nav-link" href="#"><font color="green"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Schedule</a></font>
+					<a class="nav-link" href="#"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Schedule</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link active" href="#"><font color="green"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>&nbsp; Reports</a></font>
+					<a class="nav-link active" href="#"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>&nbsp; Reports</a>
 				  </li>
 				  <li class="nav-item">
-					 <a class="nav-link active" href="#"><font color="green"><i class="fa fa-file-o fa-fw" aria-hidden="true"></i>&nbsp; Notes</a></font>
+					 <a class="nav-link active" href="#"><i class="fa fa-file-o fa-fw" aria-hidden="true"></i>&nbsp; Notes</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link active" href="#"><font color="green"><i class="fa fa-key fa-fw" aria-hidden="true"></i>&nbsp; Auths</a></font>
+					<a class="nav-link active" href="#"><i class="fa fa-key fa-fw" aria-hidden="true"></i>&nbsp; Auths</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link active" href="#"><font color="green"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>&nbsp; Contracts</a></font>
+					<a class="nav-link active" href="#"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>&nbsp; Contracts</a>
 				  </li>
 			</div>
 		</div>
@@ -272,10 +252,10 @@
 		</thead>
 		<tbody id="#Schedule">
 		  <tr class="border-top">
-			<th scope="row" class="align-middle">
-			  <span class="badge badge-pill badge-light ">
-				Renewable
-			  </span>
+			<th scope="row" class="align-middle" data-toggle="modal" data-target="#nologinmodal">
+			  <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+				RENEWABLE
+			  </span></a>
 			</th>
 			<td class="align-middle">RET43554</td>
 			<td class="align-middle text-uppercase"><font color="green">1 dec 2014</font></td>
@@ -283,27 +263,33 @@
 			<td class="align-middle text-uppercase">8 dec 2014</td>
 			<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
 			<td class="align-middle">Eastern Douglas Development Group</td>
-			<td class="align-middle data-toggle="tooltip" data-placement="bottom" title="Edit"><font color="green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td></font>
+			<td class="align-middle" data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#nologinmodal"></i></td></div></a> <!-- data-toggle="modal" data-target="#editrow"-->
 		  </tr>
 		  <tr class="border-top">
-			<th scope="row" class="align-middle"><span class="badge badge-pill badge-light">Renewable</span></th>
-			<td class="align-middle">RET43554</td>
-			<td class="align-middle text-uppercase"><font color="green" text-uppercase">1 dec 2014</font></td>
+			<th scope="row" class="align-middle" data-toggle="modal" data-target="#nologinmodal">
+			  <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+				RENEWABLE
+			  </span></a>
+			</th>			<td class="align-middle">RET43554</td>
+			<td class="align-middle text-uppercase">1 dec 2014</td>
 			<td class="align-middle text-uppercase"><font color="red">1 jun 2015</font></td>
 			<td class="align-middle text-uppercase">8 dec 2014</td>
 			<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
 			<td class="align-middle">Eastern Douglas Development Group</td>
-			<td class="align-middle data-toggle="tooltip" data-placement="bottom" title="Edit"><font color="green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td><font>
+			<td class="align-middle" data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#nologinmodal"></i></td></div></a> <!-- data-toggle="modal" data-target="#editrow"-->
 		  </tr>
 		  <tr class="border-top">
-			<th scope="row" class="align-middle"><span class="badge badge-pill badge-light">Renewable</span></th>
-			<td class="align-middle">RET43554</td>
-			<td class="align-middle text-uppercase"><font color="green">1 DEC 2014</font></td>
-			<td class="align-middle text-uppercase"><font color="red">1 jun 2015</font></td>
+			<th scope="row" class="align-middle" data-toggle="modal" data-target="#nologinmodal">
+			  <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+				RENEWABLE
+			  </span></a>
+			</th>			<td class="align-middle">RET43554</td>
+			<td class="align-middle text-uppercase">1 DEC 2014</td>
+			<td class="align-middle text-uppercase">1 jun 2015</td>
 			<td class="align-middle text-uppercase">8 DEC 2014</td>
 			<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
 			<td class="align-middle">Eastern Douglas Development Group</td>
-		    <td class="align-middle data-toggle="tooltip" data-placement="bottom" title="Edit"><font color="green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+			<td class="align-middle" data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#nologinmodal"></i></td></div></a> <!-- data-toggle="modal" data-target="#editrow"-->
 		  </tr>
 		</tbody>
 
@@ -372,76 +358,10 @@
 		</div>
 	  </div>
 	</div>
-	
-	<div id="reports" class="d-none">
-	<tbody>
-	  <tr class="border-top">
-		<th scope="row" class="align-middle">
-		  <span class="badge badge-pill badge-light ">
-			Renewable
-		  </span>
-		</th>
-		<td class="align-middle">POT987987</td>
-		<td class="align-middle text-uppercase"><font color="green">1 dec 2014</font></td>
-		<td class="align-middle text-uppercase"><font color="red">1 jun 2015</font></td>
-		<td class="align-middle text-uppercase">8 dec 2014</td>
-		<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
-		<td class="align-middle">Eastern Douglas Development Group</td>
-		<td class="align-middle data-toggle="tooltip" data-placement="bottom" title="Edit"><font color="green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td></font>
-	  </tr>
-	  <tr class="border-top">
-		<th scope="row" class="align-middle"><span class="badge badge-pill badge-light">Renewable</span></th>
-		<td class="align-middle">POT987987</td>
-		<td class="align-middle text-uppercase"><font color="green" text-uppercase">1 dec 2014</font></td>
-		<td class="align-middle text-uppercase"><font color="red">1 jun 2015</font></td>
-		<td class="align-middle text-uppercase">8 dec 2014</td>
-		<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
-		<td class="align-middle">Eastern Douglas Development Group</td>
-		<td class="align-middle data-toggle="tooltip" data-placement="bottom" title="Edit"><font color="green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td><font>
-	  </tr>
-	  <tr class="border-top">
-		<th scope="row" class="align-middle"><span class="badge badge-pill badge-light">Renewable</span></th>
-		<td class="align-middle">POT987987</td>
-		<td class="align-middle text-uppercase"><font color="green">1 DEC 2014</font></td>
-		<td class="align-middle text-uppercase"><font color="red">1 jun 2015</font></td>
-		<td class="align-middle text-uppercase">8 DEC 2014</td>
-		<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
-		<td class="align-middle">Eastern Douglas Development Group</td>
-		<td class="align-middle data-toggle="tooltip" data-placement="bottom" title="Edit"><font color="green"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
-	  </tr>
-	</tbody>
-	</div>
-	
-	
-	
-	
+
 </body>
 
-<script>
 
-$('#myList a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-<!-- data-toggle="reports" data-target="#2reports"> -->
-$('#myList a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-$('#myList a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-$('#myList a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-$('#myList a').on('click', function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-
-</script>
 
 
 
