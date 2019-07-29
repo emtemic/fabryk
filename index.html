@@ -6,17 +6,14 @@
 		<meta name="description" content="">
 		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 		<meta name="generator" content="Jekyll v3.8.5">
-		<title>Strona Testowa</title>
-		<!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script></script> -->
-		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script> -->
-		<!--<link rel="stylesheet" href="./dist/css/bootstrap.min.css"> -->
-		<!-- <script src="./dist/js/bootstrap.min.js"></script> -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			
+		<title>Index</title>
+			
+
 		
-		<link rel="canonical" href="./docs/4.3/examples/starter-template/">
-		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+		<!--<link rel="canonical" href="/docs/4.3/examples/starter-template/"> -->
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">   <!--Font nie dziala na stronie przy -->
+		<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		
@@ -35,43 +32,55 @@
 			}
 		  }
 		</style>
-		<!-- Custom styles for this template -->
-		<link href="starter-template.css" rel="stylesheet">
+		<!-- Custom styles for this template 
+		<link href="starter-template.css" rel="stylesheet"> -->
 	  </head>
 	<body>
 	  <main role="main" class="container.fluid">
 		
 		
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar" href="#"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar" href="index.html"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
 			<button class="navbar-toggler border-info" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
 		<div class="collapse navbar-collapse" id="mainmenu">
-					
-		<ul class="navbar-nav m-auto">	
-			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>								
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Clients</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
-			</li>
-		</ul>
+                
+    <ul class="navbar-nav m-auto"z>	
+            <li class="nav-item">
+                    <a class="nav-link  active"" href="index.html" data-toggle="modal" data-target="#nologinmodal">
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                        Home
+                    </a>								
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  "" href="/clients.html" data-toggle="modal" data-target="#nologinmodal">
+                        <i class="fa fa-users fa-fw" aria-hidden="true"></i>
+                        Clients
+                    </a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="list-test.html"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+            </li>
+        </ul>
+                
+
 		<ul class="navbar-nav ">
-				<li class="nav-item form-inline">
-					<a class="btn btn-outline-success my-auto mr-1" href="login.html" role="button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</a>
-					<a class="btn btn-success my-auto" href="register.html" role="button">Register</a>
-				</li>
+            
+            <!--START NAVBAR RIGHT BUTTONS-->
+            <li class="nav-item form-inline">
+                <a class="btn btn-outline-success my-auto mr-1" href="login.html" role="button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</a>
+                <a class="btn btn-success my-auto" href="register.html" role="button">Register</a>
+            </li>
+            <!--END NAVBAR RIGHT BUTTONS-->
+            
 		</ul>
 	</div>
 	</nav>
@@ -82,269 +91,97 @@
 		  <ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
 			<li class="breadcrumb-item"><a href="#">Clients</a></li>
-			<li class="breadcrumb-item active" aria-current="page">User Detail</li>
+
+			
+				<li class="breadcrumb-item active" aria-current="page">Index</li>
+			
+		
 		  </ol>
 		</nav>
 	  </div>
-
-	  <div class="container">
-		<div class="row">
-		  <div class="col col-md-2">
-			<div class="d-flex justify-content-center justify-content-md-end">
-				<img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="100" width="100">
-		  </div>
-		  </div>
-		  <div class="col-12 col-md-10 d-flex">
-			<div class="row">
-					<div class="col-12 col-md-6 d-inline-flex justify-content-center justify-content-md-start">
-							<h3>Teresa Sabdee  Wilson</h3>
-						  </div>
-						  <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end my-auto">
-							  <button type="button" class="btn btn-success " data-toggle="modal" data-target="#nologinmodal">
-							  <i class="fa fa-pencil" aria-hidden="true"></i> Edit User</button>
-						</div>
-				<div class="w-100"></div>
-				<div class="col-12 col-md-3 mt-3">
-					<p class="mt-2 text-center text-md-left">317 Willow Ave<br>
-						Franklin, CA 90988<br>
-						Washington Country</p>
-							
-						<dl class="row justify-content-center justify-content-md-start" data-toggle="modal" data-target="#nologinmodal">
-							<dt class="col-5 col-md-3"><small class="text-muted">Gender:</small></dt>
-							<dd class="col-5 col-md-9"><small>Female</small></dd>
-			
-							<dt class="col-5 col-md-3"><small class="text-muted">Email:</small></dt>
-							<dd class="col-5 col-md-9"><small><a href="mailto:juanita@alred.com">juanita@alred.com</a></small></dd>
-			
-							<dt class="col-5 col-md-3"><small class="text-muted">URL:</small></dt>
-							<dd class="col-5 col-md-9"><small><a href="#">www.ress.com</a></small></dd>
-						</dl>
-				</div>
-				<div class="col-12 col-md-4 mt-3">
-						<dl class="row justify-content-center justify-content-md-start">
-								<dd class="col-5 col-md-5"><small class="text-muted">Client Language:</small></dd>
-								<dd class="col-5 col-md-7"><small>Armenian</small></dd>
-				  
-								<dd class="col-5 col-md-5"><small class="text-muted">Family Language:</small></dd>
-								<dd class="col-5 col-md-7"><small>Russian</small></dd>
-				  
-								<dd class="col-5 col-md-5"><small class="text-muted">Client Type:</small></dd>
-								<dd class="col-5 col-md-7"><small>Client Reffered</small></dd>
-				  
-								<dd class="col-5 col-md-5"><small class="text-muted">Grade: </small></dd>
-								<dd class="col-5 col-md-7"><small>11</small></dd>
-				  
-								<dd class="col-5 col-md-5"><small class="text-muted">School:</small></dd>
-								<dd class="col-5 col-md-7"><small>Independence High School</small></dd>
-						</dl>
-				</div>
-				<div class="col-12 col-md-5 mt-3">
-						<dl class="row justify-content-center justify-content-md-start">
-	  
-								<dd class="col-5 col-md-5"><small class="text-muted">Contact Type:</small></dd>
-								<dd class="col-5 col-md-7"><small>Spouse</small></dd>
-				  
-								<dd class="col-5 col-md-5"><small class="text-muted">Relation to:</small></dd>
-								<dd class="col-5 col-md-7"><small>Program Supervisior</small></dd>
-				  
-								<dd class="col-5 col-md-5"><small class="text-muted">Legal Guardian:</small></dd>
-								<dd class="col-5 col-md-7"><small>False</small></dd>
-				  
-								<dd class="col-5 col-md-5"><small class="text-muted">Resident with:</small></dd>
-								<dd class="col-5 col-md-7"><small>False</small></dd>
-						</dl>
-				</div>
-			</div>
-		</div>
-	  </div>
-
-	<div class="container p-0">
-	<!-- START Card with Table -->
-	<div class="card text-center d-flex ">
-	  <!-- START Tabs with Input & Button "Add" -->
-	  <div class="card-header form-inline pr-1 pb-0 pt-1">
-		<ul class="nav nav-tabs card-header-tabs flex-grow-1 my-auto"  data-toggle="modal" data-target="#nologinmodal">
-		
-		<div class="dropdown d-lg-none">
-			<button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		Menu
-			</button>
-			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				 <li class="nav-item">
-					<a class="nav-link" href="#"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Schedule</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link active" href="#"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i>&nbsp; Reports</a>
-				  </li>
-				  <li class="nav-item">
-					 <a class="nav-link active" href="#"><i class="fa fa-file-o fa-fw" aria-hidden="true"></i>&nbsp; Notes</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link active" href="#"><i class="fa fa-key fa-fw" aria-hidden="true"></i>&nbsp; Auths</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link active" href="#"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i>&nbsp; Contracts</a>
-				  </li>
-			</div>
-		</div>
-				 <li class="nav-item d-none d-lg-block" data-toggle="schedule" data-target="#1schedule">
-					<a class="nav-link active" href="#"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> Schedule</a>
-				  </li>
-				  <li class="nav-item d-none d-lg-block" data-toggle="reports" data-target="#2reports">
-					<a class="nav-link" href="#"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i> Reports</a>
-				  </li>
-				  <li class="nav-item d-none d-lg-block">
-					 <a class="nav-link" href="#"><i class="fa fa-file-o fa-fw" aria-hidden="true"></i> Notes</a>
-				  </li>
-				  <li class="nav-item d-none d-lg-block">
-					<a class="nav-link" href="#"><i class="fa fa-key fa-fw" aria-hidden="true"></i> Auths</a>
-				  </li>
-				  <li class="nav-item d-none d-lg-block">
-					<a class="nav-link" href="#"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Contracts</a>
-				  </li> 
-		</ul>
-				
-				<div class="nav"  data-toggle="modal" data-target="#nologinmodal">
-					<li class="nav-item  form-inline">
-						<div class="form-group mx-1 my-auto" >
-							<input class="form-control form-control-sm rounded-pill" size="15" type="text" placeholder="  Search or filter" aria-label="Search">
-						</div>
-						<button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus" aria-hidden="true"></i> 
-							Add
-						</button>
-					</li>
-				</div>	
-	  </div>
-	
-	  <!-- END Tabs with Input & Button "Add" -->
-	  <!-- START Table -->
-	  <table class="table mb-0 table-responsive-md table-borderless">
-		<thead> 
-		  <tr>
-              <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</small></th>
-			<th scope="col" class="align-middle"><small class="text-muted">Authorizantion Code</small></th>
-			<th scope="col" class="align-middle"><small class="text-muted">Funding Begin date</small></th>
-			<th scope="col" class="align-middle"><small class="text-muted">Funding End Date</small></th>
-			<th scope="col" class="align-middle"><small class="text-muted">Enrollment Date</small></th>
-			<th scope="col" class="align-middle"><small class="text-muted">Termination Date</small></th>
-			<th scope="col" class="align-middle"><small class="text-muted">Funder</small></th>
-			<th scope="col" class="align-middle"><small class="text-muted"></small></th>
-		  </tr>
-		</thead>
-		<tbody id="#Schedule">
-		  <tr class="border-top">
-			<th scope="row" class="align-middle" data-toggle="modal" data-target="#nologinmodal">
-			  <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
-				RENEWABLE
-			  </span></a>
-			</th>
-			<td class="align-middle">RET43554</td>
-			<td class="align-middle text-uppercase">1 dec 2014</td>
-			<td class="align-middle text-uppercase">1 jun 2015</td>
-			<td class="align-middle text-uppercase">8 dec 2014</td>
-			<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
-			<td class="align-middle">Eastern Douglas Development Group</td>
-			<td class="align-middle"><a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#nologinmodal"></i></a></td> <!-- data-toggle="modal" data-target="#editrow"-->
-		  </tr>
-		  <tr class="border-top">
-			<th scope="row" class="align-middle" data-toggle="modal" data-target="#nologinmodal">
-			  <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
-				RENEWABLE
-			  </span></a>
-			</th>			<td class="align-middle">RET43554</td>
-			<td class="align-middle text-uppercase">1 dec 2014</td>
-			<td class="align-middle text-uppercase">1 jun 2015</td>
-			<td class="align-middle text-uppercase">8 dec 2014</td>
-			<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
-			<td class="align-middle">Eastern Douglas Development Group</td>
-			<td class="align-middle"><a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#nologinmodal"></i></a></td> <!-- data-toggle="modal" data-target="#editrow"-->
-		  </tr>
-		  <tr class="border-top">
-			<th scope="row" class="align-middle" data-toggle="modal" data-target="#nologinmodal">
-			  <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
-				RENEWABLE
-			  </span></a>
-			</th>			<td class="align-middle">RET43554</td>
-			<td class="align-middle text-uppercase">1 DEC 2014</td>
-			<td class="align-middle text-uppercase">1 jun 2015</td>
-			<td class="align-middle text-uppercase">8 DEC 2014</td>
-			<td class="align-middle"><p class="font-weight-light">Undefined</p></td>
-			<td class="align-middle">Eastern Douglas Development Group</td>
-			<td class="align-middle"><a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row"><i class="fa fa-pencil-square-o" aria-hidden="true" data-toggle="modal" data-target="#nologinmodal"></i></a></td> <!-- data-toggle="modal" data-target="#editrow"-->
-		  </tr>
-		</tbody>
-
-		</table>
-		</div>
-	  
-	  <!-- END Table -->
-	  <!-- START Footer with Pagination -->
+    <!--Start CONTENT-->
+    <div class="container">
+  INDEX
+</div>
 
 
-<div class="card-footer d-sm-flex m-0 p-2 px-3 border" >
-	  
+<div class="modal fade" id="nologinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="container w-auto">
 
-		
-		<div class="my-auto text-center text-md-left"><small class="text-muted">Showing 1 to 10 of 57 Entires</small></div>
-		
-		<nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-			<ul class="pagination justify-content-center justify-content-md-end my-auto">
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">-</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">1</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">2</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">3</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">4</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">5</font></a></li>
-			  <li class="page-item"><a class="page-link" href="#"><font color="green">></font></a></li>
-			</ul>
-		  </nav>
-	  </div>
-	  </div>
-	</div>
-	  <!-- END Footer with Pagination -->
-	
+                    <form class="px-4">
 
-		<!-- Modal -->
-	<div class="modal fade" id="nologinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="container d-flex justify-content-center">
-			<form class="w-75">
-				<div class="text-center pb-2 pt-4"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></div>
-				<p class="text-center"><strong>Sign In to Application</strong></p>
-				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus dui justo, ac consectetur dui feugiat vel.</p>
-				<div class="form-group font-weight-bold">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-				<div class="form-group font-weight-bold">
-					<label for="exampleInputPassword1">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password...">
-				</div>
-			  <div class="form-group form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1"><strong>Remember Password</strong></label>
-			  </div>
-			  <a href="index-logged.html" class="btn btn-primary btn-block" role="button" aria-pressed="true">Sign In</a>
-			  <div class="d-flex">
-				  <div class="pt-2 w-100"><a href="forgot-password.html" class="card-link"><strong>Forgot Password</strong></a></div>
-				  <div class="pt-2 flex-shrink-1>"><a href="register.html" class="card-link"><strong>Register</strong></a></div>
-			  </div>
-			  <p class="text-justify pt-4 pb-5"><small>Ambitioni Cras dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit iudicareturamet fermentum. Ambitioni Cras dedisse scripsisse iudicaretur
-			  <a href="#" class="card-link">www.adres.com</a></small></p>
-			</form>
-			</div>
-		</div>
-	  </div>
-	</div>
+                        
+
+    <div class="text-center pb-2 pt-4"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a></div>
+    
+   
+      <p class="text-center">
+        <strong>
+          Sign In to Application
+        </strong>
+      </p>
+
+      <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum placeat accusantium quasi perferendis.
+      </p>
 
 
-        
+
+
+                            <div class="form-group font-weight-bold">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group font-weight-bold">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password...">
+                                </div>
+                            
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><strong>Remember Password</strong></label>
+                                </div>
+                                <a href="index-logged.html" class="btn btn-primary btn-block" role="button" aria-pressed="true">Sign In</a>
+                                
+                                <div class="d-flex">
+                                <div class="pt-2 w-100"><a href="forgot-password.html" class="card-link"><strong>Forgot Password</strong></a></div>
+                                <div class="pt-2 flex-shrink-1>"><a href="register.html" class="card-link"><strong>Register</strong></a></div>
+                                </div>
+                    
+                        
+    <p class="text-justify pt-4"><small>Ambitioni Cras dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit iudicareturamet fermentum. Ambitioni Cras dedisse scripsisse iudicaretur
+    <a href="#" class="card-link">www.adres.com</a></small></p>
+
+
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+    
+    
+
+    <!--End CONTENT-->
+        		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>   
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+ 	 $('[data-toggle="tooltip"]').tooltip()
 })	
+
+$(function () {
+	$('#myTab li:last-child a').tab('show')
+})
 </script>
      </main>   
 </body>
