@@ -1,0 +1,353 @@
+	<!doctype html>
+	<html lang="en">
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Jekyll v3.8.5">
+			
+		<title></title>
+			
+
+		
+		<!--<link rel="canonical" href="/docs/4.3/examples/starter-template/"> -->
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">   <!--Font nie dziala na stronie przy -->
+		<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		
+		<style>
+		  .bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		  }
+		  @media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+			  font-size: 3.5rem;
+			}
+		  }
+		</style>
+		<!-- Custom styles for this template 
+		<link href="starter-template.css" rel="stylesheet"> -->
+	  </head>
+	<body>
+	  <main role="main" class="container.fluid">
+		
+		
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar" href="index.html"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
+			<button class="navbar-toggler border-info" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+		<div class="collapse navbar-collapse" id="mainmenu">
+                
+                
+    <ul class="navbar-nav m-auto"z>	
+            <li class="nav-item">
+                    <a class="nav-link  "" href="index.html">
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                        Home
+                    </a>								
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  
+                                       "" href="/clients.html">
+                        <i class="fa fa-users fa-fw" aria-hidden="true"></i>
+                        Clients
+                    </a>
+                </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+        </li>
+    </ul>
+              
+
+		<ul class="navbar-nav ">
+            
+            <!--START NAVBAR LOGGED USER-->
+            <li class="nav-item dropdown ">
+                <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="d-flex flex-nowrap">
+                        <div class="order-2 order-lg-1 my-auto">&nbsp; Mark Hohmann</div> 
+                        <div class="order-1 nav-link href="#"><i class="fa fa-users fa-fw" aria-hidden="true"></i></div>
+                        <div class="order-3 my-auto ml-2"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="index.html">Sign Out</a>
+                </div>		
+            </li>
+            <!--END NAVBAR LOGGED USER-->
+            
+		</ul>
+	</div>
+	</nav>
+	
+
+	  <div class="container-fluid ">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+			<li class="breadcrumb-item"><a href="#">Clients</a></li>
+
+			
+				<li class="breadcrumb-item active" aria-current="page"></li>
+			
+		
+		  </ol>
+		</nav>
+	  </div>
+    <!--Start CONTENT-->
+    <div class="container">
+    <div class="card text-center">
+        <!--   START CARD HEADER     -->
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Lists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favourites</a>
+            </li>
+          </ul>
+        </div>
+        <!--   END CARD HEADER     -->
+        <!--   START CARD BODY     -->
+        <div class="card-body p-0 pt-2">
+            <div class="d-flex">
+
+                <nav class="navbar navbar-light">
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Search for Influencers..." aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </nav>
+
+                <i class="fa fa-sliders my-auto mr-auto" aria-hidden="true">  
+                    <a href="#" >Filters</a>
+                </i>
+                
+                <div class="custom-control custom-checkbox my-auto pr-2">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Select All</label>
+                </div>
+
+                <div class="dropdown my-auto pr-2">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actions
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+
+                <ul class="nav nav-pills my-auto pr-2" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary active" id="list-tab" data-toggle="pill" href="#list" role="tab" aria-controls="list" aria-selected="true">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary" id="grid-tab" data-toggle="pill" href="#grid" role="tab" aria-controls="grid" aria-selected="false">Grid</a>
+                    </li>
+                </ul>
+
+             </div>
+             <p class="text-left text-muted pl-3">Showing x of x Entries (filtered from x total entries)</p>
+        </div>
+
+        <!--   END CARD BODY     -->
+      </div>
+        <!--START LIST TAB CONTENT-->
+<div class="tab-content" id="pills-tabContent">
+<div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab"> 
+<table class="table border">
+    <thead>
+        <tr>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">1</th>
+        <th scope="col">2</th>
+        <th scope="col">3</th>
+        <th scope="col">4</th>
+        <th scope="col">5</th>
+        <th scope="col">6</th>
+        <th scope="col">7</th>
+        <th scope="col">8</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td>Elena Cano</td>
+        <td>New York Queens</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        </tr>
+        <tr>
+        <th scope="row">2</th>
+        <td>Teresa Sabdee</td>
+        <td>Czechowice-Dziedzice, woj. mazowieckie, Poland</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        </tr>
+        <tr>
+        <th scope="row">3</th>
+        <td>Sa Xo Ann</td>
+        <td>London, UK</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        </tr>
+        <tr>
+        <th scope="row">4</th>
+        <td>Jonathan Arsavin</td>
+        <td>Moscow, Russia Federation</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        </tr>         
+    </tbody>
+</table>
+</div>
+        <!--END LIST TAB CONTENT-->
+
+        <!--START TAB GRID CONTENT-->
+<div class="tab-pane fade" id="grid" role="tabpanel" aria-labelledby="grid-tab">  
+<br>
+    <div class="row justify-content-around">
+        <div class="col-2 border p-0">
+            <div class="col">      
+                <div class="custom-control custom-checkbox my-auto pr-2">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1"></label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center pt-3">
+                    <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="100" width="100"> 
+                </div>
+            </div>
+            <div class="col text-center pt-4"><a href="#">Elena Cano</a></div>
+            <div class="col text-center text-muted pb-3">@ecano</div>
+            <div class="col text-center text-muted p-1">New York Queens 28-46879 NY USA</div>
+            <div class="col text-center pt-3">2,435</div>
+            <div class="col text-center text-muted pb-3">Followers</div>
+            <div class="col bg-secondary">Inne Dane</div>
+        </div>
+        <div class="col-2 border p-0">
+            <div class="col">      
+                <div class="custom-control custom-checkbox my-auto pr-2">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1"></label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center pt-3">
+                    <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="100" width="100"> 
+                </div>
+            </div>
+            <div class="col text-center pt-4"><a href="#">Teresa Sabdee</a></div>
+            <div class="col text-center text-muted pb-3">@tesa</div>
+            <div class="col text-center text-muted p-1">Czechowice-Dziedzice, woj. mazowieckie, Poland</div>
+            <div class="col text-center pt-3">12</div>
+            <div class="col text-center text-muted pb-3">Followers</div>
+            <div class="col bg-secondary">Inne Dane</div>
+        </div>
+        <div class="col-2 border p-0">
+            <div class="col">      
+                <div class="custom-control custom-checkbox my-auto pr-2">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1"></label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center pt-3">
+                    <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="100" width="100"> 
+                </div>
+            </div>
+            <div class="col text-center pt-4"><a href="#">Sa Xo Ann</a></div>
+            <div class="col text-center text-muted pb-3">@ann</div>
+            <div class="col text-center text-muted p-1">London, UK Birmingham 781222</div>
+            <div class="col text-center pt-3">12345</div>
+            <div class="col text-center text-muted pb-3">Followers</div>
+            <div class="col bg-secondary">Inne Dane</div>
+        </div>
+        <div class="col-2 border p-0">
+            <div class="col">      
+                <div class="custom-control custom-checkbox my-auto pr-2">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1"></label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-center pt-3">
+                    <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="100" width="100"> 
+                </div>
+            </div>
+            <div class="col text-center pt-4"><a href="#">Jonathan Arsavin</a></div>
+            <div class="col text-center text-muted pb-3">@avaj</div>
+            <div class="col text-center text-muted p-1">Moscow, Russia Federation</div>
+            <div class="col text-center pt-3">1445</div>
+            <div class="col text-center text-muted pb-3">Followers</div>
+            <div class="col bg-secondary">Inne Dane</div>
+        </div>
+    </div>
+</div>
+</div>
+        <!--END TAB GRID CONTENT-->
+</div>
+    <!--End CONTENT-->
+        		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>   
+$(function () {
+ 	 $('[data-toggle="tooltip"]').tooltip()
+})	
+
+$(function () {
+	$('#myTab li:last-child a').tab('show')
+})
+</script>
+     </main>   
+</body>
+</html>
