@@ -9,14 +9,7 @@
 			
 		<title>Index</title>
 			
-	
-		<!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script></script> -->
-		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script> -->
-		<!--<link rel="stylesheet" href="./dist/css/bootstrap.min.css"> -->
-		<!-- <script src="./dist/js/bootstrap.min.js"></script> -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 		
 		<!--<link rel="canonical" href="/docs/4.3/examples/starter-template/"> -->
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">   <!--Font nie dziala na stronie przy -->
@@ -62,13 +55,13 @@
                     </a>								
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link""href="clients.html" data-toggle="modal" data-target="#nologinmodal">
+                    <a class="nav-link" href="clients.html" data-toggle="modal" data-target="#nologinmodal">
                         <i class="fa fa-users fa-fw" aria-hidden="true"></i>
                         Clients
                     </a>
                 </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
+                <a class="nav-link" href="list-test.html"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
@@ -111,7 +104,7 @@
   INDEX
 </div>
 
-<!-- Modal -->
+
 <div class="modal fade" id="nologinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -119,43 +112,68 @@
                 <div class="container w-auto">
 
                     <form class="px-4">
-                    
-                        <div class="text-center pb-2 pt-4"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a></div>
-                    
-                        <p class="text-center"><strong>Sign In to Application</strong></p>
-                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus dui justo, ac consectetur dui feugiat vel.</p>
-                    
-                        <div class="form-group font-weight-bold">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group font-weight-bold">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password...">
-                        </div>
-                    
-                        <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1"><strong>Remember Password</strong></label>
-                        </div>
-                        <a href="index-logged.html" class="btn btn-primary btn-block" role="button" aria-pressed="true">Sign In</a>
+
                         
-                        <div class="d-flex">
-                        <div class="pt-2 w-100"><a href="forgot-password.html" class="card-link"><strong>Forgot Password</strong></a></div>
-                        <div class="pt-2 flex-shrink-1>"><a href="register.html" class="card-link"><strong>Register</strong></a></div>
-                        </div>
+
+    <div class="text-center pb-2 pt-4"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a></div>
+    
+   
+      <p class="text-center">
+        <strong>
+          Sign In to Application
+        </strong>
+      </p>
+
+      <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum placeat accusantium quasi perferendis.
+      </p>
+
+
+
+
+                            <div class="form-group font-weight-bold">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group font-weight-bold">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password...">
+                                </div>
+                            
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><strong>Remember Password</strong></label>
+                                </div>
+                                <a href="index-logged.html" class="btn btn-primary btn-block" role="button" aria-pressed="true">Sign In</a>
+                                
+                                <div class="d-flex">
+                                <div class="pt-2 w-100"><a href="forgot-password.html" class="card-link"><strong>Forgot Password</strong></a></div>
+                                <div class="pt-2 flex-shrink-1>"><a href="register.html" class="card-link"><strong>Register</strong></a></div>
+                                </div>
                     
-                        <p class="text-justify pt-4"><small>Ambitioni Cras dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit iudicareturamet fermentum. Ambitioni Cras dedisse scripsisse iudicaretur
-                        <a href="#" class="card-link">www.adres.com</a></small></p>
+                        
+    <p class="text-justify pt-4"><small>Ambitioni Cras dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit iudicareturamet fermentum. Ambitioni Cras dedisse scripsisse iudicaretur
+    <a href="#" class="card-link">www.adres.com</a></small></p>
+
+
                     </form>
                 </div>
             </div>
           </div>
         </div>
 </div>
+
+
+
+
+    
+    
+
     <!--End CONTENT-->
-        
+        		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>   
 $(function () {
  	 $('[data-toggle="tooltip"]').tooltip()
