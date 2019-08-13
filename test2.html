@@ -86,7 +86,7 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="profile-edit.html">Settings</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="index.html">Sign Out</a>
                 </div>		
@@ -113,23 +113,29 @@
 	  </div>
     <!--Start CONTENT-->
     <div class="container">
-
-    <!-- Start CARD -->
-    <div class="card">
-        <!-- START CARD HEADER tabs -->
+    <div class="card text-center">
+        <!--   START CARD HEADER     -->
         <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
+          <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                        <i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 
-                        Schedule <span class="badge badge-pill badge-success">3</span>
-                    </a>
+                    <a class="nav-link active" id="pills-schedule-tab" data-toggle="pill" href="#pills-schedule" role="tab" aria-controls="pills-schedule" aria-selected="false">
+                    <i class="fa fa-calendar fa-fw" aria-hidden="true"></i> Schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                        <i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i> 
-                        Reports <span class="badge badge-pill badge-danger">3</span>
-                    </a>
+                    <a class="nav-link" id="pills-reports-tab" data-toggle="pill" href="#pills-reports" role="tab" aria-controls="pills-reports" aria-selected="false">
+                    <i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-notes-tab" data-toggle="pill" href="#pills-notes" role="tab" aria-controls="pills-notes" aria-selected="false">
+                    <i class="fa fa-file-o fa-fw" aria-hidden="true"></i> Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-auths-tab" data-toggle="pill" href="#pills-auths" role="tab" aria-controls="pills-auths" aria-selected="false">
+                    <i class="fa fa-key fa-fw" aria-hidden="true"></i> Auths</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contracts-tab" data-toggle="pill" href="#pills-contracts" role="tab" aria-controls="pills-contracts" aria-selected="false">
+                    <i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Contracts</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="v-pills-notes-tab" data-toggle="pill" href="#v-pills-notes" role="tab" aria-controls="v-pills-notes" aria-selected="false">
@@ -151,8 +157,204 @@
                 </li>
             </ul>
         </div>
-        <!-- END CARD HEADER tabs -->
+    </div>
+    <!--   END CARD HEADER     -->
 
+<<<<<<< Updated upstream
+        <!--   START CARD BODY     -->
+        <div class="tab-pane fade show active" id="pills-schedule" role="tabpanel" aria-labelledby="pills-schedule-tab">
+            <div class="card-body p-0 pt-2 border-right border-left border-bottom">
+              <div class="d-flex">
+                <nav class="navbar navbar-light mr-auto">
+                  <form class="form-inline">
+                    <input class="form-control" type="search" placeholder="Search for Influencers..." aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </nav>
+                <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary active" id="list-schedule-tab" data-toggle="pill" href="#list-schedule" role="tab" aria-controls="list-schedule" aria-selected="true">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary" id="grid-schedule-tab" data-toggle="pill" href="#grid-schedule" role="tab" aria-controls="grid-schedule" aria-selected="false">Grid</a>
+                    </li>
+                </ul>
+             </div>
+             <div class="d-sm-flex px-2 pb-2" >
+                <small class="text-muted align-self-start pl-2 m-0 "><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
+                    <nav aria-label="Page navigation example" class="ml-auto p-0">
+                      <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                        <li class="page-item"><a class="page-link" href="#"><</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link" href="#">></a></li>
+                    </ul>
+                    </nav>
+             </div>
+            </div>
+          <!--   END CARD BODY     -->
+    
+          <!-- START Schedule Tab Content -->
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="list-schedule" role="tabpanel" aria-labelledby="list-schedule-tab">
+                <!-- START Table -->
+<table class="table mb-0 table-responsive-md">
+    <thead> 
+        <tr>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Authorizantion Type
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Schedule LIST
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funding Begin date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funding End Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Enrollment Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Termination Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funder
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+  
+            </small>
+          </th>
+        </tr>
+    </thead>
+  <tbody>
+
+
+ 
+<tr class="">
+    <th scope="row" class="align-middle">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Schedule</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
+</tr>
+ 
+<tr class="">
+    <th scope="row" class="align-middle">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Schedule</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
+</tr>
+ 
+<tr class="">
+    <th scope="row" class="align-middle">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Schedule</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
+</tr>
+ 
+<tr class="">
+    <th scope="row" class="align-middle">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Schedule</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
+</tr>
+ 
+<tr class="">
+    <th scope="row" class="align-middle">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Schedule</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
+</tr>
+
+
+</tbody>
+</table>
+=======
         <!-- START TABS: Schedule | Reports | Notes | Auths | Contracts -->
         <div class="tab-content" id="v-pills-tabContent">
             <!-- START TAB-content: Schedule -->
@@ -254,7 +456,7 @@
 <tr class="">
     <th scope="row" class="align-middle">
         <a href="#">
-          <span class="badge badge-pill badge-success text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -265,13 +467,16 @@
       <td class="align-middle text-uppercase">8 DEC 2014</td>
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
 </tr>
  
 <tr class="">
     <th scope="row" class="align-middle">
         <a href="#">
-          <span class="badge badge-pill badge-success text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -282,13 +487,16 @@
       <td class="align-middle text-uppercase">8 DEC 2014</td>
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
 </tr>
  
 <tr class="">
     <th scope="row" class="align-middle">
         <a href="#">
-          <span class="badge badge-pill badge-success text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -299,13 +507,16 @@
       <td class="align-middle text-uppercase">8 DEC 2014</td>
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
 </tr>
  
 <tr class="">
     <th scope="row" class="align-middle">
         <a href="#">
-          <span class="badge badge-pill badge-success text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -316,13 +527,16 @@
       <td class="align-middle text-uppercase">8 DEC 2014</td>
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
 </tr>
  
 <tr class="">
     <th scope="row" class="align-middle">
         <a href="#">
-          <span class="badge badge-pill badge-success text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -333,7 +547,10 @@
       <td class="align-middle text-uppercase">8 DEC 2014</td>
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
+      <td class="align-middle">
+          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+      </td>
+
 </tr>
 
 
@@ -350,8 +567,8 @@
                 <div class="row">
                     <div class="col-auto">
                         <dl class="row justify-content-center justify-content-md-start">
-                            <dt class="col-6"><small class="text-success">Authorization Type:</small></dt>
-                            <dd class="col-6"><small class="text-success">RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
                             <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                             <dd class="col-6"><small>Schedule</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -364,6 +581,9 @@
                             <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funder:</small></dt>
                             <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
                         </dl>
                     </div>
                 </div>
@@ -377,8 +597,8 @@
                 <div class="row">
                     <div class="col-auto">
                         <dl class="row justify-content-center justify-content-md-start">
-                            <dt class="col-6"><small class="text-success">Authorization Type:</small></dt>
-                            <dd class="col-6"><small class="text-success">RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
                             <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                             <dd class="col-6"><small>Schedule</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -391,6 +611,9 @@
                             <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funder:</small></dt>
                             <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
                         </dl>
                     </div>
                 </div>
@@ -404,8 +627,8 @@
                 <div class="row">
                     <div class="col-auto">
                         <dl class="row justify-content-center justify-content-md-start">
-                            <dt class="col-6"><small class="text-success">Authorization Type:</small></dt>
-                            <dd class="col-6"><small class="text-success">RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
                             <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                             <dd class="col-6"><small>Schedule</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -418,6 +641,9 @@
                             <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funder:</small></dt>
                             <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
                         </dl>
                     </div>
                 </div>
@@ -431,8 +657,8 @@
                 <div class="row">
                     <div class="col-auto">
                         <dl class="row justify-content-center justify-content-md-start">
-                            <dt class="col-6"><small class="text-success">Authorization Type:</small></dt>
-                            <dd class="col-6"><small class="text-success">RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
                             <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                             <dd class="col-6"><small>Schedule</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -445,6 +671,9 @@
                             <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funder:</small></dt>
                             <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
                         </dl>
                     </div>
                 </div>
@@ -458,8 +687,8 @@
                 <div class="row">
                     <div class="col-auto">
                         <dl class="row justify-content-center justify-content-md-start">
-                            <dt class="col-6"><small class="text-success">Authorization Type:</small></dt>
-                            <dd class="col-6"><small class="text-success">RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
                             <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                             <dd class="col-6"><small>Schedule</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -472,6 +701,9 @@
                             <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
                             <dt class="col-6"><small class="text-muted">Funder:</small></dt>
                             <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
                         </dl>
                     </div>
                 </div>
@@ -587,7 +819,7 @@
 <tr class="border-top">
     <th scope="row" class="align-middle ">
         <a href="#">
-          <span class="badge badge-pill badge-danger text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -604,7 +836,7 @@
 <tr class="border-top">
     <th scope="row" class="align-middle ">
         <a href="#">
-          <span class="badge badge-pill badge-danger text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -621,7 +853,7 @@
 <tr class="border-top">
     <th scope="row" class="align-middle ">
         <a href="#">
-          <span class="badge badge-pill badge-danger text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -638,7 +870,7 @@
 <tr class="border-top">
     <th scope="row" class="align-middle ">
         <a href="#">
-          <span class="badge badge-pill badge-danger text-uppercase">
+          <span class="badge badge-pill badge-secondary text-uppercase">
             RENEWABLE
           </span>
         </a>
@@ -666,8 +898,8 @@
             <div class="row">
                 <div class="col-auto">
                     <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-danger">Authorization Type:</small></dt>
-                        <dd class="col-6"><small class="text-danger">RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
                         <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                         <dd class="col-6"><small>Reports</a></small></dd>
                         <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -693,8 +925,8 @@
             <div class="row">
                 <div class="col-auto">
                     <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-danger">Authorization Type:</small></dt>
-                        <dd class="col-6"><small class="text-danger">RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
                         <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                         <dd class="col-6"><small>Reports</a></small></dd>
                         <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -720,8 +952,8 @@
             <div class="row">
                 <div class="col-auto">
                     <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-danger">Authorization Type:</small></dt>
-                        <dd class="col-6"><small class="text-danger">RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
                         <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                         <dd class="col-6"><small>Reports</a></small></dd>
                         <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -747,8 +979,8 @@
             <div class="row">
                 <div class="col-auto">
                     <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-danger">Authorization Type:</small></dt>
-                        <dd class="col-6"><small class="text-danger">RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
                         <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
                         <dd class="col-6"><small>Reports</a></small></dd>
                         <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
@@ -772,9 +1004,454 @@
 <!--END data for reports-->       
                     </div>
                 </div>
+>>>>>>> Stashed changes
             </div>
-            <!-- END TAB-content:: Reports -->
+            <div class="tab-pane fade" id="grid-schedule" role="tabpanel" aria-labelledby="grid-schedule-tab">
+                <!--START data for schedule-->          
+<div class="row">
+    
+    <div class="col-6 p-auto my-1">
+        <div class="card">
+            <div class="card-body px-3 py-2">
+                <div class="row">
+                    <div class="col-auto">
+                        <dl class="row justify-content-center justify-content-md-start">
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                            <dd class="col-6"><small>Schedule</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                            <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                            <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                            <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                            <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                            <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-6 p-auto my-1">
+        <div class="card">
+            <div class="card-body px-3 py-2">
+                <div class="row">
+                    <div class="col-auto">
+                        <dl class="row justify-content-center justify-content-md-start">
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                            <dd class="col-6"><small>Schedule</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                            <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                            <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                            <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                            <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                            <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-6 p-auto my-1">
+        <div class="card">
+            <div class="card-body px-3 py-2">
+                <div class="row">
+                    <div class="col-auto">
+                        <dl class="row justify-content-center justify-content-md-start">
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                            <dd class="col-6"><small>Schedule</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                            <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                            <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                            <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                            <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                            <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-6 p-auto my-1">
+        <div class="card">
+            <div class="card-body px-3 py-2">
+                <div class="row">
+                    <div class="col-auto">
+                        <dl class="row justify-content-center justify-content-md-start">
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                            <dd class="col-6"><small>Schedule</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                            <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                            <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                            <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                            <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                            <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-6 p-auto my-1">
+        <div class="card">
+            <div class="card-body px-3 py-2">
+                <div class="row">
+                    <div class="col-auto">
+                        <dl class="row justify-content-center justify-content-md-start">
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>RENEWABLE</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                            <dd class="col-6"><small>Schedule</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                            <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                            <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                            <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                            <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                            <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">
+                                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i></small>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+  <!--END data for schedule-->
+            </div>
+          </div>
+        </div>
+        <!-- END Schedule Tab Content -->
+      
+        <!--   START CARD BODY     -->
 
+<<<<<<< Updated upstream
+        <div class="tab-pane fade" id="pills-reports" role="tabpanel" aria-labelledby="pills-reports-tab">
+            
+              <div class="card-body p-0 pt-2 border-right border-left">
+                <div class="d-flex">
+                  <nav class="navbar navbar-light mr-auto">
+                    <form class="form-inline">
+                      <input class="form-control" type="search" placeholder="Search for Influencers..." aria-label="Search">
+                      <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                      </button>
+                    </form>
+                  </nav>
+                  <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                          <a class="btn btn-outline-secondary active" id="list-reports-tab" data-toggle="pill" href="#list-reports" role="tab" aria-controls="list-reports" aria-selected="true">List</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="btn btn-outline-secondary" id="grid-reports-tab" data-toggle="pill" href="#grid-reports" role="tab" aria-controls="grid-reports" aria-selected="false">Grid</a>
+                      </li>
+                  </ul>
+               </div>
+               <div class="d-sm-flex px-2 pb-2" >
+                  <small class="text-muted align-self-start pl-2 m-0 "><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
+                      <nav aria-label="Page navigation example" class="ml-auto p-0">
+                        <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                          <li class="page-item"><a class="page-link" href="#"><</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item"><a class="page-link" href="#">></a></li>
+                      </ul>
+                      </nav>
+               </div>
+              </div>
+              <!--   END CARD BODY     -->
+      
+            <!-- START Schedule Tab Content -->
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="list-reports" role="tabpanel" aria-labelledby="list-reports-tab">
+                  <!-- START Table -->
+<table class="table mb-0 table-responsive-md">
+    <thead> 
+        <tr>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Authorizantion Type
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Report LIST
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funding Begin date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funding End Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Enrollment Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Termination Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funder
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+  
+            </small>
+          </th>
+        </tr>
+    </thead>
+  <tbody>
+
+
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Reports</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle"></td>
+</tr>
+
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Reports</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle"></td>
+</tr>
+
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Reports</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle"></td>
+</tr>
+
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            RENEWABLE
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">Reports</td>
+      <td class="align-middle text-uppercase">1 DEC 2014</td>
+      <td class="align-middle text-uppercase">1 JUN 2015</td>
+      <td class="align-middle text-uppercase">8 DEC 2014</td>
+      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
+      <td class="align-middle">Eastern Douglas Development Group</td>
+      <td class="align-middle"></td>
+</tr>
+
+
+</tbody>
+</table>
+              </div>
+              <div class="tab-pane fade" id="grid-reports" role="tabpanel" aria-labelledby="grid-reports-tab">
+                  <!--START data for reports-->         
+<div class="row">
+    
+<div class="col-6 p-auto my-1">
+    <div class="card">
+        <div class="card-body px-3 py-2">
+            <div class="row">
+                <div class="col-auto">
+                    <dl class="row justify-content-center justify-content-md-start">
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                        <dd class="col-6"><small>Reports</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 p-auto my-1">
+    <div class="card">
+        <div class="card-body px-3 py-2">
+            <div class="row">
+                <div class="col-auto">
+                    <dl class="row justify-content-center justify-content-md-start">
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                        <dd class="col-6"><small>Reports</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 p-auto my-1">
+    <div class="card">
+        <div class="card-body px-3 py-2">
+            <div class="row">
+                <div class="col-auto">
+                    <dl class="row justify-content-center justify-content-md-start">
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                        <dd class="col-6"><small>Reports</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-6 p-auto my-1">
+    <div class="card">
+        <div class="card-body px-3 py-2">
+            <div class="row">
+                <div class="col-auto">
+                    <dl class="row justify-content-center justify-content-md-start">
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>RENEWABLE</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                        <dd class="col-6"><small>Reports</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<!--END data for reports-->       
+              </div>
+            </div>
+        </div>
+          <!-- END Schedule Tab Content -->
+
+</div>
+=======
             <!-- START TAB-content:: Notes -->
             <div class="tab-pane fade" id="v-pills-notes" role="tabpanel" aria-labelledby="v-pills-notes-tab">
                 <!-- START header: search, switch: list | grid -->
@@ -1385,6 +2062,7 @@
     <!-- END TABS: Schedule | Reports | Notes | Auths | Contracts -->
 </div>
     <!-- END CARD -->
+>>>>>>> Stashed changes
 
      
       
