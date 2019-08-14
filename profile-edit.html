@@ -112,189 +112,161 @@
 		</nav>
 	  </div>
     <!--Start CONTENT-->
-            <div class="container">
-                <div class="row">
-                        <div class="col-xl-12">
-                                <h1 class="display-4 mt-5 mb-4">Profile Edit</h1>
-                            </div>
-                    <!-- START HEADER -->
-                    <div class="col-xl-12">
-                                        <!-- START HEADER -->
-        <div class="media mb-3 mt-4">
-            <div class="d-flex align-self-center mr-3 mr-2">
-                <div class="avatar avatar--lg mr-2">
-                    <img src="foto.jpeg" class="rounded-circle" height="100">
-                </div>
+    <div class="container">
+<!--START HEADER MENU-->
+    <div class="row pt-4 pb-3">
+        <div class="col-3">
+        </div>
+        <div class="col">
+            <h1>Profile Edit</h1>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-3 d-flex justify-content-end">
+            <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="112" width="112"> 
+        </div>
+        <div class="col pl-0">
+            <div class="col d-flex d-inline-flex">
+                <a href="user_details.html"><h5>Teresa Sabdee Wilson</h5></a> / Profile Edit
             </div>
-            <div class="media-body">
-                <h5 class="mb-1 mt-0">
-                    <a href="user_details.html"><span data-faker="[[name.firstName]] [[name.lastName]]">Teresa Sabdee </span></a> <span class="text-muted ml-1 mr-1"> / </span> Profile Edit</h5>
-                
-                <span class="badge badge-primary badge-pill mr-1">Premium</span> 
+            <div class="col d-flex d-inline-flex">
+                <span class="badge badge-pill badge-primary mr-2">Premium</span>
                 <span class="text-muted">Edit Your Name, Avatar, etc.</span>
             </div>
         </div>
-        <!-- END HEADER -->
+    </div>
+<!--END HEADER MENU-->
+<!--START MENU LIST-->    
+    <div class="row pt-4">
+        <div class="col-3 ">
+            <div class="list-group">
+                <a href="profile-edit.html" class="list-group-item list-group-item-action active border-0">
+                    Profile Edit
+                </a>
+                <a href="account-edit.html" class="list-group-item list-group-item-action border-0">
+                    Account Edit                
+                </a>
+                <a href="billing-edit.html" class="list-group-item list-group-item-action border-0">
+                    Billing Edit
+                </a>
+                <a href="settings-edit.html" class="list-group-item list-group-item-action border-0">
+                    Settings Edit
+                </a>
+                <a href="sessions-edit.html" class="list-group-item list-group-item-action border-0">
+                    Sessions Edit
+                </a>
+            </div> 
+        </div>
+        <div class="col p-0">
+            <div class="card">
+                <div class="d-flex d-inline-flex px-4 pt-3">
+                    <p class="mr-auto">Profile Edit</p> 
+                    Fields mark as 
+                     <p class="text-danger">&nbsp * &nbsp</p> 
+                    is required
+                </div>
+                <div class="card-body p-0">
+                    <form >
+                        <div class="form-group row pt-1">
+                            <label for="colFormLabel" class="col-sm-3 col-form-label text-right">Avatar</label>
+                            <div class="col-sm-7">
+                                <div class="card text-center" >
+                                    <i class="fa fa-user fa-3x py-3" aria-hidden="true"></i>
+                                    <div class="card-body py-3">
+                                        <h5 class="card-title">Upload Your Avatar...</h5>
+                                        <p class="card-text">Drag a file here or browse for a file to upload.</p>
+                                        <p class="card-text font-weight-light">JPG, GIF, PNG, MOV and AVI. Please choose a files under 2TB to upload. File sizes are 400 x 300px.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-3 col-form-label text-right">* First Name</label>
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="First Name...">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-3 col-form-label text-right">
+                                *  Last Name 
+                            </label>
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="Last Name..">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-3 col-form-label text-right">Job Type</label>
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control" id="colFormLabel" placeholder="Job Type..">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="d-flex d-inline-flex px-4 pt-4 pb-3">
+                        <p class="mr-auto">Availability</p> 
                     </div>
-                    <!-- END HEADER -->
-                    <!-- START LEFT MENU -->
-                    <div class="col-xl-3">
-                                        <!-- START LEFT NAVS -->                
-        <ul class="nav flex-column nav-pills mt-3 mb-4">
-            <li class="nav-item">
-                <a class="nav-link d-flex justify-content-start active" href="profile-edit.html">
-                    <div>Profile Edit</div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-flex justify-content-start " href="account-edit.html">
-                    <div>Account Edit</div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-flex justify-content-start " href="billing-edit.html">
-                    <div>Billing Edit</div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-flex justify-content-start " href="settings-edit.html">
-                    <div>Settings Edit</div>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link d-flex justify-content-start " href="sessions-edit.html">
-                    <div>Sessions Edit</div>
-                </a>
-            </li>
-        </ul>
-        <!-- END LEFT NAVS -->
-                    </div>
-                    <!-- END LEFT MENU -->
-                    <!-- START RIGHT CONTENT -->
-                     <div class="col-xl-9 mt-3">
-                         <div class="card">
-                                                             <!-- START Header -->
-                        <div class="card-body">
-                            <div class="d-flex justify-content-end">
-                                <h6 class="card-title mr-auto">Profile Edit</h6>
-                                <div class="pull-right small">
-                                    Fields mark as 
-                                    <span class="text-danger">*</span> is required.
+
+                    <form>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-sm-3 col-form-label text-right">After Logging</label>
+                            <div class="col-sm-7">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">
+                                        <span class="badge badge-pill badge-success">Available</span>
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">
+                                        <span class="badge badge-pill badge-secondary">Inactive</span>   
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">
+                                        <span class="badge badge-pill badge-primary">Busy</span>
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">
+                                        <span class="badge badge-pill badge-danger">Offline</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <!-- END Header -->
-                             <div class="card-body">
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-3 col-form-label text-right">
-                                    Avatar</label>
-                                    <div class="col-7">
-                                        <div class="card b-dashed r-4 b-2 b-gray-400">
-                                            <div class="card-body text-center">
-                                                <div>
-                                                    <i class="fa fa-user fa-3x text-muted mt-2 mb-3"></i>
-                                                </div>
-                                                <h6>Upload Your Avatar...</h6>
-                                                <p>Drag a file here or <a href="#">browse</a> for a file to upload.</p>
-                                                <span class="small">JPG, GIF, PNG, MOV and AVI. Please choose a files under 2GB to upload. File sizes are 400 x 300px.</span>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </form>
+                    
+                    <div class="d-flex d-inline-flex pt-4 pb-3 px-4">
+                            <p class="mr-auto">Add Profile</p> 
+                        </div>
+    
+                        <form>
+                            <div class="form-group row">
+                                <label for="colFormLabel" class="col-sm-3 col-form-label text-right">Profile</label>
+                                <div class="col-sm-7">
+                                    <textarea class="form-control" id="textarea" rows="4" placeholder="Please Describe Your Profile..."></textarea>
                                 </div>
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-3 col-form-label text-right">
-                                        <span class="text-danger">*</span> First Name
-                                    </label>
-                                    <div class="col-7">
-                                        <input class="form-control" type="text" placeholder="First Name..." id="example-text-input">
-                                    </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="colFormLabel" class="col-sm-3 col-form-label text-right">Add Labels</label>
+                                <div class="col-sm-7">
+                                    <input type="email" class="form-control" id="colFormLabel" placeholder="Add Here...">
                                 </div>
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-3 col-form-label text-right">
-                                        <span class="text-danger">*</span> Last Name
-                                    </label>
-                                    <div class="col-7">
-                                        <input class="form-control" type="text" placeholder="Last Name..." id="example-text-input">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="example-number-input" class="col-3 col-form-label text-right">
-                                        Job Type
-                                    </label>
-                                    <div class="col-7">
-                                        <select class="custom-select">
-                                            <option selected="">Human Intranet Developer </option>
-                                            <option value="1">Dynamic Tactics Specialist</option>
-                                            <option value="2">Global Configuration Consultant</option>
-                                            <option value="3">Principal Directives Orchestrator</option>
-                                            <option value="3">Corporate Usability Consultant</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="hr-text hr-text-left mt-5 mb-2">
-                                    <span class="small">Availability</span>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-3 col-form-label text-right"> 
-                                        After Logging
-                                    </label>
-                                    <div class="col-7 mt-2">
-                                        <div class="custom-controls-stacked">
-                                            <div class="custom-control custom-radio mb-1">
-                                                <input type="radio" id="customRadio1" name="afterLogging" class="custom-control-input" checked="">
-                                                <label class="custom-control-label" for="customRadio1">
-                                                    <span class="badge badge-pill badge-success">Available</span>
-                                                </label>
-                                            </div>
-                                            <div class="custom-control custom-radio mb-1">
-                                                <input type="radio" id="customRadio2" name="afterLogging" class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadio2">
-                                                    <span class="badge badge-pill badge-warning">Inactive</span>
-                                                </label>
-                                            </div>
-                                            <div class="custom-control custom-radio mb-1">
-                                                <input type="radio" id="customRadio3" name="afterLogging" class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadio3">
-                                                    <span class="badge badge-pill badge-danger">Busy</span>
-                                                </label>
-                                            </div>
-                                            <div class="custom-control custom-radio mb-1">
-                                                <input type="radio" id="customRadio4" name="afterLogging" class="custom-control-input">
-                                                <label class="custom-control-label" for="customRadio4">
-                                                    <span class="badge badge-pill badge-secondary">Offline</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                    <div class="hr-text hr-text-left mt-5 mb-2">
-                                        <span class="small">Add Profile</span>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="example-text-input" class="col-3 col-form-label text-right">Profile</label>
-                                        <div class="col-7">
-                                            <textarea class="form-control" id="exampleTextarea" rows="4" placeholder="Please Describe Your Profile..."></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row mb-4">
-                                        <label for="example-text-input" class="col-3 col-form-label text-right">
-                                            Add Labels
-                                        </label>
-                                        <div class="col-7">
-                                            <input class="form-control" type="text" placeholder="Add Here..." id="example-text-input">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer text-right">
-                                    <button type="button" class="btn btn-primary">Update Profile</button>
-                                </div>
-                             </div>
-                    </div>
-                    <!-- END RIGHT CONTENT -->
+                            </div>
+                        </form>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                    <a href="#" class="btn btn-primary">Update Profile</a>
                 </div>
             </div>
-
-
+            <br><br>
+        </div>
+    </div>
+<!--END MENU LIST--> 
+</div>
     <!--End CONTENT-->
         		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -307,6 +279,10 @@ $(function () {
 $(function () {
 	$('#myTab li:last-child a').tab('show')
 })
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 </script>
      </main>   
 </body>

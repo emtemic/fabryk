@@ -50,13 +50,15 @@
                 
     <ul class="navbar-nav m-auto"z>	
             <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link  " href="index.html">
                         <i class="fa fa-home fa-fw" aria-hidden="true"></i>
                         Home
                     </a>								
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="clients.html"><i class="fa fa-users fa-fw" aria-hidden="true"></i>
+                    <a class="nav-link  
+                                       " href="clients.html">
+                        <i class="fa fa-users fa-fw" aria-hidden="true"></i>
                         Clients
                     </a>
                 </li>
@@ -127,6 +129,10 @@ $(function () {
 $(function () {
 	$('#myTab li:last-child a').tab('show')
 })
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 </script>
      </main>   
 </body>

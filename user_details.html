@@ -418,14 +418,26 @@
               <!-- START header: search, switch: list | grid -->
               <div class="card-body p-0 pt-2">
                   <div class="d-flex">
-                      <nav class="navbar navbar-light mr-auto">
-                          <form class="form-inline">
-                              <input class="form-control" type="search" placeholder="Search for Influencers..." aria-label="Search">
-                              <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
-                              </button>
-                          </form>
-                      </nav>
-                      <!-- START TABS: Grid | List -->
+                        <nav class="navbar navbar-light mr-auto">
+
+                                <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                          </nav>
+                                <!--
+                              <form class="form-inline">
+                                  <input class="form-control" type="search" placeholder="Search for Influencers..." aria-label="Search">
+                                  <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                  
+                              </form>
+                              -->
+                          
+                          <!-- START TABS: Grid | List -->
                       <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
                           <li class="nav-item">
                               <a class="btn btn-outline-secondary active" id="list-schedule-tab" data-toggle="pill" href="#list-schedule" role="tab" aria-controls="list-schedule" aria-selected="true">
@@ -440,20 +452,7 @@
                       </ul>
                       <!-- END TABS: Grid | List -->
                   </div>
-                      <div class="d-sm-flex px-2 pb-2" >
-                          <small class="text-muted align-self-start pl-2 m-0 "><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
-                          <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                              <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                                  <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">></a></li>
-                              </ul>
-                          </nav>
-                      </div>
+
               </div>
               <!-- END header: search, switch: list | grid -->
               <!-- START Schedule Tab Content -->
@@ -524,7 +523,7 @@
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
       <td class="align-middle">
-          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+          <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
       </td>
 
 </tr>
@@ -544,7 +543,7 @@
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
       <td class="align-middle">
-          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+          <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
       </td>
 
 </tr>
@@ -564,7 +563,7 @@
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
       <td class="align-middle">
-          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+          <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
       </td>
 
 </tr>
@@ -584,7 +583,7 @@
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
       <td class="align-middle">
-          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+          <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
       </td>
 
 </tr>
@@ -604,7 +603,7 @@
       <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
       <td class="align-middle">Eastern Douglas Development Group</td>
       <td class="align-middle">
-          <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="modal" data-target="#exampleModal"></i>
+          <a href="#exampleModal" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-eye" aria-hidden="true"></i></a>
       </td>
 
 </tr>
@@ -617,7 +616,7 @@
                       <!--START data for schedule-->          
 <div class="row">
     
-    <div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
         <div class="card">
             <div class="card-body px-3 py-2">
                 <div class="row">
@@ -647,7 +646,7 @@
         </div>
     </div>
     
-    <div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
         <div class="card">
             <div class="card-body px-3 py-2">
                 <div class="row">
@@ -677,7 +676,7 @@
         </div>
     </div>
     
-    <div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
         <div class="card">
             <div class="card-body px-3 py-2">
                 <div class="row">
@@ -707,7 +706,7 @@
         </div>
     </div>
     
-    <div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
         <div class="card">
             <div class="card-body px-3 py-2">
                 <div class="row">
@@ -737,7 +736,7 @@
         </div>
     </div>
     
-    <div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
         <div class="card">
             <div class="card-body px-3 py-2">
                 <div class="row">
@@ -770,6 +769,22 @@
   </div>
   <!--END data for schedule-->
                   </div>
+                  <div class="card-footer text-muted">
+                        <div class="d-sm-flex">
+                            <small class="text-muted align-self-start"><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
+                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
+                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                                    <li class="page-item"><a class="page-link" href="#"><</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
               </div>
               <!-- END Schedule Tab Content -->
           </div>
@@ -787,6 +802,9 @@
                               </button>
                           </form>
                       </nav>
+
+
+
                   <!-- START TABS: Grid | List -->
                       <!-- START TABS: Grid | List -->
                       <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
@@ -804,20 +822,6 @@
                       <!-- END TABS: Grid | List -->
                   <!-- END TABS: Grid | List -->
                   </div>
-                      <div class="d-sm-flex px-2 pb-2" >
-                          <small class="text-muted align-self-start pl-2 m-0 "><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
-                          <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                              <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                                  <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">></a></li>
-                              </ul>
-                          </nav>
-                      </div>
                   </div>
               <!-- END header: search, switch: list | grid -->
 
@@ -948,7 +952,7 @@
                       <!--START data for reports-->         
 <div class="row">
     
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
     <div class="card">
         <div class="card-body px-3 py-2">
             <div class="row">
@@ -975,7 +979,7 @@
     </div>
 </div>
 
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
     <div class="card">
         <div class="card-body px-3 py-2">
             <div class="row">
@@ -1002,7 +1006,7 @@
     </div>
 </div>
 
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
     <div class="card">
         <div class="card-body px-3 py-2">
             <div class="row">
@@ -1029,7 +1033,7 @@
     </div>
 </div>
 
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
     <div class="card">
         <div class="card-body px-3 py-2">
             <div class="row">
@@ -1059,6 +1063,22 @@
 </div>
 <!--END data for reports-->       
                   </div>
+                  <div class="card-footer text-muted">
+                        <div class="d-sm-flex">
+                            <small class="text-muted align-self-start"><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
+                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
+                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                                    <li class="page-item"><a class="page-link" href="#"><</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
               </div>
           </div>
           <!-- END TAB-content:: Reports -->
@@ -1090,20 +1110,6 @@
           </ul>
           <!-- END TABS: Grid | List -->
           </div>
-              <div class="d-sm-flex px-2 pb-2" >
-                  <small class="text-muted align-self-start pl-2 m-0 "><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
-                  <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                      <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                          <li class="page-item"><a class="page-link" href="#"><</a></li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link" href="#">></a></li>
-                      </ul>
-                  </nav>
-              </div>
           </div>
               <!-- END header: search, switch: list | grid -->
 
@@ -1220,7 +1226,7 @@
 <!-- START Table -->
 <div class="row">
     
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
   <div class="card">
       <div class="card-body px-3 py-2">
           <div class="row">
@@ -1247,7 +1253,7 @@
   </div>
 </div>
 
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
   <div class="card">
       <div class="card-body px-3 py-2">
           <div class="row">
@@ -1274,7 +1280,7 @@
   </div>
 </div>
 
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
   <div class="card">
       <div class="card-body px-3 py-2">
           <div class="row">
@@ -1306,6 +1312,22 @@
 
 <!--END data for notes-->  
                   </div>
+                  <div class="card-footer text-muted">
+                        <div class="d-sm-flex">
+                            <small class="text-muted align-self-start"><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
+                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
+                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                                    <li class="page-item"><a class="page-link" href="#"><</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
               </div>
           </div>
           <!-- END TAB-content:: Notes -->
@@ -1337,20 +1359,6 @@
           </ul>
           <!-- END TABS: Grid | List -->
           </div>
-              <div class="d-sm-flex px-2 pb-2" >
-                  <small class="text-muted align-self-start pl-2 m-0 "><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
-                  <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                      <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                          <li class="page-item"><a class="page-link" href="#"><</a></li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link" href="#">></a></li>
-                      </ul>
-                  </nav>
-              </div>
           </div>
               <!-- END header: search, switch: list | grid -->
 
@@ -1449,7 +1457,7 @@
 <!-- START Table -->
 <div class="row ">
     
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
   <div class="card">
       <div class="card-body px-3 py-2">
           <div class="row">
@@ -1476,7 +1484,7 @@
   </div>
 </div>
 
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
   <div class="card">
       <div class="card-body px-3 py-2">
           <div class="row">
@@ -1508,6 +1516,22 @@
 
 <!--END data for notes--> 
                   </div>
+                  <div class="card-footer text-muted">
+                        <div class="d-sm-flex">
+                            <small class="text-muted align-self-start"><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
+                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
+                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                                    <li class="page-item"><a class="page-link" href="#"><</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
               </div>
           </div>
           <!-- END TAB-content:: Auths -->
@@ -1539,20 +1563,6 @@
           </ul>
           <!-- END TABS: Grid | List -->
           </div>
-              <div class="d-sm-flex px-2 pb-2" >
-                  <small class="text-muted align-self-start pl-2 m-0 "><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
-                  <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                      <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                          <li class="page-item"><a class="page-link" href="#"><</a></li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link" href="#">></a></li>
-                      </ul>
-                  </nav>
-              </div>
           </div>
               <!-- END header: search, switch: list | grid -->
 
@@ -1634,7 +1644,7 @@
 <!-- START Table -->
 <div class="row ">
     
-<div class="col-6 p-auto my-1">
+    <div class="col-12 col-md-6 p-auto my-1">
   <div class="card">
       <div class="card-body px-3 py-2">
           <div class="row">
@@ -1666,6 +1676,22 @@
 
 <!--END data for Contracts-->   
                   </div>
+                  <div class="card-footer text-muted">
+                        <div class="d-sm-flex">
+                            <small class="text-muted align-self-start"><span class="text-left">Showing x of x Entries (filtered from x total entries)</span></small>
+                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
+                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                                    <li class="page-item"><a class="page-link" href="#"><</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
               </div>
           </div>
           <!-- END TAB-content:: contracts -->
@@ -1690,6 +1716,10 @@ $(function () {
 $(function () {
 	$('#myTab li:last-child a').tab('show')
 })
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 </script>
      </main>   
 </body>
