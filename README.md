@@ -5,7 +5,7 @@ Dostępny tu: https://emtemic.github.io/strona_testowa/
 
 
 
-C:\HTML\marcin-bootstrap
+C:\Users\Marcin\Documents\GitHub\marcin-bootstrap
 D:\HTML\marcin-bootstrap
 jekyll serve --incremental
 
