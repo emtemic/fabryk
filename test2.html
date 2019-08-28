@@ -51,19 +51,22 @@
 		<div class="collapse navbar-collapse" id="mainmenu">
                 
                 
-    <ul class="navbar-nav m-auto"z>	
+    <ul class="navbar-nav m-auto">	
             <li class="nav-item">
-                    <a class="nav-link  "" href="index.html">
+                <a class="nav-link" href="index.html" data-toggle="modal" data-target="#nologinmodal"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>       
+                    <!--<a class="nav-link  "" href="index.html">
                         <i class="fa fa-home fa-fw" aria-hidden="true"></i>
                         Home
-                    </a>								
+                    </a>-->								
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  
+                    <a class="nav-link" href="clients.html" data-toggle="modal" data-target="#nologinmodal"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Clients</a>
+
+                    <!--<a class="nav-link  
                                        "" href="/clients.html">
                         <i class="fa fa-users fa-fw" aria-hidden="true"></i>
                         Clients
-                    </a>
+                    </a>-->
                 </li>
         <li class="nav-item">
             <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
@@ -136,7 +139,7 @@
     <a type="button" class="btn btn-secondary" id="grid-schedule-tab" data-toggle="pill" href="#grid-schedule" role="tab" aria-controls="grid-schedule" aria-selected="false">Right</a>
   </div>
     <!--End CONTENT-->
-        		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>   
@@ -148,9 +151,6 @@ $(function () {
 	$('#myTab li:last-child a').tab('show')
 })
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
 </script>
      </main>   
 </body>
