@@ -53,23 +53,23 @@
                 
     <ul class="navbar-nav m-auto">	
             <li class="nav-item">
-                <a class="nav-link" href="index.html" data-toggle="modal" data-target="#nologinmodal"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>       
-                    <!--<a class="nav-link  "" href="index.html">
+                      
+                    <a class="nav-link  "" href="index.html">
                         <i class="fa fa-home fa-fw" aria-hidden="true"></i>
                         Home
-                    </a>-->								
+                    </a>						
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="clients.html" data-toggle="modal" data-target="#nologinmodal"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Clients</a>
+                    
 
-                    <!--<a class="nav-link  
+                    <a class="nav-link  
                                        "" href="/clients.html">
                         <i class="fa fa-users fa-fw" aria-hidden="true"></i>
                         Clients
-                    </a>-->
+                    </a>
                 </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
+            <a class="nav-link" href="pages/empty-table.html"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
@@ -250,7 +250,7 @@
               <li class="nav-item">
                   <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                       <i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i> 
-                      Reports <span class="badge badge-pill badge-danger">3</span>
+                      Media <span class="badge badge-pill badge-danger">3</span>
                   </a>
               </li>
               <li class="nav-item">
@@ -450,7 +450,7 @@
                             </div>
                           </nav>
                         <!--  START TABS: Grid | List -->
-                      <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
+                      <ul class="nav nav-pills my-auto pr-2 m-0" id="pills-tab" role="tablist">
                           <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
                               <a class="nav-link active" id="list-schedule-tab" data-toggle="pill" href="#list-schedule" role="tab" aria-controls="list-schedule" aria-selected="true" >
                                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -542,9 +542,9 @@
 						<i class="fa fa-cog" aria-hidden="true"></i>
                 </button>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#" >View details</a>
-					<a class="dropdown-item" href="#">Edit this task</a>
-					<a class="dropdown-item" href="#">Delete</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
 				</div>
 			</div>
 			</div>
@@ -594,9 +594,9 @@
 						<i class="fa fa-cog" aria-hidden="true"></i>
                 </button>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#" >View details</a>
-					<a class="dropdown-item" href="#">Edit this task</a>
-					<a class="dropdown-item" href="#">Delete</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
 				</div>
 			</div>
 			</div>
@@ -646,9 +646,9 @@
 						<i class="fa fa-cog" aria-hidden="true"></i>
                 </button>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#" >View details</a>
-					<a class="dropdown-item" href="#">Edit this task</a>
-					<a class="dropdown-item" href="#">Delete</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
 				</div>
 			</div>
 			</div>
@@ -698,9 +698,9 @@
 						<i class="fa fa-cog" aria-hidden="true"></i>
                 </button>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#" >View details</a>
-					<a class="dropdown-item" href="#">Edit this task</a>
-					<a class="dropdown-item" href="#">Delete</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
 				</div>
 			</div>
 			</div>
@@ -750,9 +750,9 @@
 						<i class="fa fa-cog" aria-hidden="true"></i>
                 </button>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#" >View details</a>
-					<a class="dropdown-item" href="#">Edit this task</a>
-					<a class="dropdown-item" href="#">Delete</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
 				</div>
 			</div>
 			</div>
@@ -815,9 +815,9 @@
                                     <i class="fa fa-cog" aria-hidden="true"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">View details</a>
-                                    <a class="dropdown-item" href="#">Edit this task</a>
-                                    <a class="dropdown-item" href="#">Delete</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
                                 </div>
                             </div>
                         </div>
@@ -873,9 +873,9 @@
                                     <i class="fa fa-cog" aria-hidden="true"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">View details</a>
-                                    <a class="dropdown-item" href="#">Edit this task</a>
-                                    <a class="dropdown-item" href="#">Delete</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
                                 </div>
                             </div>
                         </div>
@@ -931,9 +931,9 @@
                                     <i class="fa fa-cog" aria-hidden="true"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">View details</a>
-                                    <a class="dropdown-item" href="#">Edit this task</a>
-                                    <a class="dropdown-item" href="#">Delete</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
                                 </div>
                             </div>
                         </div>
@@ -989,9 +989,9 @@
                                     <i class="fa fa-cog" aria-hidden="true"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">View details</a>
-                                    <a class="dropdown-item" href="#">Edit this task</a>
-                                    <a class="dropdown-item" href="#">Delete</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
                                 </div>
                             </div>
                         </div>
@@ -1047,9 +1047,9 @@
                                     <i class="fa fa-cog" aria-hidden="true"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">View details</a>
-                                    <a class="dropdown-item" href="#">Edit this task</a>
-                                    <a class="dropdown-item" href="#">Delete</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
                                 </div>
                             </div>
                         </div>
@@ -1092,30 +1092,34 @@
               <!-- START header: search, switch: list | grid -->
               <div class="card-body p-0 pt-2">
                   <div class="d-flex">
-                      <nav class="navbar navbar-light mr-auto">
-                          <form class="form-inline">
-                              <input class="form-control" type="search" placeholder="Search for Influencers..." aria-label="Search">
-                              <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
-                              </button>
-                          </form>
-                      </nav>
+                        <nav class="navbar navbar-light mr-auto">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                              </nav>
 
 
 
                   <!-- START TABS: Grid | List -->
                       <!-- START TABS: Grid | List -->
                       <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
-                          <li class="nav-item">
-                              <a class="btn btn-outline-secondary active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false">
-                                  List
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="btn btn-outline-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">
-                                  Grid
-                              </a>
-                          </li>
-                      </ul>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false" >
+                                  <i class="fa fa-bars" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
+                                <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">
+                                  <i class="fa fa-th-large" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+
                       <!-- END TABS: Grid | List -->
                   <!-- END TABS: Grid | List -->
                   </div>
@@ -1130,235 +1134,460 @@
         <tr>
           <th scope="col" class="align-middle">
             <small class="text-muted">
-              Authorizantion Type
+              File Name
             </small>
           </th>
           <th scope="col" class="align-middle">
             <small class="text-muted">
-              Report LIST
+              Date Added
+            </small>
+          </th>
+          <th scope="col" class="align-middle text-right">
+            <small class="text-muted">
+              Added by
             </small>
           </th>
           <th scope="col" class="align-middle">
             <small class="text-muted">
-              Funding Begin date
+              Tags
             </small>
-          </th>
-          <th scope="col" class="align-middle">
-            <small class="text-muted">
-              Funding End Date
-            </small>
-          </th>
-          <th scope="col" class="align-middle">
-            <small class="text-muted">
-              Enrollment Date
-            </small>
-          </th>
-          <th scope="col" class="align-middle">
-            <small class="text-muted">
-              Termination Date
-            </small>
-          </th>
-          <th scope="col" class="align-middle">
-            <small class="text-muted">
-              Funder
-            </small>
-          </th>
-          <th scope="col" class="align-middle">
-            <small class="text-muted">
-  
-            </small>
+          <th scope="col" class="align-middle text-right">
+              <small class="text-muted">
+              Actions
+              </small>
           </th>
         </tr>
     </thead>
   <tbody>
 
 
-<tr class="border-top">
-    <th scope="row" class="align-middle ">
-        <a href="#">
-          <span class="badge badge-pill badge-secondary text-uppercase">
-            RENEWABLE
-          </span>
-        </a>
-    </th>
-      <td class="align-middle">Reports</td>
-      <td class="align-middle text-uppercase">1 DEC 2014</td>
-      <td class="align-middle text-uppercase">1 JUN 2015</td>
-      <td class="align-middle text-uppercase">8 DEC 2014</td>
-      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
-      <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
-</tr>
-
-<tr class="border-top">
-    <th scope="row" class="align-middle ">
-        <a href="#">
-          <span class="badge badge-pill badge-secondary text-uppercase">
-            RENEWABLE
-          </span>
-        </a>
-    </th>
-      <td class="align-middle">Reports</td>
-      <td class="align-middle text-uppercase">1 DEC 2014</td>
-      <td class="align-middle text-uppercase">1 JUN 2015</td>
-      <td class="align-middle text-uppercase">8 DEC 2014</td>
-      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
-      <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
-</tr>
-
-<tr class="border-top">
-    <th scope="row" class="align-middle ">
-        <a href="#">
-          <span class="badge badge-pill badge-secondary text-uppercase">
-            RENEWABLE
-          </span>
-        </a>
-    </th>
-      <td class="align-middle">Reports</td>
-      <td class="align-middle text-uppercase">1 DEC 2014</td>
-      <td class="align-middle text-uppercase">1 JUN 2015</td>
-      <td class="align-middle text-uppercase">8 DEC 2014</td>
-      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
-      <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
-</tr>
-
-<tr class="border-top">
-    <th scope="row" class="align-middle ">
-        <a href="#">
-          <span class="badge badge-pill badge-secondary text-uppercase">
-            RENEWABLE
-          </span>
-        </a>
-    </th>
-      <td class="align-middle">Reports</td>
-      <td class="align-middle text-uppercase">1 DEC 2014</td>
-      <td class="align-middle text-uppercase">1 JUN 2015</td>
-      <td class="align-middle text-uppercase">8 DEC 2014</td>
-      <td class="align-middle"><p class="font-weight-light">TEST_DATA_BASE</p></td>
-      <td class="align-middle">Eastern Douglas Development Group</td>
-      <td class="align-middle"></td>
-</tr>
-
-
+     
+    <tr class="">
+        <th scope="row" class="align-middle p-0 pl-2">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 bd-highlight my-auto">
+                    <i class="fa fa-file-word-o fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="p-2 flex-shrink-1 bd-highlight">
+                        <span class="text-muted">Games</span> <br>
+                        <span class="text-muted">59.62 Mb</span>
+                </div>
+            </div>
+        </th>
+        <td class="align-middle">
+            <span class="text-muted">Tuesday 12 February, 2018</span><br>
+            <span class="text-muted"> 12:23 PM</span>
+        </td>
+        <td class="align-middle">
+            <div class="d-flex justify-content-end">
+                <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="30" width="30">
+            </div>
+        </td>
+        <td class="align-middle">
+            <span class="badge badge-pill badge-secondary">Kids</span>
+            <span class="badge badge-pill badge-secondary">Books</span>
+            <span class="badge badge-pill badge-secondary">Home</span>
+        </td>
+        <td class="align-middle text-right">
+            <div class="btn-group">
+                <div class="dropdown dropdown-menu-right">
+                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" >View details</a>
+                        <a class="dropdown-item" href="#">Edit this task</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+     
+    <tr class="">
+        <th scope="row" class="align-middle p-0 pl-2">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 bd-highlight my-auto">
+                    <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="p-2 flex-shrink-1 bd-highlight">
+                        <span class="text-muted">Health</span> <br>
+                        <span class="text-muted">628.50 Mb</span>
+                </div>
+            </div>
+        </th>
+        <td class="align-middle">
+            <span class="text-muted">Tuesday 12 December, 2018</span><br>
+            <span class="text-muted"> 12:23 PM</span>
+        </td>
+        <td class="align-middle">
+            <div class="d-flex justify-content-end">
+                <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="30" width="30">
+            </div>
+        </td>
+        <td class="align-middle">
+            <span class="badge badge-pill badge-secondary">Garden</span>
+            <span class="badge badge-pill badge-secondary">Baby</span>
+            <span class="badge badge-pill badge-secondary">Games</span>
+        </td>
+        <td class="align-middle text-right">
+            <div class="btn-group">
+                <div class="dropdown dropdown-menu-right">
+                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" >View details</a>
+                        <a class="dropdown-item" href="#">Edit this task</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+     
+    <tr class="">
+        <th scope="row" class="align-middle p-0 pl-2">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 bd-highlight my-auto">
+                    <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="p-2 flex-shrink-1 bd-highlight">
+                        <span class="text-muted">Beauty</span> <br>
+                        <span class="text-muted">87.58 Mb</span>
+                </div>
+            </div>
+        </th>
+        <td class="align-middle">
+            <span class="text-muted">Monday 12 February, 2018</span><br>
+            <span class="text-muted"> 12:23 PM</span>
+        </td>
+        <td class="align-middle">
+            <div class="d-flex justify-content-end">
+                <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="30" width="30">
+            </div>
+        </td>
+        <td class="align-middle">
+            <span class="badge badge-pill badge-secondary">Sports</span>
+            <span class="badge badge-pill badge-secondary">Games</span>
+            <span class="badge badge-pill badge-secondary">Kids</span>
+        </td>
+        <td class="align-middle text-right">
+            <div class="btn-group">
+                <div class="dropdown dropdown-menu-right">
+                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" >View details</a>
+                        <a class="dropdown-item" href="#">Edit this task</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+     
+    <tr class="">
+        <th scope="row" class="align-middle p-0 pl-2">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 bd-highlight my-auto">
+                    <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="p-2 flex-shrink-1 bd-highlight">
+                        <span class="text-muted">Outdoors</span> <br>
+                        <span class="text-muted">908.45 Mb</span>
+                </div>
+            </div>
+        </th>
+        <td class="align-middle">
+            <span class="text-muted">Sunday 12 July, 2018</span><br>
+            <span class="text-muted"> 12:23 PM</span>
+        </td>
+        <td class="align-middle">
+            <div class="d-flex justify-content-end">
+                <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="30" width="30">
+            </div>
+        </td>
+        <td class="align-middle">
+            <span class="badge badge-pill badge-secondary">Garden</span>
+            <span class="badge badge-pill badge-secondary">Electronics</span>
+            <span class="badge badge-pill badge-secondary">Toys</span>
+        </td>
+        <td class="align-middle text-right">
+            <div class="btn-group">
+                <div class="dropdown dropdown-menu-right">
+                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" >View details</a>
+                        <a class="dropdown-item" href="#">Edit this task</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+     
+    <tr class="">
+        <th scope="row" class="align-middle p-0 pl-2">
+            <div class="d-flex bd-highlight">
+                <div class="p-2 bd-highlight my-auto">
+                    <i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="p-2 flex-shrink-1 bd-highlight">
+                        <span class="text-muted">Music</span> <br>
+                        <span class="text-muted">110.70 Mb</span>
+                </div>
+            </div>
+        </th>
+        <td class="align-middle">
+            <span class="text-muted">Monday 12 December, 2018</span><br>
+            <span class="text-muted"> 12:23 PM</span>
+        </td>
+        <td class="align-middle">
+            <div class="d-flex justify-content-end">
+                <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="30" width="30">
+            </div>
+        </td>
+        <td class="align-middle">
+            <span class="badge badge-pill badge-secondary">Health</span>
+            <span class="badge badge-pill badge-secondary">Clothing</span>
+            <span class="badge badge-pill badge-secondary">Grocery</span>
+        </td>
+        <td class="align-middle text-right">
+            <div class="btn-group">
+                <div class="dropdown dropdown-menu-right">
+                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" >View details</a>
+                        <a class="dropdown-item" href="#">Edit this task</a>
+                        <a class="dropdown-item" href="#">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    
 </tbody>
 </table>
+
+
+
+
+
+
                   </div>
                   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                      <!--START data for reports-->         
-<div class="row">
-    
-    <div class="col-12 col-md-6 p-auto my-1">
-    <div class="card">
-        <div class="card-body px-3 py-2">
-            <div class="row">
-                <div class="col-auto">
-                    <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
-                        <dd class="col-6"><small>RENEWABLE</small></dd>
-                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
-                        <dd class="col-6"><small>Reports</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
-                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
-                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
-                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
-                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
-                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
-                    </dl>
+                      <!--START data for schedule-->          
+<div class="card-body pt-1">
+        <div class="row">
+         
+        <div class="col-12 col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 bd-highlight my-auto">
+                            <i class="fa fa-file-word-o fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                                <span class="text-muted">Games</span> <br>
+                                <span class="text-muted">59.62 Mb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <span class="badge badge-pill badge-secondary">Kids</span>
+                    <span class="badge badge-pill badge-secondary">Books</span>
+                    <span class="badge badge-pill badge-secondary">Home</span>
+                </div>
+                <div class="card-footer text-muted p-0">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 w-100 bd-highlight ml-2">Tuesday 12 February, 2018</div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                            <div class="btn-group">
+                                <div class="dropdown dropdown-menu-right">
+                                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#">View details</a>
+                                        <a class="dropdown-item" href="#">Edit this task</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-    <div class="col-12 col-md-6 p-auto my-1">
-    <div class="card">
-        <div class="card-body px-3 py-2">
-            <div class="row">
-                <div class="col-auto">
-                    <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
-                        <dd class="col-6"><small>RENEWABLE</small></dd>
-                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
-                        <dd class="col-6"><small>Reports</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
-                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
-                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
-                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
-                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
-                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
-                    </dl>
+         
+        <div class="col-12 col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 bd-highlight my-auto">
+                            <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                                <span class="text-muted">Health</span> <br>
+                                <span class="text-muted">628.50 Mb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <span class="badge badge-pill badge-secondary">Garden</span>
+                    <span class="badge badge-pill badge-secondary">Baby</span>
+                    <span class="badge badge-pill badge-secondary">Games</span>
+                </div>
+                <div class="card-footer text-muted p-0">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 w-100 bd-highlight ml-2">Tuesday 12 December, 2018</div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                            <div class="btn-group">
+                                <div class="dropdown dropdown-menu-right">
+                                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#">View details</a>
+                                        <a class="dropdown-item" href="#">Edit this task</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-    <div class="col-12 col-md-6 p-auto my-1">
-    <div class="card">
-        <div class="card-body px-3 py-2">
-            <div class="row">
-                <div class="col-auto">
-                    <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
-                        <dd class="col-6"><small>RENEWABLE</small></dd>
-                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
-                        <dd class="col-6"><small>Reports</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
-                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
-                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
-                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
-                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
-                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
-                    </dl>
+         
+        <div class="col-12 col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 bd-highlight my-auto">
+                            <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                                <span class="text-muted">Beauty</span> <br>
+                                <span class="text-muted">87.58 Mb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <span class="badge badge-pill badge-secondary">Sports</span>
+                    <span class="badge badge-pill badge-secondary">Games</span>
+                    <span class="badge badge-pill badge-secondary">Kids</span>
+                </div>
+                <div class="card-footer text-muted p-0">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 w-100 bd-highlight ml-2">Monday 12 February, 2018</div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                            <div class="btn-group">
+                                <div class="dropdown dropdown-menu-right">
+                                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#">View details</a>
+                                        <a class="dropdown-item" href="#">Edit this task</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-    <div class="col-12 col-md-6 p-auto my-1">
-    <div class="card">
-        <div class="card-body px-3 py-2">
-            <div class="row">
-                <div class="col-auto">
-                    <dl class="row justify-content-center justify-content-md-start">
-                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
-                        <dd class="col-6"><small>RENEWABLE</small></dd>
-                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
-                        <dd class="col-6"><small>Reports</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
-                        <dd class="col-6"><small>1 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
-                        <dd class="col-6"><small>1 JUN 2015</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
-                        <dd class="col-6"><small>8 DEC 2014</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
-                        <dd class="col-6"><small>TEST_DATA_BASE</a></small></dd>
-                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
-                        <dd class="col-6"><small>Eastern Douglas Development Group</a></small></dd>
-                    </dl>
+         
+        <div class="col-12 col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 bd-highlight my-auto">
+                            <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                                <span class="text-muted">Outdoors</span> <br>
+                                <span class="text-muted">908.45 Mb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <span class="badge badge-pill badge-secondary">Garden</span>
+                    <span class="badge badge-pill badge-secondary">Electronics</span>
+                    <span class="badge badge-pill badge-secondary">Toys</span>
+                </div>
+                <div class="card-footer text-muted p-0">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 w-100 bd-highlight ml-2">Sunday 12 July, 2018</div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                            <div class="btn-group">
+                                <div class="dropdown dropdown-menu-right">
+                                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#">View details</a>
+                                        <a class="dropdown-item" href="#">Edit this task</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+         
+        <div class="col-12 col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 bd-highlight my-auto">
+                            <i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                                <span class="text-muted">Music</span> <br>
+                                <span class="text-muted">110.70 Mb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <span class="badge badge-pill badge-secondary">Health</span>
+                    <span class="badge badge-pill badge-secondary">Clothing</span>
+                    <span class="badge badge-pill badge-secondary">Grocery</span>
+                </div>
+                <div class="card-footer text-muted p-0">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 w-100 bd-highlight ml-2">Monday 12 December, 2018</div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                            <div class="btn-group">
+                                <div class="dropdown dropdown-menu-right">
+                                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#">View details</a>
+                                        <a class="dropdown-item" href="#">Edit this task</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
     </div>
-</div>
-
-</div>
-<!--END data for reports-->       
                   </div>
                   <div class="card-footer text-muted">
                         <div class="d-sm-flex">
@@ -2234,33 +2463,47 @@
 						<div class="col">Priority:</div>
 						<div class="w-100"></div>
 						<div class="col">
-							<div class="input-group mb-3">
-								<div class="input-group-prepend">
-									<label class="input-group-text" for="inputGroupSelect01">
-										<i class="fa fa-user" aria-hidden="true"></i>
-									</label>
+							<div class="input-group">
+								<label class="input-group-text" for="inputGroupSelect01">
+									<i class="fa fa-user" aria-hidden="true"></i>
+								</label>
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select User...</button>
+									<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-user text-success" aria-hidden="true"></i>&nbsp Teresa Sabdee Wilson
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-user text-secondary text-muted" aria-hidden="true"></i>&nbsp Marcin Tracz
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-user text-secondary" aria-hidden="true"></i>&nbsp Tomasz Owczarczyk
+									</a>
+									</div>
 								</div>
-								<select class="custom-select" id="inputGroupSelect01">
-									<option selected>Select Person...</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
 							</div>
 						</div>
 						<div class="col">
-							<div class="input-group mb-3">
-								<div class="input-group-prepend">
-									<label class="input-group-text" for="inputGroupSelect01">
-											<input type="radio" aria-label="Radio button for following text input">
-									</label>
+							<div class="input-group">
+								<label class="input-group-text" for="inputGroupSelect01">
+									<input type="radio" aria-label="Radio button for following text input">
+								</label>
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Priority...</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">
+											<i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small											</a>
+										<a class="dropdown-item" href="#">
+											<i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+										</a>
+										<a class="dropdown-item" href="#">
+											<i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+										</a>
+										<a class="dropdown-item" href="#">
+											<i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+										</a>
+									</div>
 								</div>
-								<select class="custom-select" id="inputGroupSelect01">
-									<option selected>Select Priority...</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
 							</div>
 						</div>
 					</div>		
@@ -2278,12 +2521,7 @@
 										<i class="fa fa-calendar-o" aria-hidden="true"></i>
 									</label>
 								</div>
-								<select class="custom-select" id="inputGroupSelect01">
-									<option selected>Select Start Date...</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+									<input type="text" class="form-control" placeholder="Select Start Date..." aria-label="Username" aria-describedby="basic-addon1">
 							</div>
 						</div>
 						<div class="col">
@@ -2293,12 +2531,7 @@
 										<i class="fa fa-calendar-o" aria-hidden="true"></i>
 									</label>
 								</div>
-								<select class="custom-select" id="inputGroupSelect01">
-									<option selected>Select Due Date...</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
+								<input type="text" class="form-control" placeholder="Select Due Date..." aria-label="Username" aria-describedby="basic-addon1">
 							</div>
 						</div>
 					</div>	
@@ -2325,6 +2558,230 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Add Task</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="edit_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Task</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+			<form>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Task Name:</label>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Enter Task Name..." aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Add Tags:</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Tags Here...">
+					<small id="emailHelp" class="form-text text-muted">Add tags here; separate them with a comma.</small>
+				</div>
+			</form>
+			<div class="row">
+				<div class="col">
+					<div class="row">
+						<div class="col">Assigned To:</div>
+						<div class="col">Priority:</div>
+						<div class="w-100"></div>
+						<div class="col">
+							<div class="input-group">
+								<label class="input-group-text" for="inputGroupSelect01">
+									<i class="fa fa-user" aria-hidden="true"></i>
+								</label>
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select User...</button>
+									<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-user text-success" aria-hidden="true"></i>&nbsp Teresa Sabdee Wilson
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-user text-secondary text-muted" aria-hidden="true"></i>&nbsp Marcin Tracz
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-user text-secondary" aria-hidden="true"></i>&nbsp Tomasz Owczarczyk
+									</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="dropdown w-100">
+								<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+								</button>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small	
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+									</a>
+									<a class="dropdown-item" href="#">
+										<i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<div class="w-100"></div>
+				<div class="col">
+					<div class="row">
+						<div class="col">Start Date Task:</div>
+						<div class="col">Due Date Task:</div>
+						<div class="w-100"></div>
+						<div class="col">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="inputGroupSelect01">
+										<i class="fa fa-calendar-o" aria-hidden="true"></i>
+									</label>
+								</div>
+									<input type="text" class="form-control" placeholder="Select Start Date..." aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+						</div>
+						<div class="col">
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<label class="input-group-text" for="inputGroupSelect01">
+										<i class="fa fa-calendar-o" aria-hidden="true"></i>
+									</label>
+								</div>
+								<input type="text" class="form-control" placeholder="Select Due Date..." aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>	
+			<form>
+				<div class="form-group pt-2">
+					<label for="exampleFormControlTextarea1">Task Details:</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="4">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil beatae odit ab porro amet quis atque quia assumenda cumque temporibus mollitia ducimus! Quasi velit provident consectetur animi libero quod eum enim possimus, nihil expedita corrupti sed commodi sint est nostrum dicta at doloribus eos aperiam quam, alias reprehenderit?					</textarea>
+				</div>
+			</form>
+			<form>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Attachments:</label>
+					<div class="input-group mb-3">
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+							<label class="custom-file-label" for="inputGroupFile03">Choose file to this task...</label>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="card-body p-0 pb-3 pt-2">
+					<div class="container">
+						<div class="row pb-4">
+							<div class="col-2 my-auto">
+								<button type="button" class="btn btn-primary">
+									<i class="fa fa-file-word-o fa-2x" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="col-7 text-left p-0">
+								<span><small>salad_unleash_handmade.otc
+										by Nels Veum - 784.00 Kb
+								</small></span>
+							</div>
+							<div class="col-2 text-right">
+								<span><small>18-Se-2013 09:48 PM</small></span>
+							</div>
+							<div class="col-1 p-0 my-auto">
+								<button type="button" class="btn btn-outline-secondary px-3 py-2">
+									<i class="fa fa-download" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row pb-4">
+							<div class="col-2 my-auto">
+								<button type="button" class="btn btn-success">
+									<i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>
+								</button>
+								
+							</div>
+							<div class="col-7 text-left p-0">
+								<span><small>hdd_human_unbranded.rcprofile
+										by kody Witting - 812.00 Kb
+								</small></span>
+							</div>
+							<div class="col-2 text-right">
+								<span><small>26-Jul-2014 03:24 PM</small></span>
+							</div>
+							<div class="col-1 p-0 my-auto">
+								<button type="button" class="btn btn-outline-secondary px-3 py-2">
+									<i class="fa fa-download" aria-hidden="true"></i>
+								</button>
+							</div>
+							</div>
+						<div class="row pb-3">
+							<div class="col-2">
+								<button type="button" class="btn btn-warning my-auto">
+									<i class="fa fa-file-powerpoint-o fa-2x" aria-hidden="true"></i>
+								</button>
+							</div>
+							<div class="col-7 text-left p-0">
+								<span><small>optimize_cotton.cil
+										by Arvid McGlynn - 165.00 Kb
+								</small></span>
+							</div>
+							<div class="col-2 text-right">
+								<span><small>10-Ap-2013 10:02 PM</small></span>
+							</div>
+							<div class="col-1 p-0 my-auto">
+								<button type="button" class="btn btn-outline-secondary px-3 py-2">
+									<i class="fa fa-download" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+        </div>
+        <div class="modal-footer">
+			<a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
+    	    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+    	    <button type="button" class="btn btn-primary">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="delete_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col text-center text-danger pt-4">
+							<i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center pt-3">
+							<p class="h3">Delete this task?</p>
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center pt-3">
+							<span>Are you sure you want to delete this task. Note, <br> you cannot undo this change.</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center py-4">
+						<button type="button" class="btn btn-outline-secondary text-center">Close</button>
+						<button type="button" class="btn btn-danger text-center">Delete</button>
+						</div>
+					</div>
+				</div>
         </div>
       </div>
     </div>
