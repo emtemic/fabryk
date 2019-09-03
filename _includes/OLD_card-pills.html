@@ -1,0 +1,378 @@
+<!--TABLE PILLS-->
+<div class="container">
+<div class="card text-center">
+    <div class="card-header d-flex py-1">
+      <ul class="nav nav-pills card-header-pills flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link" id="schedule-tab" data-toggle="tab" href="#schedule" role="tab" aria-controls="schedule" aria-selected="true"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> Schedule</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="reports-tab" data-toggle="tab" href="#reports" role="tab" aria-controls="reports" aria-selected="true"><i class="fa fa-pie-chart fa-fw" aria-hidden="true"></i> Reports</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="notes-tab" data-toggle="tab" href="#notes" role="tab" aria-controls="notes" aria-selected="true"><i class="fa fa-file-o fa-fw" aria-hidden="true"></i> Notes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="auths-tab" data-toggle="tab" href="#auths" role="tab" aria-controls="auths" aria-selected="true"><i class="fa fa-key fa-fw" aria-hidden="true"></i> Auths</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contracts-tab" data-toggle="tab" href="#contracts" role="tab" aria-controls="contracts" aria-selected="true"><i class="fa fa-files-o fa-fw" aria-hidden="true"></i> Contracts</a>
+        </li>
+      </ul>
+        <div class="nav d-flex">
+            <li class="nav-item  form-inline">
+                <div class="form-group mx-1 my-auto" >
+                    <input class="form-control form-control-sm rounded-pill" size="15" type="text" placeholder="  Search or filter" aria-label="Search">
+                </div>
+                <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-plus" aria-hidden="true"></i> 
+                    Add
+                </button>
+            </li>
+        </div>
+    </div>
+</div>
+<!--TABLE SCHEDULE CONTENT-->
+
+<div class="tab-content">
+    <div class="tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">
+        <table class="table mb-0 table-responsive-md table-borderless">
+        <thead> 
+            <tr>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Code</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding Begin date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding End Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Enrollment Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Termination Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funder</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted"></small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-top">
+            <th scope="row" class="align-middle ">
+                <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+                RENEWABLE
+                </span></a>
+            </th>
+            {% if include.schedule_authorization_code %}
+            <td class="align-middle">{{include.authorization_code_s}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.schedule_funding_begin_date %}
+                <td class="align-middle text-uppercase">{{include.funding_begin_date_s}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.schedule_funding_end_date %}
+                <td class="align-middle text-uppercase">{{include.funding_end_date_s}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.schedule_enrollment_date %}
+                <td class="align-middle text-uppercase">{{include.enrollment_date_s}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.schedule_termination_date %}
+                <td class="align-middle"><p class="font-weight-light">{{include.termination_date_s}}</p></td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.schedule_funder %}
+                <td class="align-middle">{{include.funder_s}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+<!--TABLE REPORTS CONTENT-->
+
+<div class="tab-pane fade" id="reports" role="tabpanel" aria-labelledby="reports-tab">
+        <table class="table mb-0 table-responsive-md table-borderless">
+        <thead> 
+            <tr>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Code</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding Begin date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding End Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Enrollment Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Termination Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funder</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted"></small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-top">
+            <th scope="row" class="align-middle ">
+                <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+                RENEWABLE
+                </span></a>
+            </th>
+            {% if include.reports_authorization_code %}
+            <td class="align-middle">{{include.authorization_code_r}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.reports_funding_begin_date %}
+                <td class="align-middle text-uppercase">{{include.funding_begin_date_r}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.reports_funding_end_date %}
+                <td class="align-middle text-uppercase">{{include.funding_end_date_r}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.reports_enrollment_date %}
+                <td class="align-middle text-uppercase">{{include.enrollment_date_r}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.reports_termination_date %}
+                <td class="align-middle"><p class="font-weight-light">{{include.termination_date_r}}</p></td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.reports_funder %}
+                <td class="align-middle">{{include.funder_r}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+
+<!--TABLE NOTES CONTENT-->
+
+<div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
+        <table class="table mb-0 table-responsive-md table-borderless">
+        <thead> 
+            <tr>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Code</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding Begin date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding End Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Enrollment Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Termination Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funder</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted"></small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-top">
+            <th scope="row" class="align-middle ">
+                <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+                RENEWABLE
+                </span></a>
+            </th>
+            {% if include.notes_authorization_code %}
+            <td class="align-middle">{{include.authorization_code_n}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.notes_funding_begin_date %}
+                <td class="align-middle text-uppercase">{{include.funding_begin_date_n}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.notes_funding_end_date %}
+                <td class="align-middle text-uppercase">{{include.funding_end_date_n}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.notes_enrollment_date %}
+                <td class="align-middle text-uppercase">{{include.enrollment_date_n}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.notes_termination_date %}
+                <td class="align-middle"><p class="font-weight-light">{{include.termination_date_n}}</p></td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.notes_funder %}
+                <td class="align-middle">{{include.funder_n}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+<!--TABLE AUTHS CONTENT-->
+
+<div class="tab-pane fade" id="auths" role="tabpanel" aria-labelledby="auths-tab">
+        <table class="table mb-0 table-responsive-md table-borderless">
+        <thead> 
+            <tr>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Code</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding Begin date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding End Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Enrollment Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Termination Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funder</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted"></small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-top">
+            <th scope="row" class="align-middle ">
+                <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+                RENEWABLE
+                </span></a>
+            </th>
+            {% if include.auths_authorization_code %}
+            <td class="align-middle">{{include.authorization_code_a}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.auths_funding_begin_date %}
+                <td class="align-middle text-uppercase">{{include.funding_begin_date_a}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.auths_funding_end_date %}
+                <td class="align-middle text-uppercase">{{include.funding_end_date_a}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.auths_enrollment_date %}
+                <td class="align-middle text-uppercase">{{include.enrollment_date_a}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.auths_termination_date %}
+                <td class="align-middle"><p class="font-weight-light">{{include.termination_date_a}}</p></td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.auths_funder %}
+                <td class="align-middle">{{include.funder_a}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+
+<!--TABLE CONTRACTS CONTENT-->
+
+<div class="tab-pane fade" id="contracts" role="tabpanel" aria-labelledby="contracts-tab">
+        <table class="table mb-0 table-responsive-md table-borderless">
+        <thead> 
+            <tr>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Type</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Authorizantion Code</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding Begin date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funding End Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Enrollment Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Termination Date</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted">Funder</small></th>
+            <th scope="col" class="align-middle"><small class="text-muted"></small></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border-top">
+            <th scope="row" class="align-middle ">
+                <a href="#"><span class="badge badge-pill badge-light py-1 px-3 border bg-white text-secondary">
+                RENEWABLE
+                </span></a>
+            </th>
+            {% if include.contracts_authorization_code %}
+            <td class="align-middle">{{include.authorization_code_c}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.contracts_funding_begin_date %}
+                <td class="align-middle text-uppercase">{{include.funding_begin_date_c}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.contracts_funding_end_date %}
+                <td class="align-middle text-uppercase">{{include.funding_end_date_c}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.contracts_enrollment_date %}
+                <td class="align-middle text-uppercase">{{include.enrollment_date_c}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.contracts_termination_date %}
+                <td class="align-middle"><p class="font-weight-light">{{include.termination_date_c}}</p></td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+
+            {% if include.contracts_funder %}
+                <td class="align-middle">{{include.funder_c}}</td>
+            {% else %}
+                <td class="align-middle"><small>Undefined</small></td>
+            {% endif %}
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+        <!--TABLE FOOTER-->
+
+        <div class="card-footer d-sm-flex m-0 p-2 px-3 " >
+
+            <div class="my-auto"><small class="text-muted align-self-start"><span class="text-sm-center text-md-left">Showing 1 to 10 of 57 Entires</span></small></div>
+            
+            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
+                <ul class="pagination justify-content-center justify-content-md-end my-auto">
+                  <li class="page-item"><a class="page-link" href="#"><</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">></a></li>
+                </ul>
+              </nav>
+          </div>
+
+</div>
+
+  <script>
+        $(function () {
+          $('#myTab li:last-child a').tab('show')
+        })
+  </script>

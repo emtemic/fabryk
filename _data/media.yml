@@ -1,0 +1,41 @@
+
+- file_name_icon: <i class="fa fa-file-word-o fa-2x" aria-hidden="true"></i>
+  file_name_text: Games
+  file_name_size: 59.62 Mb
+  date_added: Tuesday 12 February, 2018
+  tag1: Kids
+  tag2: Books
+  tag3: Home
+
+
+- file_name_icon: <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
+  file_name_text: Health
+  file_name_size: 628.50 Mb
+  date_added: Tuesday 12 December, 2018
+  tag1: Garden
+  tag2: Baby
+  tag3: Games
+
+- file_name_icon: <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+  file_name_text: Beauty
+  file_name_size: 87.58 Mb
+  date_added: Monday 12 February, 2018
+  tag1: Sports
+  tag2: Games
+  tag3: Kids
+
+- file_name_icon: <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>
+  file_name_text: Outdoors
+  file_name_size: 908.45 Mb
+  date_added: Sunday 12 July, 2018
+  tag1: Garden
+  tag2: Electronics
+  tag3: Toys
+
+- file_name_icon: <i class="fa fa-file-image-o fa-2x" aria-hidden="true"></i>
+  file_name_text: Music
+  file_name_size: 110.70 Mb
+  date_added: Monday 12 December, 2018
+  tag1: Health
+  tag2: Clothing
+  tag3: Grocery

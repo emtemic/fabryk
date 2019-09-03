@@ -1,0 +1,35 @@
+teresa_sabdee_wilson:
+    name: Teresa Sabdee Wilson
+    email: tsw@o2.pl
+    client_type: Reffered
+    client_status: DATA_BASE
+    frade: 11
+    contact_type: Spouse
+    school: Independence High School
+    adress: 317 Willow Ave Franklin, CA 90988 Washington Country
+    gender: Female
+    url: www.ress.com
+    client_language: English
+    family_language: Russian
+    grade: 11
+    relation_to: Program Supervisior
+    legal_guardian: False
+    resident_with: False
+
+artur_nowicki:
+    name: Artur Nowicki
+    email: an@o2.pl
+    client_type: Registered
+    client_status: DATA_BASE
+    frade: 12
+    contact_type: Spouse
+    school: Independence High School
+    adress: 01-213 Warszawa, Aleje Jerozolimskie 1
+    gender: Male
+    url: www.ARNO.com
+    client_language: English
+    family_language: Polish
+    grade: 12
+    relation_to: Program Supervisior
+    legal_guardian: False
+    resident_with: False

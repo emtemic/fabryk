@@ -1,0 +1,70 @@
+<!-- START Table -->
+<table class="table mb-0 table-responsive-md">
+    <thead> 
+        <tr>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Authorizantion Type
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Notes List
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funding Begin date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funding End Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Enrollment Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Termination Date
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Funder
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+  
+            </small>
+          </th>
+        </tr>
+    </thead>
+  <tbody>
+
+
+{% for note in site.data.notes %}
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            {{ note.authType }}
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">{{note.authorization_code}}</td>
+      <td class="align-middle text-uppercase">{{note.funding_begin_date}}</td>
+      <td class="align-middle text-uppercase">{{note.funding_end_date}}</td>
+      <td class="align-middle text-uppercase">{{note.enrollment_date}}</td>
+      <td class="align-middle"><p class="font-weight-light">{{note.termination_date}}</p></td>
+      <td class="align-middle">{{note.funder}}</td>
+      <td class="align-middle"></td>
+</tr>
+{% endfor %}
+
+</tbody>
+</table>

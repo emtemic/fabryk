@@ -1,0 +1,359 @@
+<!-- START Table -->
+<table class="table mb-0 table-responsive-md table-borderless">
+  <thead> 
+      <tr>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+            Authorizantion Type
+          </small>
+        </th>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+            Authorizantion Code
+          </small>
+        </th>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+            Funding Begin date
+          </small>
+        </th>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+            Funding End Date
+          </small>
+        </th>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+            Enrollment Date
+          </small>
+        </th>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+            Termination Date
+          </small>
+        </th>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+            Funder
+          </small>
+        </th>
+        <th scope="col" class="align-middle">
+          <small class="text-muted">
+
+          </small>
+        </th>
+      </tr>
+  </thead>
+<tbody>
+  <!-----------------------------LIST TABLE----------------------------------------->
+
+{% if include.schedule_list %}
+
+<!--START data for schedule-->          
+{% for schedul in site.data.schedule %} 
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            {{ schedul.authType }}
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">{{schedul.authorization_code}}</td>
+      <td class="align-middle text-uppercase">{{schedul.funding_begin_date}}</td>
+      <td class="align-middle text-uppercase">{{schedul.funding_end_date}}</td>
+      <td class="align-middle text-uppercase">{{schedul.enrollment_date}}</td>
+      <td class="align-middle"><p class="font-weight-light">{{schedul.termination_date}}</p></td>
+      <td class="align-middle">{{schedul.funder}}</td>
+</tr>
+{% endfor %}
+<!--END data for schedule-->
+
+{% elsif include.reports_list %}   
+
+<!--START data for reports-->         
+{% for report in site.data.reports %}
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            {{ report.authType }}
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">{{report.authorization_code}}</td>
+      <td class="align-middle text-uppercase">{{report.funding_begin_date}}</td>
+      <td class="align-middle text-uppercase">{{report.funding_end_date}}</td>
+      <td class="align-middle text-uppercase">{{report.enrollment_date}}</td>
+      <td class="align-middle"><p class="font-weight-light">{{report.termination_date}}</p></td>
+      <td class="align-middle">{{report.funder}}</td>
+</tr>
+{% endfor %}
+<!--END data for reports-->       
+              
+{% elsif include.notes_list %} 
+
+<!--START data for notes-->         
+{% for note in site.data.notes %}
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            {{ note.authType }}
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">{{note.authorization_code}}</td>
+      <td class="align-middle text-uppercase">{{note.funding_begin_date}}</td>
+      <td class="align-middle text-uppercase">{{note.funding_end_date}}</td>
+      <td class="align-middle text-uppercase">{{note.enrollment_date}}</td>
+      <td class="align-middle"><p class="font-weight-light">{{note.termination_date}}</p></td>
+      <td class="align-middle">{{note.funder}}</td>
+</tr>
+{% endfor %}
+<!--END data for notes-->  
+
+{% elsif include.auths_list %} 
+
+<!--START data for auths-->         
+{% for aut in site.data.auths %}
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            {{ aut.authType }}
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">{{aut.authorization_code}}</td>
+      <td class="align-middle text-uppercase">{{aut.funding_begin_date}}</td>
+      <td class="align-middle text-uppercase">{{aut.funding_end_date}}</td>
+      <td class="align-middle text-uppercase">{{aut.enrollment_date}}</td>
+      <td class="align-middle"><p class="font-weight-light">{{aut.termination_date}}</p></td>
+      <td class="align-middle">{{aut.funder}}</td>
+</tr>
+{% endfor %}
+<!--END data for auths-->     
+
+{% elsif include.contracts_list %} 
+
+<!--START data for contracts-->         
+{% for contract in site.data.contracts %}
+<tr class="border-top">
+    <th scope="row" class="align-middle ">
+        <a href="#">
+          <span class="badge badge-pill badge-secondary text-uppercase">
+            {{ contract.authType }}
+          </span>
+        </a>
+    </th>
+      <td class="align-middle">{{contract.authorization_code}}</td>
+      <td class="align-middle text-uppercase">{{contract.funding_begin_date}}</td>
+      <td class="align-middle text-uppercase">{{contract.funding_end_date}}</td>
+      <td class="align-middle text-uppercase">{{contract.enrollment_date}}</td>
+      <td class="align-middle"><p class="font-weight-light">{{contract.termination_date}}</p></td>
+      <td class="align-middle">{{contract.funder}}</td>
+</tr>
+{% endfor %}     
+<!--END data for contracts-->  
+            
+{% endif %}
+
+</tbody>
+</table>
+
+<!-----------------------------GRID TABLE--------------------------------------------->
+{% if include.schedule_grid %}
+
+<!--START data for schedule-->          
+<div class="row ">
+  {% for schedul in site.data.schedule %}
+  <div class="col-6 p-auto my-1">
+      <div class="card">
+          <div class="card-body px-3 py-2">
+              <div class="row">
+                  <div class="col-auto">
+                      <dl class="row justify-content-center justify-content-md-start">
+                          <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                          <dd class="col-6"><small>{{schedul.authType}}</small></dd>
+                          <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                          <dd class="col-6"><small>{{schedul.authorization_code}}</a></small></dd>
+                          <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                          <dd class="col-6"><small>{{schedul.funding_begin_date}}</a></small></dd>
+                          <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                          <dd class="col-6"><small>{{schedul.funding_end_date}}</a></small></dd>
+                          <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                          <dd class="col-6"><small>{{schedul.enrollment_date}}</a></small></dd>
+                          <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                          <dd class="col-6"><small>{{schedul.termination_date}}</a></small></dd>
+                          <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                          <dd class="col-6"><small>{{schedul.funder}}</a></small></dd>
+                      </dl>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+</div>
+<!--END data for schedule-->
+
+{% elsif include.reports_grid %}   
+
+<!--START data for reports-->         
+<div class="row ">
+    {% for report in site.data.reports %}
+<div class="col-6 p-auto my-1">
+    <div class="card">
+        <div class="card-body px-3 py-2">
+            <div class="row">
+                <div class="col-auto">
+                    <dl class="row justify-content-center justify-content-md-start">
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>{{report.authType}}</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                        <dd class="col-6"><small>{{report.authorization_code}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                        <dd class="col-6"><small>{{report.funding_begin_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                        <dd class="col-6"><small>{{report.funding_end_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                        <dd class="col-6"><small>{{report.enrollment_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                        <dd class="col-6"><small>{{report.termination_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                        <dd class="col-6"><small>{{report.funder}}</a></small></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+<!--END data for reports-->       
+     
+{% elsif include.notes_grid %} 
+
+<!--START data for notes-->         
+
+<!-- START Table -->
+<div class="row ">
+          {% for note in site.data.notes %}
+    <div class="col-6 p-auto my-1">
+        <div class="card">
+            <div class="card-body px-3 py-2">
+                <div class="row">
+                    <div class="col-auto">
+                        <dl class="row justify-content-center justify-content-md-start">
+                            <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                            <dd class="col-6"><small>{{note.authType}}</small></dd>
+                            <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                            <dd class="col-6"><small>{{note.authorization_code}}</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                            <dd class="col-6"><small>{{note.funding_begin_date}}</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                            <dd class="col-6"><small>{{note.funding_end_date}}</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                            <dd class="col-6"><small>{{note.enrollment_date}}</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                            <dd class="col-6"><small>{{note.termination_date}}</a></small></dd>
+                            <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                            <dd class="col-6"><small>{{note.funder}}</a></small></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      {% endfor %}
+</div>
+<!-- END Table -->
+
+<!--END data for notes-->  
+
+{% elsif include.auths_grid %} 
+
+<!--START data for notes-->         
+
+<!-- START Table -->
+<div class="row ">
+    {% for aut in site.data.auths %}
+<div class="col-6 p-auto my-1">
+  <div class="card">
+      <div class="card-body px-3 py-2">
+          <div class="row">
+              <div class="col-auto">
+                  <dl class="row justify-content-center justify-content-md-start">
+                      <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                      <dd class="col-6"><small>{{aut.authType}}</small></dd>
+                      <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                      <dd class="col-6"><small>{{aut.authorization_code}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                      <dd class="col-6"><small>{{aut.funding_begin_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                      <dd class="col-6"><small>{{aut.funding_end_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                      <dd class="col-6"><small>{{aut.enrollment_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                      <dd class="col-6"><small>{{aut.termination_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                      <dd class="col-6"><small>{{aut.funder}}</a></small></dd>
+                  </dl>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+<!-- END Table -->
+
+<!--END data for notes-->     
+
+{% elsif include.contracts_grid %} 
+
+<!--START data for Contracts-->         
+
+<!-- START Table -->
+<div class="row ">
+    {% for cont in site.data.contracts %}
+<div class="col-6 p-auto my-1">
+  <div class="card">
+      <div class="card-body px-3 py-2">
+          <div class="row">
+              <div class="col-auto">
+                  <dl class="row justify-content-center justify-content-md-start">
+                      <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                      <dd class="col-6"><small>{{cont.authType}}</small></dd>
+                      <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                      <dd class="col-6"><small>{{cont.authorization_code}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                      <dd class="col-6"><small>{{cont.funding_begin_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                      <dd class="col-6"><small>{{cont.funding_end_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                      <dd class="col-6"><small>{{cont.enrollment_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                      <dd class="col-6"><small>{{cont.termination_date}}</a></small></dd>
+                      <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                      <dd class="col-6"><small>{{cont.funder}}</a></small></dd>
+                  </dl>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+<!-- END Table -->
+
+<!--END data for Contracts-->   
+            
+{% endif %}
+
+
+
+
+             
+

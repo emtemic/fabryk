@@ -1,0 +1,44 @@
+            <tr class="border-top">
+              <th scope="row" class="align-middle ">
+                  <a href="#">
+                    <span class="badge badge-pill badge-secondary text-uppercase">
+                      {{ include.authType }}
+                    </span>
+                  </a>
+              </th>
+              {% if include.schedule_authorization_code %}
+              <td class="align-middle">{{include.authorization_code_s}}</td>
+              {% else %}
+                  <td class="align-middle"><small>Undefined</small></td>
+              {% endif %}
+
+              {% if include.schedule_funding_begin_date %}
+                  <td class="align-middle text-uppercase">{{include.funding_begin_date_s}}</td>
+              {% else %}
+                  <td class="align-middle"><small>Undefined</small></td>
+              {% endif %}
+
+              {% if include.schedule_funding_end_date %}
+                  <td class="align-middle text-uppercase">{{include.funding_end_date_s}}</td>
+              {% else %}
+                  <td class="align-middle"><small>Undefined</small></td>
+              {% endif %}
+
+              {% if include.schedule_enrollment_date %}
+                  <td class="align-middle text-uppercase">{{include.enrollment_date_s}}</td>
+              {% else %}
+                  <td class="align-middle"><small>Undefined</small></td>
+              {% endif %}
+
+              {% if include.schedule_termination_date %}
+                  <td class="align-middle"><p class="font-weight-light">{{include.termination_date_s}}</p></td>
+              {% else %}
+                  <td class="align-middle"><small>Undefined</small></td>
+              {% endif %}
+
+              {% if include.schedule_funder %}
+                  <td class="align-middle">{{include.funder_s}}</td>
+              {% else %}
+                  <td class="align-middle"><small>Undefined</small></td>
+              {% endif %}
+            </tr>

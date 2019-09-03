@@ -1,0 +1,17 @@
+- authType: RENEWABLE
+  authorization_code: Auths
+  funding_begin_date: 1 DEC 2014
+  funding_end_date: 1 JUN 2015
+  enrollment_date: 8 DEC 2014
+  termination_date: TEST_DATA_BASE
+  funder: Eastern Douglas Development Group
+
+
+- authType: RENEWABLE
+  authorization_code: Auths
+  funding_begin_date: 1 DEC 2014
+  funding_end_date: 1 JUN 2015
+  enrollment_date: 8 DEC 2014
+  termination_date: TEST_DATA_BASE
+  funder: Eastern Douglas Development Group
+  

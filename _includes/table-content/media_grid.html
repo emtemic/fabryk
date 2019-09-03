@@ -1,0 +1,46 @@
+<!--START data for schedule-->          
+<div class="card-body pt-1">
+        <div class="row">
+        {% for med in site.data.media %} 
+        <div class="col-12 col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 bd-highlight my-auto">
+                            {{med.file_name_icon}}
+                        </div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                                <span class="text-muted">{{med.file_name_text}}</span> <br>
+                                <span class="text-muted">{{med.file_name_size}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted">
+                    <span class="badge badge-pill badge-secondary">{{med.tag1}}</span>
+                    <span class="badge badge-pill badge-secondary">{{med.tag2}}</span>
+                    <span class="badge badge-pill badge-secondary">{{med.tag3}}</span>
+                </div>
+                <div class="card-footer text-muted p-0">
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 w-100 bd-highlight ml-2">{{med.date_added}}</div>
+                        <div class="p-2 flex-shrink-1 bd-highlight">
+                            <div class="btn-group">
+                                <div class="dropdown dropdown-menu-right">
+                                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#">View details</a>
+                                        <a class="dropdown-item" href="#">Edit this task</a>
+                                        <a class="dropdown-item" href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>

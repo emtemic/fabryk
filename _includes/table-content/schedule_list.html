@@ -1,0 +1,85 @@
+<!-- START Table -->
+<table class="table mb-0 table-responsive-md">
+    <thead> 
+        <tr>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Priority
+            </small>
+          </th>
+          <th scope="col" class="align-middle">
+            <small class="text-muted">
+              Task
+            </small>
+          </th>
+          <th scope="col" class="align-middle text-right">
+            <small class="text-muted">
+              Last Update
+            </small>
+          </th>
+          <th scope="col" class="align-middle text-right">
+            <small class="text-muted">
+              Actions
+            </small>
+          </th>
+        </tr>
+    </thead>
+  <tbody>
+
+
+{% for schedul in site.data.schedule %} 
+<tr class="">
+    <th scope="row" class="align-middle">
+        <div class="dropdown">
+            <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+            </button>
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item" href="#">
+					<i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+				</a>
+				<a class="dropdown-item" href="#">
+					<i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+				</a>
+				<a class="dropdown-item" href="#">
+					<i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+				</a>
+				<a class="dropdown-item" href="#">
+					<i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+				</a>
+			</div>
+        </div>
+    </th>
+        <td class="align-middle">
+          	<span>
+          		#26077 
+				<a href="#" data-toggle="modal" data-target="#user_details">
+					transmitting the interface won't do anything, we need to connect the multi-byte PCI capacitor.
+				</a>
+        		<br>
+				  Voluptas possimus perspiciatis voluptatibus.
+				  <span class="badge badge-pill badge-secondary">Kids</span>
+				  <span class="badge badge-pill badge-danger">Books</span>
+        	</span>
+
+        </td>
+        <td class="align-middle">{{schedul.funding_begin_date}}</td>
+        <td class="align-middle">
+			<div class="btn-group">
+            <div class="dropdown dropdown-menu-right">
+                <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-cog" aria-hidden="true"></i>
+                </button>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" data-toggle="modal" data-target="#user_details" href="#" >View details</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#edit_task" href="#">Edit this task</a>
+					<a class="dropdown-item" data-toggle="modal" data-target="#delete_task" href="#">Delete</a>
+				</div>
+			</div>
+			</div>
+        </td>
+</tr>
+{% endfor %}
+
+</tbody>
+</table>

@@ -1,0 +1,32 @@
+<!--START data for reports-->         
+<div class="row">
+    {% for report in site.data.reports %}
+    <div class="col-12 col-md-6 p-auto my-1">
+    <div class="card">
+        <div class="card-body px-3 py-2">
+            <div class="row">
+                <div class="col-auto">
+                    <dl class="row justify-content-center justify-content-md-start">
+                        <dt class="col-6"><small class="text-muted">Authorization Type:</small></dt>
+                        <dd class="col-6"><small>{{report.authType}}</small></dd>
+                        <dt class="col-6"><small class="text-muted">Authorization Code:</small></dt>
+                        <dd class="col-6"><small>{{report.authorization_code}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding Begin date:</small></dt>
+                        <dd class="col-6"><small>{{report.funding_begin_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funding End Date:</small></dt>
+                        <dd class="col-6"><small>{{report.funding_end_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Enrollment Date:</small></dt>
+                        <dd class="col-6"><small>{{report.enrollment_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Termination Date:</small></dt>
+                        <dd class="col-6"><small>{{report.termination_date}}</a></small></dd>
+                        <dt class="col-6"><small class="text-muted">Funder:</small></dt>
+                        <dd class="col-6"><small>{{report.funder}}</a></small></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+<!--END data for reports-->       
