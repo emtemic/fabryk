@@ -1,10 +1,117 @@
----
-layout: navbar
-title: Index
-navbar-right-buttons: yes
----
+	<!doctype html>
+	<html lang="en">
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Jekyll v3.8.5">
+			
+		<title>Home</title>
+			
 
-<div class="container pt-3">
+		
+		<!--<link rel="canonical" href="/docs/4.3/examples/starter-template/"> 
+		<link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="./dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">-->
+
+		
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		
+		<style>
+		  .bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		  }
+		  @media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+			  font-size: 3.5rem;
+			}
+		  }
+		</style>
+		<!-- Custom styles for this template 
+		<link href="starter-template.css" rel="stylesheet"> -->
+	  </head>
+	<body>
+	  <main role="main" class="container.fluid">
+		
+		
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar" href="index.html"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
+			<button class="navbar-toggler border-info" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+		<div class="collapse navbar-collapse" id="mainmenu">
+                
+                
+                <ul class="navbar-nav m-auto">	
+            
+                    <li class="nav-item">
+
+                        <a class="nav-link  active
+                            "" href="index-logged.html" data-toggle="modal" data-target="#nologinmodal">
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                        Home
+                    </a>								
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="clients.html" data-toggle="modal" data-target="#nologinmodal"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+                    </li>
+                </ul>
+                
+
+		<ul class="navbar-nav ">
+            
+            <!--START NAVBAR RIGHT BUTTONS-->
+            <li class="nav-item form-inline">
+                <a class="btn btn-outline-success my-auto mr-1" href="login.html" role="button"><i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>Login</a>
+                <a class="btn btn-success my-auto" href="register.html" role="button">Register</a>
+            </li>
+            <!--END NAVBAR RIGHT BUTTONS-->
+            
+		</ul>
+	</div>
+	</nav>
+	
+
+	  <div class="container-fluid ">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="index.html">
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</a>
+			</li>
+
+			
+				<li class="breadcrumb-item active" aria-current="page" ><a href="#">Home</a></li>
+
+
+			
+		
+		  </ol>
+		</nav>
+	  </div>
+    <!--Start CONTENT-->
+    <div class="container pt-3">
 
     <!-- Start CARD -->
     <div class="card">
@@ -46,10 +153,10 @@ navbar-right-buttons: yes
                         ADD
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#nologinmodal">Add Task</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#nologinmodal">Add File</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#nologinmodal">Add Note</a>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#nologinmodal">Add Note</a>
+                        <a class="dropdown-item" href="login.html">Add Task</a>
+                        <a class="dropdown-item" href="login.html">Add File</a>
+                        <a class="dropdown-item" href="login.html">Add Note</a>
+                        <a class="dropdown-item" href="login.html">Add Note</a>
                       </div>
                   </div>
             </ul>
@@ -59,7 +166,149 @@ navbar-right-buttons: yes
   
         </div>
         <!-- END CARD HEADER tabs -->
-        {% include modal_table_eye.html %}
+        
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Tutaj imie</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               
+                <div class="col-12">
+                    
+                <dl class="row justify-content-center justify-content-md-start">
+                    <dt class="col-5 "><small class="text-muted">Authorization Type:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Schedule List:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Funding Begin date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funding End Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Enrollment Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Termination Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funder	:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                </dl>
+                
+                <dl class="row justify-content-center justify-content-md-start">
+                    <dt class="col-5 "><small class="text-muted">Authorization Type:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Schedule List:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Funding Begin date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funding End Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Enrollment Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Termination Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funder	:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                </dl>
+                
+                <dl class="row justify-content-center justify-content-md-start">
+                    <dt class="col-5 "><small class="text-muted">Authorization Type:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Schedule List:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Funding Begin date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funding End Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Enrollment Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Termination Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funder	:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                </dl>
+                
+                <dl class="row justify-content-center justify-content-md-start">
+                    <dt class="col-5 "><small class="text-muted">Authorization Type:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Schedule List:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Funding Begin date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funding End Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Enrollment Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Termination Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funder	:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                </dl>
+                
+                <dl class="row justify-content-center justify-content-md-start">
+                    <dt class="col-5 "><small class="text-muted">Authorization Type:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Schedule List:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                
+                    <dt class="col-5 "><small class="text-muted">Funding Begin date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funding End Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Enrollment Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Termination Date:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+
+                    <dt class="col-5 "><small class="text-muted">Funder	:</small></dt>
+                    <dd class="col-7"><small></small></dd>
+                </dl>
+                
+            </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
         <!-- START TABS: Schedule | Reports | Notes | Auths | Contracts -->
         <div class="tab-content" id="v-pills-tabContent">
             <!-- START TAB-content: Schedule -->
@@ -134,7 +383,7 @@ navbar-right-buttons: yes
                         <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
                         <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
                             <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                              <li class="page-item"><a class="page-link" href="#">-</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><</a></li>
                               <li class="page-item"><a class="page-link" href="#">1</a></li>
                               <li class="page-item"><a class="page-link" href="#">2</a></li>
                               <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -221,7 +470,7 @@ navbar-right-buttons: yes
                         <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
                         <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
                             <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                              <li class="page-item"><a class="page-link" href="#">-</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><</a></li>
                               <li class="page-item"><a class="page-link" href="#">1</a></li>
                               <li class="page-item"><a class="page-link" href="#">2</a></li>
                               <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -299,7 +548,7 @@ navbar-right-buttons: yes
                         <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
                         <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
                             <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                              <li class="page-item"><a class="page-link" href="#">-</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><</a></li>
                               <li class="page-item"><a class="page-link" href="#">1</a></li>
                               <li class="page-item"><a class="page-link" href="#">2</a></li>
                               <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -379,7 +628,7 @@ navbar-right-buttons: yes
                         <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
                         <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
                             <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                              <li class="page-item"><a class="page-link" href="#">-</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><</a></li>
                               <li class="page-item"><a class="page-link" href="#">1</a></li>
                               <li class="page-item"><a class="page-link" href="#">2</a></li>
                               <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -454,7 +703,7 @@ navbar-right-buttons: yes
                         <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
                         <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
                             <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                              <li class="page-item"><a class="page-link" href="#">-</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><</a></li>
                               <li class="page-item"><a class="page-link" href="#">1</a></li>
                               <li class="page-item"><a class="page-link" href="#">2</a></li>
                               <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -473,17 +722,86 @@ navbar-right-buttons: yes
     <!-- END CARD -->
   </div>
 
-{% include modal.html %}
 
+<div class="modal fade" id="nologinmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="container w-auto">
 
+                    <form class="px-4">
 
-    {% for person in site.data.members %}
-          {{ person.authTypeR }} 
-          {{ person.authorization_codeR }}
-          {{ person.funding_begin_dateR }} 
-          {{ person.funding_end_dateR }}
-          {{ person.enrollment_dateR }} 
-          {{ person.termination_dateR }}
-          {{ person.funderR }} 
-    {% endfor %}
+                        
+
+    <div class="text-center pb-2 pt-4"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a></div>
     
+   
+      <p class="text-center">
+        <strong>
+          Sign In to Application
+        </strong>
+      </p>
+
+      <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum placeat accusantium quasi perferendis.
+      </p>
+
+
+
+
+                            <div class="form-group font-weight-bold">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email...">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group font-weight-bold">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password...">
+                                </div>
+                            
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1"><strong>Remember Password</strong></label>
+                                </div>
+                                <a href="clients.html" class="btn btn-primary btn-block" role="button" aria-pressed="true">Sign In</a>
+                                
+                                <div class="d-flex">
+                                <div class="pt-2 w-100"><a href="forgot-password.html" class="card-link"><strong>Forgot Password</strong></a></div>
+                                <div class="pt-2 flex-shrink-1>"><a href="register.html" class="card-link"><strong>Register</strong></a></div>
+                                </div>
+                    
+                        
+    <p class="text-justify pt-4"><small>Ambitioni Cras dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit iudicareturamet fermentum. Ambitioni Cras dedisse scripsisse iudicaretur
+    <a href="#" class="card-link">www.adres.com</a></small></p>
+
+
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+    
+    
+
+    <!--End CONTENT-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>   
+$(function () {
+ 	 $('[data-toggle="tooltip"]').tooltip()
+})	
+
+$(function () {
+	$('#myTab li:last-child a').tab('show')
+})
+
+</script>
+     </main>   
+</body>
+</html>

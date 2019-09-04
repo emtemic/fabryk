@@ -1,14 +1,149 @@
----
-layout: navbar
-title: Clients
-navbar-right-buttons:
----
-<div class="container p-0">
+	<!doctype html>
+	<html lang="en">
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Jekyll v3.8.5">
+			
+		<title>Clients</title>
+			
+
+		
+		<!--<link rel="canonical" href="/docs/4.3/examples/starter-template/"> 
+		<link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="./dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">-->
+
+		
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		
+		<style>
+		  .bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		  }
+		  @media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+			  font-size: 3.5rem;
+			}
+		  }
+		</style>
+		<!-- Custom styles for this template 
+		<link href="starter-template.css" rel="stylesheet"> -->
+	  </head>
+	<body>
+	  <main role="main" class="container.fluid">
+		
+		
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar" href="index.html"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
+			<button class="navbar-toggler border-info" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+		<div class="collapse navbar-collapse" id="mainmenu">
+                
+                
+    <ul class="navbar-nav m-auto">
+        
+
+            <li class="nav-item">
+                      
+                    <a class="nav-link  
+                                        "" href="index-logged.html">
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                        Home
+                    </a>						
+                </li>
+                <li class="nav-item">
+                    
+
+                    <a class="nav-link  
+                                       
+                                       active"" href="clients.html">
+                        <i class="fa fa-users fa-fw" aria-hidden="true"></i>
+                        Clients
+                    </a>
+                </li>
+
+        
+        <!--
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>								
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="clients.html"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Clients</a>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+        </li>
+    </ul>
+              
+
+		<ul class="navbar-nav ">
+            
+            <!--START NAVBAR LOGGED USER-->
+            <li class="nav-item dropdown ">
+                <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="d-flex flex-nowrap">
+                        <div class="order-2 order-lg-1 my-auto">&nbsp; Mark Hohmann</div> 
+                        <div class="order-1 nav-link href="#"><i class="fa fa-users fa-fw" aria-hidden="true"></i></div>
+                        <div class="order-3 my-auto ml-2"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profile-edit.html">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="index.html">Sign Out</a>
+                </div>		
+            </li>
+            <!--END NAVBAR LOGGED USER-->
+            
+		</ul>
+	</div>
+	</nav>
+	
+
+	  <div class="container-fluid ">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="index.html">
+					<i class="fa fa-home" aria-hidden="true"></i>
+				</a>
+			</li>
+
+			
+				<li class="breadcrumb-item active" aria-current="page" ><a href="#">Clients</a></li>
+
+
+			
+		
+		  </ol>
+		</nav>
+	  </div>
+    <!--Start CONTENT-->
+    <div class="container p-0">
   <!-- START Card with Table -->
   <div class="card">
     <!-- START Tabs with Input & Button "Add" -->
-    <div class="card-header d-inline-flex ">
-      <p class="mr-auto">Clients</p>  
+    <div class="card-header d-inline-flex p-0 py-2 pl-3">
+      <h5 class="mr-auto my-auto">Clients</h5>
 
       <ul class="nav nav-pills my-auto pr-2 m-0" id="pills-tab" role="tablist">
         <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
@@ -43,28 +178,24 @@ navbar-right-buttons:
           </thead>
           <tbody>
   <!--START CLIENTS CONTENT FROM CLIENTS.YML-->
-        {% for member in site.data.clients %}
+        
           <tr class="border-top">
               <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
               <td class="align-middle">
-                  <a href="user_details.html">{{member.name}}</a>
+                  <a href="user_details.html">Teresa Sabdee Wilson</a>
               </td>
               <td class="align-middle">
-                  <small><a href="mailto:{{include.mail}}">{{member.email}}</a></small>
+                  <small><a href="mailto:">tsw@o2.pl</a></small>
               </td>
               <th scope="row" class="align-middle">
-                {% if member.client_type == 'Reffered' %} 
+                 
                   <span class="badge badge-pill badge-warning">Reffered</span>
-                {% elsif member.client_type == 'Registered' %}  
-                  <span class="badge badge-pill badge-danger">Registered</span>
-                {% else %}
-                  <span class="badge badge-pill badge-secondary">Undefined</span>
-                {% endif %}
+                
               </th>
-              <td class="align-middle">{{member.client_status}}</td>
-              <td class="align-middle">{{member.frade}}</td>
-              <td class="align-middle">{{member.contact_type}}</td>
-              <td class="align-middle">{{member.school}}</td>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">11</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
               <td class="align-middle">
                 <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                     <i class="fa fa-search-plus" aria-hidden="true"></i></a>
@@ -74,7 +205,196 @@ navbar-right-buttons:
                     <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
-        {% endfor %}
+        
+          <tr class="border-top">
+              <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+              <td class="align-middle">
+                  <a href="user_details.html">Artur Nowicki</a>
+              </td>
+              <td class="align-middle">
+                  <small><a href="mailto:">an@o2.pl</a></small>
+              </td>
+              <th scope="row" class="align-middle">
+                  
+                  <span class="badge badge-pill badge-danger">Registered</span>
+                
+              </th>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">12</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
+              <td class="align-middle">
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+              </td>
+          </tr>
+        
+          <tr class="border-top">
+              <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+              <td class="align-middle">
+                  <a href="user_details.html">Karol Wolski</a>
+              </td>
+              <td class="align-middle">
+                  <small><a href="mailto:">kw@o2.pl</a></small>
+              </td>
+              <th scope="row" class="align-middle">
+                
+                  <span class="badge badge-pill badge-secondary">Undefined</span>
+                
+              </th>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">13</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
+              <td class="align-middle">
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+              </td>
+          </tr>
+        
+          <tr class="border-top">
+              <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+              <td class="align-middle">
+                  <a href="user_details.html">Magda Potocka</a>
+              </td>
+              <td class="align-middle">
+                  <small><a href="mailto:">mp@o2.pl</a></small>
+              </td>
+              <th scope="row" class="align-middle">
+                
+                  <span class="badge badge-pill badge-secondary">Undefined</span>
+                
+              </th>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">14</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
+              <td class="align-middle">
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+              </td>
+          </tr>
+        
+          <tr class="border-top">
+              <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+              <td class="align-middle">
+                  <a href="user_details.html">Wojciech Grid</a>
+              </td>
+              <td class="align-middle">
+                  <small><a href="mailto:">wg@o2.pl</a></small>
+              </td>
+              <th scope="row" class="align-middle">
+                  
+                  <span class="badge badge-pill badge-danger">Registered</span>
+                
+              </th>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">15</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
+              <td class="align-middle">
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+              </td>
+          </tr>
+        
+          <tr class="border-top">
+              <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+              <td class="align-middle">
+                  <a href="user_details.html">Jerzy Zuch</a>
+              </td>
+              <td class="align-middle">
+                  <small><a href="mailto:">jz@o2.pl</a></small>
+              </td>
+              <th scope="row" class="align-middle">
+                 
+                  <span class="badge badge-pill badge-warning">Reffered</span>
+                
+              </th>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">16</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
+              <td class="align-middle">
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+              </td>
+          </tr>
+        
+          <tr class="border-top">
+              <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+              <td class="align-middle">
+                  <a href="user_details.html">Marzena Fach</a>
+              </td>
+              <td class="align-middle">
+                  <small><a href="mailto:">mf@o2.pl</a></small>
+              </td>
+              <th scope="row" class="align-middle">
+                
+                  <span class="badge badge-pill badge-secondary">Undefined</span>
+                
+              </th>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">17</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
+              <td class="align-middle">
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+              </td>
+          </tr>
+        
+          <tr class="border-top">
+              <td class="align-middle"><i class="fa fa-user-circle" aria-hidden="true"></i></td>
+              <td class="align-middle">
+                  <a href="user_details.html">Marcin Miszcz</a>
+              </td>
+              <td class="align-middle">
+                  <small><a href="mailto:">mm@o2.pl</a></small>
+              </td>
+              <th scope="row" class="align-middle">
+                  
+                  <span class="badge badge-pill badge-danger">Registered</span>
+                
+              </th>
+              <td class="align-middle">DATA_BASE</td>
+              <td class="align-middle">18</td>
+              <td class="align-middle">Spouse</td>
+              <td class="align-middle">Independence High School</td>
+              <td class="align-middle">
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+              </td>
+          </tr>
+        
           <!--END CLIENTS CONTENT FROM CLIENTS.YML-->
           </tbody>
       </table>
@@ -84,32 +404,28 @@ navbar-right-buttons:
         <thead> 
             <div class="container">
                 <div class="row ">
-                        {% for member in site.data.clients %}
+                        
                     <div class="col-3 py-3">
                         <div class="card ">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        {% if member.client_type == 'Reffered' %} 
+                                         
                                             <span class="badge badge-pill badge-warning">Reffered</span>
-                                        {% elsif member.client_type == 'Registered' %}  
-                                            <span class="badge badge-pill badge-danger">Registered</span>
-                                        {% else %}
-                                            <span class="badge badge-pill badge-secondary">Undefined</span>
-                                        {% endif %}
+                                        
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
                                         <i class="fa fa-user-circle" aria-hidden="true"></i>
-                                        {{member.name}}
+                                        Teresa Sabdee Wilson
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                        <a href="mailto:{{include.mail}}">{{member.email}}</a>
+                                        <a href="mailto:">tsw@o2.pl</a>
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                        {{member.client_status}}
+                                        DATA_BASE
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
@@ -124,7 +440,259 @@ navbar-right-buttons:
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
+                    
+                    <div class="col-3 py-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                          
+                                            <span class="badge badge-pill badge-danger">Registered</span>
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        Artur Nowicki
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <a href="mailto:">an@o2.pl</a>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        DATA_BASE
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3 py-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        
+                                            <span class="badge badge-pill badge-secondary">Undefined</span>
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        Karol Wolski
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <a href="mailto:">kw@o2.pl</a>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        DATA_BASE
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3 py-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        
+                                            <span class="badge badge-pill badge-secondary">Undefined</span>
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        Magda Potocka
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <a href="mailto:">mp@o2.pl</a>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        DATA_BASE
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3 py-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                          
+                                            <span class="badge badge-pill badge-danger">Registered</span>
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        Wojciech Grid
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <a href="mailto:">wg@o2.pl</a>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        DATA_BASE
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3 py-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                         
+                                            <span class="badge badge-pill badge-warning">Reffered</span>
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        Jerzy Zuch
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <a href="mailto:">jz@o2.pl</a>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        DATA_BASE
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3 py-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        
+                                            <span class="badge badge-pill badge-secondary">Undefined</span>
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        Marzena Fach
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <a href="mailto:">mf@o2.pl</a>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        DATA_BASE
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3 py-3">
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                          
+                                            <span class="badge badge-pill badge-danger">Registered</span>
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                        Marcin Miszcz
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        <a href="mailto:">mm@o2.pl</a>
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                        DATA_BASE
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <div class="col">
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>                   
         </table>
@@ -150,6 +718,53 @@ navbar-right-buttons:
 
 
 
-{% include modal_delete_task.html
+<div class="modal fade" id="delete_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col text-center text-danger pt-4">
+							<i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center pt-3">
+							
+							<p class="h3">Delete this member?</p>
+							
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center pt-3">
+							
+							<span>Are you sure you want to delete this member?<br> Note, you cannot undo this change.</span>
+							
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center py-4">
+						<button type="button" class="btn btn-outline-secondary text-center" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-danger text-center">Delete</button>
+						</div>
+					</div>
+				</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  %}
+    <!--End CONTENT-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>   
+$(function () {
+ 	 $('[data-toggle="tooltip"]').tooltip()
+})	
+
+$(function () {
+	$('#myTab li:last-child a').tab('show')
+})
+
+</script>
+     </main>   
+</body>
+</html>
