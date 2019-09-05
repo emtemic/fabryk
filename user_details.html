@@ -45,7 +45,7 @@
 		
 		
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar" href="index.html"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
+			<a class="navbar"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
 			<button class="navbar-toggler border-info" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -69,6 +69,8 @@
 
                     <a class="nav-link  
                                        active
+                                       
+                                       
                                        "" href="clients.html">
                         <i class="fa fa-users fa-fw" aria-hidden="true"></i>
                         Clients
@@ -122,17 +124,18 @@
 	  <div class="container-fluid ">
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
-			<li class="breadcrumb-item">
-				<a href="index.html">
-					<i class="fa fa-home" aria-hidden="true"></i>
-				</a>
-			</li>
-
+			<!--BREADCRUMB LVL 1-->
 			
+			<li class="breadcrumb-item">
+				<a href="index-logged.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+			</li>
 				
-				<li class="breadcrumb-item active" aria-current="page"><a href="#">Clients</a> / <a href="#">Teresa Sabdee Wilson</a></li>
+			<!--BREADCRUMB LVL 2-->
 				
-		
+			<li class="breadcrumb-item active" aria-current="page">
+				<a href="Clients.html">Clients</a> / Teresa Sabdee Wilson</li>
+				
+	
 		  </ol>
 		</nav>
 	  </div>
@@ -272,6 +275,8 @@
                             
                             
                             5
+                <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! to wyżej jest do zmiany site.data.schedule-->
+
                       </span>
                   </a>
               </li>
@@ -2605,7 +2610,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Add Task</button>
+          <a href="user_details.html"><button type="button" class="btn btn-primary">Add Task</button></a>
         </div>
       </div>
     </div>
@@ -2830,7 +2835,9 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
 						<div class="w-100"></div>
 						<div class="col text-center py-4">
 						<button type="button" class="btn btn-outline-secondary text-center" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-danger text-center">Delete</button>
+						
+						<a href="user_details_delete.html"><button type="button" class="btn btn-danger text-center">Delete</button></a>
+						
 						</div>
 					</div>
 				</div>
