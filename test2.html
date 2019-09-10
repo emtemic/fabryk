@@ -20,7 +20,7 @@
 		
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
 		
 		<style>
 		  .bd-placeholder-img {
@@ -140,25 +140,230 @@
 		</nav>
 	  </div>
     <!--Start CONTENT-->
-    <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
-    <li class="nav-item">
-        <a class="btn btn-outline-secondary active" id="list-schedule-tab" data-toggle="pill" href="#list-schedule" role="tab" aria-controls="list-schedule" aria-selected="true">
-            List
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="btn btn-outline-secondary" id="grid-schedule-tab" data-toggle="pill" href="#grid-schedule" role="tab" aria-controls="grid-schedule" aria-selected="false">
-            Grid
-        </a>
-    </li>
-</ul>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add New Client</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <!--START Select Photo for Client-->
+                <div class="row">
+                  <div class="col-2 p-0 text-center pt-3">
+                        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
 
-
-
-
-<div class="btn-group" role="group" aria-label="Basic example">
-    <a type="button" class="btn btn-secondary" id="list-schedule-tab" data-toggle="pill" href="#list-schedule" role="tab" aria-controls="list-schedule" aria-selected="true">Left</a>
-    <a type="button" class="btn btn-secondary" id="grid-schedule-tab" data-toggle="pill" href="#grid-schedule" role="tab" aria-controls="grid-schedule" aria-selected="false">Right</a>
+                  </div>
+                  <div class="col-9 p-0">
+                    <div class="row">
+                        <div class="col mb-2">Select Photo for Client:</div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Select photo from device...</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END Select Photo for Client-->
+                <form class="">
+                    <div class="row">
+                        <div class="col p-2">
+                        <label for="Firstname">First Name</label>
+                        <input type="text" class="form-control" id="Firstname" placeholder="Enter First Name...">
+                        </div>
+                        <div class="col p-2">
+                            <label for="Lastname">Last Name</label>
+                        <input type="text" class="form-control" id="Lastname" placeholder="Enter Last Name...">
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                        <form>
+                            <div class="row">
+                                <div class="col p-2"> 
+                                    <label for="tog">Gender<br></label>
+                                    <div class="w-100"></div>
+                                    <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                        <label class="btn btn-outline-secondary active" id="tog">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Female
+                                        </label>
+                                        <label class="btn btn-outline-secondary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> Male
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="col p-2">
+                            <label for="inlineFormInputGroup">Email</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Email...">
+                            </div>                       
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col p-2">
+                            <label for="inlineFormInputGroup">URL</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Url...">
+                            </div>                       
+                        </div>
+                        <div class="col p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Client Language</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                <div class="form-group ">
+                    <label for="exampleFormControlTextarea1">Adress</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Adress Here..."></textarea>
+                </div>       
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Family Language</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Client Type</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-3 p-2">
+                        <label for="Firstname">Grade</label>
+                        <input type="text" class="form-control" id="Firstname" placeholder="Enter Grade...">
+                        </div>
+                        <div class="col-9 p-2">
+                            <label for="Lastname">School</label>
+                        <input type="text" class="form-control" id="Lastname" placeholder="Enter School...">
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                        <div class="row">
+                            <div class="col p-2">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Contact Type</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="" selected disabled>Select...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col p-2">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Realtion to</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="" selected disabled>Select Task...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="row">
+                            <div class="col p-2"> 
+                                <label for="tog">Legal Guardian<br></label>
+                                <div class="w-100"></div>
+                                <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                    <label class="btn btn-outline-secondary active" id="tog">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> True
+                                    </label>
+                                    <label class="btn btn-outline-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> False
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="col p-2">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Resident with</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option value="" selected disabled>Select Person...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>                     
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Client</button>
+        </div>
+      </div>
+    </div>
   </div>
     <!--End CONTENT-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
