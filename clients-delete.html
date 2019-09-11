@@ -159,16 +159,7 @@
             </a>
         </li>
     </ul>
-    <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle my-2 mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ADD
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#add_member">Add Member</a>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#new_task">Edit Member</a>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_task">Delete Member</a>
-        </div>
-    </div>
+    <a href="#" class="btn btn-primary btn my-2 mr-2" role="button" aria-pressed="true" data-toggle="modal" data-target="#add_member" >Add client&nbsp&nbsp<i class="fa fa-plus" aria-hidden="true"></i></a>
     </div>
           <!-- END Tabs with Input & Button "Add" -->
           <!-- START Table -->
@@ -262,11 +253,11 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="add_member" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add New Client</h5>
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -474,7 +465,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Add Client</button>
+          <a href="clients.html"><button type="button" class="btn btn-primary"></button></a>
         </div>
       </div>
     </div>

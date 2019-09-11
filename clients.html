@@ -159,16 +159,7 @@
             </a>
         </li>
     </ul>
-    <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle my-2 mr-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ADD
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#add_member">Add Member</a>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#new_task">Edit Member</a>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_task">Delete Member</a>
-        </div>
-    </div>
+        <a href="#" class="btn btn-primary btn my-2 mr-2" id="add" role="button" aria-pressed="true" data-toggle="modal" data-target="#add_member" >Add client&nbsp&nbsp<i class="fa fa-plus" aria-hidden="true"></i></a>
     </div>
           <!-- END Tabs with Input & Button "Add" -->
           <!-- START Table -->
@@ -209,12 +200,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -236,12 +227,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -263,12 +254,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -290,12 +281,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -317,12 +308,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -344,12 +335,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -371,12 +362,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -398,12 +389,12 @@
               <td class="align-middle">Spouse</td>
               <td class="align-middle">Independence High School</td>
               <td class="align-middle">
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
-                    <i class="fa fa-trash-o" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
+                <a href="#" data-placement="bottom">
+                    <i class="fa fa-eye mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_member">
+                    <i class="fa fa-pencil-square-o mr-2 fa-fw" aria-hidden="true"></i></a>
+                <a href="#"  data-placement="bottom">
+                    <i class="fa fa-trash-o mr-2 fa-fw" aria-hidden="true" data-toggle="modal" data-target="#delete_task"></i></a>
               </td>
           </tr>
         
@@ -441,9 +432,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -477,9 +468,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -513,9 +504,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -549,9 +540,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -585,9 +576,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -621,9 +612,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -657,9 +648,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -693,9 +684,9 @@
                                     </div>
                                     <div class="w-100"></div>
                                     <div class="col">
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#"  data-toggle="modal" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-search-plus" aria-hidden="true"></i></a>
-                                    <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
+                                    <a href="#" data-toggle="modal" data-target="#edit_member">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
                                     <a href="#"  data-toggle="tooltip" data-placement="bottom" title="Edit this Row">
                                         <i class="fa fa-user-o" aria-hidden="true"></i></a>
@@ -766,12 +757,12 @@
   </div>
 
 
-  <!-- Modal -->
+    <!-- Modal -->
   <div class="modal fade" id="add_member" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add New Client</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Add New Client</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -979,11 +970,230 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Add Client</button>
+          <a href="clients.html"><button type="button" class="btn btn-primary">Add New Client</button></a>
         </div>
       </div>
     </div>
 </div>
+    <!-- Modal -->
+  <div class="modal fade" id="edit_member" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Client</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <!--START Select Photo for Client-->
+                <div class="row">
+                  <div class="col-2 p-0 text-center pt-3">
+                        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-9 p-0">
+                    <div class="row">
+                        <div class="col mb-2">Select Photo for Client:</div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Select photo from device...</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END Select Photo for Client-->
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                        <label for="Firstname">First Name</label>
+                        <input type="text" class="form-control" id="Firstname" placeholder="Enter First Name...">
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <label for="Lastname">Last Name</label>
+                        <input type="text" class="form-control" id="Lastname" placeholder="Enter Last Name...">
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                        <form>
+                            <div class="row">
+                                <div class="col p-2"> 
+                                    <label for="tog">Gender<br></label>
+                                    <div class="w-100"></div>
+                                    <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                        <label class="btn btn-outline-secondary active" id="tog">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Female
+                                        </label>
+                                        <label class="btn btn-outline-secondary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> Male
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <label for="inlineFormInputGroup">Email</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Email...">
+                            </div>                       
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                            <label for="inlineFormInputGroup">URL</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Url...">
+                            </div>                       
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Client Language</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                <div class="form-group ">
+                    <label for="exampleFormControlTextarea1">Adress</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Adress Here..."></textarea>
+                </div>       
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Family Language</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Client Type</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-3 p-2">
+                        <label for="Firstname">Grade</label>
+                        <input type="text" class="form-control" id="Firstname" placeholder="Enter Grade...">
+                        </div>
+                        <div class="col-12 col-md-9 p-2">
+                            <label for="Lastname">School</label>
+                        <input type="text" class="form-control" id="Lastname" placeholder="Enter School...">
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Contact Type</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Realtion to</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select Task...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class="row">
+                        <div class="col p-2"> 
+                            <label for="tog">Legal Guardian<br></label>
+                            <div class="w-100"></div>
+                            <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                <label class="btn btn-outline-secondary active" id="tog">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> True
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> False
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Resident with</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select Person...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>                     
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          <a href="clients.html"><button type="button" class="btn btn-primary">Edit Client</button></a>
+        </div>
+      </div>
+    </div>
+</div>
+
 
 <!-- Modal -->
 
