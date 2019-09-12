@@ -76,15 +76,6 @@
                         Clients
                     </a>
                 </li>
-
-        
-        <!--
-        <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>								
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="clients.html"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Clients</a>
-        </li>-->
         <li class="nav-item">
             <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
         </li>
@@ -103,9 +94,9 @@
             <li class="nav-item dropdown ">
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
-                        <div class="order-2 order-lg-1 my-auto">&nbsp; Mark Hohmann</div> 
-                        <div class="order-1 nav-link href="#"><i class="fa fa-users fa-fw" aria-hidden="true"></i></div>
-                        <div class="order-3 my-auto ml-2"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+                        <div class="order-2 order-lg-1 my-auto">&nbsp;Mark Hohmann</div> 
+                        <div class="order-1 px-1"> <img src="images/avatars/48.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-3 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -146,7 +137,7 @@
     <div class="row">
         <div class="col col-md-2">
         <div class="d-flex justify-content-center justify-content-md-end">
-        <img class="rounded-circle " src="images\avatars\1.jpg" alt="Generic placeholder" image height="100" width="100">
+        <img class="rounded-circle " src="images/avatars/30.jpg" alt="Generic placeholder" image height="100" width="100">
         </div>
         </div>
         <div class="col-12 col-md-10 d-flex">
@@ -155,7 +146,7 @@
                 <h3>Teresa Sabdee  Wilson</h3>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end my-auto">
-                <button type="button" class="btn btn-success " data-toggle="modal" data-target="#nologinmodal">
+                <button type="button" class="btn btn-success " data-toggle="modal" data-target="#edit_member">
                 <i class="fa fa-pencil" aria-hidden="true"></i> Edit User</button>
             </div>
         <div class="w-100"></div>
@@ -249,6 +240,225 @@
     </div>
     </div>
     
+
+      <!-- Modal -->
+  <div class="modal fade" id="edit_member" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Client</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <!--START Select Photo for Client-->
+                <div class="row">
+                  <div class="col-2 p-0 text-center pt-3">
+                        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+                  </div>
+                  <div class="col-9 p-0">
+                    <div class="row">
+                        <div class="col mb-2">Select Photo for Client:</div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Select photo from device...</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END Select Photo for Client-->
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                        <label for="Firstname">First Name</label>
+                        <input type="text" class="form-control" id="Firstname" placeholder="Enter First Name...">
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <label for="Lastname">Last Name</label>
+                        <input type="text" class="form-control" id="Lastname" placeholder="Enter Last Name...">
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                        <form>
+                            <div class="row">
+                                <div class="col p-2"> 
+                                    <label for="tog">Gender<br></label>
+                                    <div class="w-100"></div>
+                                    <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                        <label class="btn btn-outline-secondary active" id="tog">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Female
+                                        </label>
+                                        <label class="btn btn-outline-secondary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> Male
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <label for="inlineFormInputGroup">Email</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Email...">
+                            </div>                       
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                            <label for="inlineFormInputGroup">URL</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Url...">
+                            </div>                       
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Client Language</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                <div class="form-group ">
+                    <label for="exampleFormControlTextarea1">Adress</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Adress Here..."></textarea>
+                </div>       
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Family Language</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Client Type</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-3 p-2">
+                        <label for="Firstname">Grade</label>
+                        <input type="text" class="form-control" id="Firstname" placeholder="Enter Grade...">
+                        </div>
+                        <div class="col-12 col-md-9 p-2">
+                            <label for="Lastname">School</label>
+                        <input type="text" class="form-control" id="Lastname" placeholder="Enter School...">
+                        </div>
+                    </div>
+                </form>
+                <form class="">
+                    <div class="row">
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Contact Type</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Realtion to</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select Task...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <div class="row">
+                        <div class="col p-2"> 
+                            <label for="tog">Legal Guardian<br></label>
+                            <div class="w-100"></div>
+                            <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                <label class="btn btn-outline-secondary active" id="tog">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> True
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> False
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Resident with</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option value="" selected disabled>Select Person...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>                     
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+          <a href="clients.html"><button type="button" class="btn btn-primary">Edit Client</button></a>
+        </div>
+      </div>
+    </div>
+</div>
     
 </div>
 <!--END USER DETAILS-->
@@ -295,9 +505,9 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                               <a class="dropdown-item" href="#" data-toggle="modal" data-target="#new_task">Add Task</a>
-                              <a class="dropdown-item" href="#">Add File</a>
-                              <a class="dropdown-item" href="#">Add Note</a>
-                              <a class="dropdown-item" href="#">Add Note</a>
+                              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#add_media">Add New Media</a>
+                              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#add_note">Add New Note</a>
+
                             </div>
                         </div>
                 </ul>
@@ -456,32 +666,6 @@
                 <div class="tab-pane fade show active"  id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <!-- START header: search, switch: list | grid -->
                     <div class="card-body p-0 pt-2">
-                        <div class="d-flex">
-                              <nav class="navbar navbar-light mr-auto">
-                                  <div class="input-group mb-3">
-                                      <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                                      <div class="input-group-append">
-                                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                                              <i class="fa fa-search" aria-hidden="true"></i>
-                                          </button>
-                                      </div>
-                                  </div>
-                                </nav>
-                              <!--  START TABS: Grid | List -->
-                            <ul class="nav nav-pills my-auto pr-2 m-0" id="pills-tab" role="tablist">
-                                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
-                                    <a class="nav-link active" id="list-schedule-tab" data-toggle="pill" href="#list-schedule" role="tab" aria-controls="list-schedule" aria-selected="true" >
-                                      <i class="fa fa-bars" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
-                                    <a class="nav-link " id="grid-schedule-tab" data-toggle="pill" href="#grid-schedule" role="tab" aria-controls="grid-schedule" aria-selected="false">
-                                      <i class="fa fa-th-large" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <!-- END TABS: Grid | List -->
-                        </div>
                     </div>
                     <!-- END header: search, switch: list | grid -->
                     <!-- START Schedule Tab Content -->
@@ -520,20 +704,6 @@
                               </div>
                               
                         </div>
-                      <div class="card-footer d-sm-flex m-0 p-2 px-3" >
-                            <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
-                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                                  <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">></a></li>
-                                </ul>
-                              </nav>
-                          </div>
                     </div>
                     <!-- END Schedule Tab Content -->
                 </div>
@@ -543,38 +713,6 @@
                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     <!-- START header: search, switch: list | grid -->
                     <div class="card-body p-0 pt-2">
-                        <div class="d-flex">
-                            <nav class="navbar navbar-light mr-auto">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                              </nav>
-      
-      
-      
-                        <!-- START TABS: Grid | List -->
-                            <!-- START TABS: Grid | List -->
-                            <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
-                                  <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
-                                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false" >
-                                        <i class="fa fa-bars" aria-hidden="true"></i>
-                                      </a>
-                                  </li>
-                                  <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
-                                      <a class="nav-link " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true">
-                                        <i class="fa fa-th-large" aria-hidden="true"></i>
-                                      </a>
-                                  </li>
-                              </ul>
-      
-                            <!-- END TABS: Grid | List -->
-                        <!-- END TABS: Grid | List -->
-                        </div>
                         </div>
                     <!-- END header: search, switch: list | grid -->
       
@@ -607,20 +745,6 @@
                                   </div>
                               </div>
                         </div>
-                      <div class="card-footer d-sm-flex m-0 p-2 px-3" >
-                            <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
-                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                                  <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">></a></li>
-                                </ul>
-                              </nav>
-                          </div>
                     </div>
                 </div>
                 <!-- END TAB-content:: Reports -->
@@ -629,32 +753,6 @@
                 <div class="tab-pane fade" id="v-pills-notes" role="tabpanel" aria-labelledby="v-pills-notes-tab">
                     <!-- START header: search, switch: list | grid -->
                 <div class="card-body p-0 pt-2">
-                <div class="d-flex">
-                    <nav class="navbar navbar-light mr-auto">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </nav>
-        
-                  <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
-                        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
-                            <a class="nav-link active" id="pills-notes-tab" data-toggle="pill" href="#pills-notes" role="tab" aria-controls="pills-notes" aria-selected="false" >
-                              <i class="fa fa-bars" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
-                            <a class="nav-link " id="pills-not-tab" data-toggle="pill" href="#pills-not" role="tab" aria-controls="pills-not" aria-selected="true">
-                              <i class="fa fa-th-large" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                <!-- END TABS: Grid | List -->
-                </div>
                 </div>
                     <!-- END header: search, switch: list | grid -->
       
@@ -685,20 +783,6 @@
                                   </div>
                               </div>
                         </div>
-                      <div class="card-footer d-sm-flex m-0 p-2 px-3" >
-                            <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
-                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                                  <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">></a></li>
-                                </ul>
-                              </nav>
-                          </div>
                     </div>
                 </div>
                 <!-- END TAB-content:: Notes -->
@@ -707,32 +791,6 @@
                 <div class="tab-pane fade" id="v-pills-auths" role="tabpanel" aria-labelledby="v-pills-auths-tab">
                     <!-- START header: search, switch: list | grid -->
                 <div class="card-body p-0 pt-2">
-                <div class="d-flex">
-                    <nav class="navbar navbar-light mr-auto">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </nav>
-        
-                  <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
-                        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
-                            <a class="nav-link active" id="pills-auths-tab" data-toggle="pill" href="#pills-auths" role="tab" aria-controls="pills-auths" aria-selected="false" >
-                              <i class="fa fa-bars" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
-                            <a class="nav-link " id="pills-aut-tab" data-toggle="pill" href="#pills-aut" role="tab" aria-controls="pills-aut" aria-selected="true">
-                              <i class="fa fa-th-large" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                <!-- END TABS: Grid | List -->
-                </div>
                 </div>
                     <!-- END header: search, switch: list | grid -->
       
@@ -752,7 +810,6 @@
                               </div>
                         </div>
                         <div class="tab-pane fade" id="pills-aut" role="tabpanel" aria-labelledby="pills-aut-tab">
-                        
                               <div class="container py-5">
                                   <div class="row">
                                       <div class="col text-center">
@@ -765,20 +822,6 @@
                                   </div>
                               </div>
                         </div>
-                      <div class="card-footer d-sm-flex m-0 p-2 px-3" >
-                            <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
-                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                                  <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">></a></li>
-                                </ul>
-                              </nav>
-                          </div>
                     </div>
                 </div>
                 <!-- END TAB-content:: Auths -->
@@ -786,31 +829,6 @@
                 <!-- START TAB-content:: contracts -->
                 <div class="tab-pane fade" id="v-pills-contracts" role="tabpanel" aria-labelledby="v-pills-contracts-tab">
                     <!-- START header: search, switch: list | grid -->
-                <div class="card-body p-0 pt-2">
-                <div class="d-flex">
-                    <nav class="navbar navbar-light mr-auto">
-                        <form class="form-inline">
-                            <input class="form-control" type="search" placeholder="Search for Influencers..." aria-label="Search">
-                            <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </form>
-                    </nav>
-                <!-- START TABS: Grid | List -->
-                <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary active" id="pills-contracts-tab" data-toggle="pill" href="#pills-contracts" role="tab" aria-controls="pills-contracts" aria-selected="false">
-                            List
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-outline-secondary" id="pills-con-tab" data-toggle="pill" href="#pills-con" role="tab" aria-controls="pills-con" aria-selected="true">
-                            Grid
-                        </a>
-                    </li>
-                </ul>
-                <!-- END TABS: Grid | List -->
-                </div>
-                </div>
                     <!-- END header: search, switch: list | grid -->
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-contracts" role="tabpanel" aria-labelledby="pills-contracts-tab">
@@ -840,20 +858,6 @@
                                   </div>
                               </div>
                         </div>
-                      <div class="card-footer d-sm-flex m-0 p-2 px-3" >
-                            <div class="my-auto text-center text-md-left"><small class="text-muted">Showing x of x Entries (filtered from x total entries)</small></div>
-                            <nav aria-label="Page navigation example" class="ml-auto p-0" data-toggle="modal" data-target="#nologinmodal">
-                                <ul class="pagination justify-content-center justify-content-md-end my-auto">
-                                  <li class="page-item"><a class="page-link" href="#"><</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">></a></li>
-                                </ul>
-                              </nav>
-                          </div>
                     </div>
                 </div>
                 <!-- END TAB-content:: contracts -->
@@ -865,7 +869,7 @@
 
    
     
-<!-- Modal -->
+      <!-- Modal -->
 <div class="modal fade" id="user_details" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content" >
@@ -1078,7 +1082,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="new_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="new_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -1207,8 +1211,8 @@
       </div>
     </div>
   </div>
-
-<div class="modal fade" id="edit_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+    <div class="modal fade" id="edit_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -1402,8 +1406,8 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
       </div>
     </div>
   </div>
-
-<div class="modal fade" id="delete_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+    <div class="modal fade" id="delete_task" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
@@ -1438,6 +1442,213 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
     </div>
   </div>
 
+    
+    <!-- Modal -->
+<div class="modal fade" id="add_media" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add New Media</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Enter Title</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title for this file">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Enter Tags</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter tags for this file">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Upload</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Select media from device</label>
+                            <small id="emailHelp" class="form-text text-muted pt-2">You can add various files such as images, sounds, music, documents and movies. You cannot exceed 50 Mb. Allowed files are: png, gif, jpg, doc, mp3 etc.</small>
+                        </div>
+                    </div>
+                </form>
+            
+                
+            
+
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="user_details.html"><button type="button" class="btn btn-primary">Add New Media</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Modal -->
+<div class="modal fade" id="edit_media" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Media</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Enter Title</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title for this file">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Enter Tags</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter tags for this file">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Upload</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Select media from device</label>
+                            <small id="emailHelp" class="form-text text-muted pt-2">You can add various files such as images, sounds, music, documents and movies. You cannot exceed 50 Mb. Allowed files are: png, gif, jpg, doc, mp3 etc.</small>
+                        </div>
+                    </div>
+                </form>
+             
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-grow-1 bd-highlight">
+                    <div class="media">
+                        <i class="fa fa-file-audio-o fa-3x mr-3" aria-hidden="true"></i>
+                        <div class="media-body">
+                          <h6 class="mt-0">File-example-selected.mp3</h6>
+                          812.00Kb                    
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <span class="m-0">18-Se-2013</span><br>
+                  <span class="text-right m-0">09:34 PM</span>
+                </div>
+                <div class="p-2 bd-highlight py-auto">
+                    <button type="button" class="btn btn-outline-secondary">
+                        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>   
+            
+
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="user_details.html"><button type="button" class="btn btn-primary">Edit Media</button></a>
+            </div>
+          </div>
+        </div>
+      </div>    
+    
+    <!-- Modal -->
+<div class="modal fade" id="add_note" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add New Note</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Enter Note</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Note here..." rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Enter Tags</label>
+                        <input class="form-control" id="exampleFormControlInput1" placeholder="Enter tags for this file">
+                    </div>
+                    <div class="row">
+                        <div class="col pl-3"> 
+                            <label for="tog">Select Priority<br></label>
+                            <div class="w-100"></div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" >
+                                <label class="btn btn-outline-secondary active" id="tog">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i> Small
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off">
+                                    <i class="fa fa-info-circle text-primary" aria-hidden="true"></i> Normal
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option3" autocomplete="off">
+                                    <i class="fa fa-info-circle text-danger" aria-hidden="true"></i> High
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="user_details.html"><button type="button" class="btn btn-primary"></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Modal -->
+<div class="modal fade" id="edit_note" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Save Changes</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Enter Title</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title for this file">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Enter Tags</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter tags for this file">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Upload</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Select media from device</label>
+                            <small id="emailHelp" class="form-text text-muted pt-2">You can add various files such as images, sounds, music, documents and movies. You cannot exceed 50 Mb. Allowed files are: png, gif, jpg, doc, mp3 etc.</small>
+                        </div>
+                    </div>
+                </form>
+            
+                
+            
+
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <a href="user_details.html"><button type="button" class="btn btn-primary">Save Changes</button></a>
+            </div>
+          </div>
+        </div>
+      </div> 
     <!--End CONTENT-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
