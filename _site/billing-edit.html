@@ -1,0 +1,378 @@
+	<!doctype html>
+	<html lang="en">
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Jekyll v3.8.5">
+			
+		<title></title>
+			
+
+		
+		<!--<link rel="canonical" href="/docs/4.3/examples/starter-template/"> 
+		<link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="/dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="./dist/font-awesome-4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">-->
+
+		
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		
+		<style>
+		  .bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		  }
+		  @media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+			  font-size: 3.5rem;
+			}
+		  }
+		</style>
+		<!-- Custom styles for this template 
+		<link href="starter-template.css" rel="stylesheet"> -->
+	  </head>
+	<body>
+	  <main role="main" class="container.fluid">
+		
+		
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar" href="index.html"><img src="http://czegonajbardziej.pl/wp-content/uploads/2016/03/logo-prostokatne-z-zielonym.png" width="150" height="40" class="" alt=""></a>
+			<button class="navbar-toggler border-info" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+		<div class="collapse navbar-collapse" id="mainmenu">
+                
+                
+    <ul class="navbar-nav m-auto">
+        
+        <!-- TO CO ZROBIL TOMEK
+            <li class="nav-item">
+                      
+                    <a class="nav-link  "" href="index.html">
+                        <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                        Home
+                    </a>						
+                </li>
+                <li class="nav-item">
+                    
+
+                    <a class="nav-link  
+                                       "" href="/clients.html">
+                        <i class="fa fa-users fa-fw" aria-hidden="true"></i>
+                        Clients
+                    </a>
+                </li>
+        -->
+        
+        
+        <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>								
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="clients.html"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Clients</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class=" fa fa-truck fa-fw" aria-hidden="true"></i>&nbsp; Providers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-usd fa-fw" aria-hidden="true"></i>&nbsp; Funders</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+        </li>
+    </ul>
+              
+
+		<ul class="navbar-nav ">
+            
+            <!--START NAVBAR LOGGED USER-->
+            <li class="nav-item dropdown ">
+                <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="d-flex flex-nowrap">
+                        <div class="order-2 order-lg-1 my-auto">&nbsp; Mark Hohmann</div> 
+                        <div class="order-1 nav-link href="#"><i class="fa fa-users fa-fw" aria-hidden="true"></i></div>
+                        <div class="order-3 my-auto ml-2"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="profile-edit.html">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="index.html">Sign Out</a>
+                </div>		
+            </li>
+            <!--END NAVBAR LOGGED USER-->
+            
+		</ul>
+	</div>
+	</nav>
+	
+
+	  <div class="container-fluid ">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+			<li class="breadcrumb-item"><a href="clients.html">Clients</a></li>
+
+			
+				<li class="breadcrumb-item active" aria-current="page"></li>
+			
+		
+		  </ol>
+		</nav>
+	  </div>
+    <!--Start CONTENT-->
+    <div class="container">
+<!--START HEADER MENU-->
+    <div class="row pt-4 pb-3">
+        <div class="col-3">
+        </div>
+        <div class="col">
+            <h1>Billing Edit</h1>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-3 d-flex justify-content-end">
+            <img class="rounded-circle " src="img\foto.jpeg" alt="Generic placeholder" image height="112" width="112"> 
+        </div>
+        <div class="col pl-0">
+            <div class="col d-flex d-inline-flex">
+                <a href="user_details.html"><h5>Teresa Sabdee Wilson</h5></a> / Billing Edit
+            </div>
+            <div class="col d-flex d-inline-flex">
+                <span class="badge badge-pill badge-primary mr-2">Premium</span>
+                <span class="text-muted">Edit Your Name, Avatar, etc.</span>
+            </div>
+        </div>
+    </div>
+<!--END HEADER MENU-->
+<!--START MENU LIST-->    
+    <div class="row pt-4">
+        <div class="col-3 ">
+            <div class="list-group">
+                <a href="profile-edit.html" class="list-group-item list-group-item-action border-0">
+                    Profile Edit
+                </a>
+                <a href="account-edit.html" class="list-group-item list-group-item-action border-0">
+                    Account Edit                
+                </a>
+                <a href="billing-edit.html" class="list-group-item list-group-item-action active border-0">
+                    Billing Edit
+                </a>
+                <a href="settings-edit.html" class="list-group-item list-group-item-action border-0">
+                    Settings Edit
+                </a>
+                <a href="sessions-edit.html" class="list-group-item list-group-item-action border-0">
+                    Sessions Edit
+                </a>
+            </div> 
+        </div>
+        <div class="col-9 p-0">
+            <div class="border">
+            <div class="row">
+                <div class="col">
+                    <p class="mr-auto font-weight-bolder mx-3 mt-3">Billing Edit</p>
+                </div>  
+                    <div class="w-100"></div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-sm-3 text-right">
+                                    <label for="colFormLabel" class="col-form-label">Your Plan</label>
+                                </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col d-flex d-inline-flex">
+                                                <label for="colFormLabel" class=" col-form-label mr-auto">Premium - You use 37% of the available space
+                                                    <div class="progress" style="height: 8px;">
+                                                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </label>
+                                                <button type="button" class="btn btn-outline-secondary mr-3 py-0">Change Plan</button>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="col">
+                                                <form class="py-3">
+                                                    <div class="row">
+                                                        <div class="col-3 text-right">
+                                                            Amount of Space
+                                                        </div>
+                                                        <div class="col-3">
+                                                            214,6 / 1,03 TB
+                                                        </div>
+                                                    </div>
+                                                        <div class="row">
+                                                            <div class="col-3 text-right">
+                                                                Regular Files
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <i class="fa fa-circle-thin" aria-hidden="true"></i> 135
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-3 text-right">
+                                                                Shared Files
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <i class="fa fa-circle" aria-hidden="true"></i> 46
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-3 text-right">
+                                                                Available Space
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <i class="fa fa-circle-thin" aria-hidden="true"></i> 118
+                                                            </div>
+                                                        </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>   
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="mr-auto font-weight-bolder mx-3 mt-3">Payment Method</p>
+                </div>  
+                <div class="w-100"></div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-sm-3 text-right">
+                                <label for="colFormLabel" class="col-form-label">Your Plan</label>
+                            </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col d-flex d-inline-flex">
+                                            <label for="colFormLabel" class=" col-form-label mr-auto"><i class="fa fa-paypal" aria-hidden="true"></i> PayPal - Account: Tyshawn_Lakin56@gmail.com
+                                            </label>
+                                            <button type="button" class="btn btn-outline-secondary mr-3">Change Payment</button>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col">
+                                            <form class="pt-3 pb-5">
+                                                <div class="row">
+                                                    <div class="col-3 text-right">
+                                                        Next Payment Due
+                                                    </div>
+                                                    <div class="col-3">
+                                                        2016-05-21
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3 text-right">
+                                                        Amount
+                                                    </div>
+                                                    <div class="col-3">
+                                                        $ 13.00
+                                                    </div>
+                                                </div>    
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <i class="fa fa-question-circle " aria-hidden="true">&nbsp If you want to personalize the notification settings, go <a href="#">here</a></i>
+                        </div>
+                    </div>   
+            </div>
+        </div>
+            <br><br>
+        <div class="border">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Description</th>
+                <th scope="col">Payment Method</th>
+                <th scope="col">Receipt</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row"><i class="fa fa-check" aria-hidden="true"></i></th>
+                <td>49271</td>
+                <td>2016-04-21</td>
+                <td>$ 183.00</td>
+                <td><span class="badge badge-primary">Premium</span></td>
+                <td><i class="fa fa-paypal" aria-hidden="true"></i>&nbsp;&nbsp; Jedediah.Jacobi@hotmail.com</td>
+                <td><i class="fa fa-cloud-download" aria-hidden="true"></i></td>
+                </td>
+                </tr>
+                <tr>
+                <th scope="row"><i class="fa fa-check" aria-hidden="true"></i></th>
+                <td>49504</td>
+                <td>2016-04-21</td>
+                <td>$ 525.00</td>
+                <td><span class="badge badge-secondary">Basic</span></td>
+                <td><i class="fa fa-credit-card-alt" aria-hidden="true"></i>&nbsp; Visa 4*** **** **** 9221</td>
+                <td><i class="fa fa-cloud-download" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
+                <td>41499</td>
+                <td>2016-04-21</td>
+                <td>$ 170.00</td>
+                <td><span class="badge badge-success">Pro</span></td>
+                <td><i class="fa fa-paypal" aria-hidden="true"></i>&nbsp;&nbsp; Kallie_Watsica@gmail.com</td>
+                <td></td>
+                </tr>
+                <tr>
+                <th scope="row"><i class="fa fa-times" aria-hidden="true"></i></th>
+                <td>30458</td>
+                <td>2016-04-21</td>
+                <td>$ 379.00</td>
+                <td><span class="badge badge-danger">Advanced</span></td>
+                <td><i class="fa fa-credit-card-alt" aria-hidden="true"></i>&nbsp; Visa 4*** **** **** 9221</td>
+                <td></td>
+                </tr>
+                <tr>
+                <th scope="row"><i class="fa fa-check" aria-hidden="true"></i></th>
+                <td>95887</td>
+                <td>2016-04-21</td>
+                <td>$ 672.00</td>
+                <td><span class="badge badge-warning">Free</span></td>
+                <td><i class="fa fa-paypal" aria-hidden="true"></i>&nbsp;&nbsp; Dewayne.Russel88@hotmail.com</td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    </div> 
+    </div>
+</div>
+
+    <!--End CONTENT-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>   
+$(function () {
+ 	 $('[data-toggle="tooltip"]').tooltip()
+})	
+
+$(function () {
+	$('#myTab li:last-child a').tab('show')
+})
+
+</script>
+     </main>   
+</body>
+</html>
