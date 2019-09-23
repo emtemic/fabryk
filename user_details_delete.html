@@ -96,7 +96,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/8.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/27.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -115,20 +115,23 @@
 
 	  <div class="container-fluid p-0">
 		<nav aria-label="breadcrumb">
-		  <ol class="breadcrumb bg-white pl-5">
+		  <ol class="breadcrumb bg-white">
+			
 			<!--BREADCRUMB LVL 1-->
 			
 			<li class="breadcrumb-item">
 				<a href="index-logged.html"><i class="fa fa-home" aria-hidden="true"></i></a>
 			</li>
 				
+		
 			<!--BREADCRUMB LVL 2-->
-				
+			
 			<li class="breadcrumb-item active text-capitalize" aria-current="page">
-				<a href="Clients.html">Clients</a> /&nbsp Teresa Sabdee Wilson</li>
-				
-	
-		  </ol>
+				<a href="Clients.html">Clients</a> /&nbsp Teresa Sabdee Wilson
+			</li>
+			
+		 
+		</ol>
 		</nav>
 	  </div>
 	<!--Start CONTENT-->
@@ -139,13 +142,13 @@
     <div class="row">
         <div class="col col-md-2">
         <div class="d-flex justify-content-center justify-content-md-end">
-        <img class="rounded-circle " src="images/avatars/38.jpg" alt="Generic placeholder" image height="100" width="100">
+        <img class="rounded-circle " src="images/avatars/30.jpg" alt="Generic placeholder" image height="100" width="100">
         </div>
         </div>
         <div class="col-12 col-md-10 d-flex">
         <div class="row">
             <div class="col-12 col-md-6 d-inline-flex justify-content-center justify-content-md-start">
-                <h3>Kody Stella</h3>
+                <h3>Wallace Ashlyn</h3>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end my-auto">
                 <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#edit_member">
@@ -1025,7 +1028,7 @@
         
                     <div class="media">
                         
-                        <img src="images/avatars/8.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                        <img src="images/avatars/17.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
                         <div class="media-body">
                             <div class="d-inline-flex">
                                 <span class="mt-0">Chyna Becker &nbsp;&nbsp;</span>
@@ -1042,7 +1045,7 @@
                             </div>
                             <div class="media mt-3">
                                 <a class="" href="#">
-                                    <img src="images/avatars/45.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                                    <img src="images/avatars/40.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
                                 </a>
                                 <div class="media-body">
                                     <div class="d-inline-flex">
@@ -1413,7 +1416,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
 				<div class="container">
 					<div class="row">
 						<div class="col text-center text-danger pt-4">
-							<i class="fa fa-info-circle fa-5x" aria-hidden="true"></i>
+							<i class="fa fa-exclamation-triangle fa-5x" aria-hidden="true"></i>
 						</div>
 						<div class="w-100"></div>
 						<div class="col text-center pt-3">
@@ -1429,7 +1432,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
 						</div>
 						<div class="w-100"></div>
 						<div class="col text-center py-4">
-						<button type="button" class="btn btn-outline-secondary text-center" data-dismiss="modal">Close</button>
+						<a class="btn text-danger" href="#" role="button" data-dismiss="modal">Close</a>						
 						
 						<a href="user_details_delete.html"><button type="button" class="btn btn-danger text-center">Delete</button></a>
 						
@@ -1482,7 +1485,8 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
             </div>
             <div class="modal-footer">
                 <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn text-primary" href="#" role="button" data-dismiss="modal">Close</a>
+
               <a href="user_details.html"><button type="button" class="btn btn-primary">Add New Media</button></a>
             </div>
           </div>
@@ -1523,8 +1527,12 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
             <div class="d-flex bd-highlight">
                 <div class="p-2 flex-grow-1 bd-highlight">
                     <div class="media">
-                        <i class="fa fa-file-audio-o fa-3x mr-3" aria-hidden="true"></i>
-                        <div class="media-body">
+
+                        <span class="fa-stack fa-lg my-auto">
+                          <i class="fa fa-square fa-stack-2x text-primary"></i>
+                          <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <div class="media-body pl-2">
                           <h6 class="mt-0">File-example-selected.mp3</h6>
                           812.00Kb                    
                         </div>
@@ -1548,7 +1556,8 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
             </div>
             <div class="modal-footer">
                 <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn text-primary" href="#" role="button" data-dismiss="modal">Close</a>
+
               <a href="user_details.html"><button type="button" class="btn btn-primary">Edit Media</button></a>
             </div>
           </div>
@@ -1646,7 +1655,8 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
             </div>
             <div class="modal-footer">
                 <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn text-primary" href="#" role="button" data-dismiss="modal">Close</a>
+
               <a href="user_details.html"><button type="button" class="btn btn-primary">Save Changes</button></a>
             </div>
           </div>
