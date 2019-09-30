@@ -81,7 +81,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-search fa-fw" aria-hidden="true"></i>&nbsp; Search</a>
+                <a class="nav-link" href="#">
+                    <i class="fa fa-search fa-fw" aria-hidden="true"></i> Search</a>
             </li>
         </ul>
         <!--END NAVBAR - IF YOU ARE LOGGED-->
@@ -95,7 +96,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/33.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/44.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -114,21 +115,20 @@
 			
 			<div class="container.fluid p-0">
 				<nav aria-label="breadcrumb">
-					
 					<ol class="breadcrumb bg-white border-bottom border-top">
-							<div class="container d-inline-flex">
-						<!--BREADCRUMB LVL 0-->
-						
-						<li class="breadcrumb-item"><a href="home.html">
-							<i class="fa fa-home" aria-hidden="true"></i></a>
-						</li>
+						<div class="container d-flex">
+							<!--BREADCRUMB LVL 0-->
 							
-					
-						<!--BREADCRUMB LVL 3-->
+							<li class="breadcrumb-item"><a href="home.html">
+								<i class="fa fa-home" aria-hidden="true"></i></a>
+							</li>
+								
 						
-						<li class="breadcrumb-item text-capitalize" aria-current="page">clients</li>
-						
-					</div>
+							<!--BREADCRUMB LVL 3-->
+							
+							<li class="breadcrumb-item text-capitalize" aria-current="page">clients</li>
+							
+						</div>
 					</ol>
 				</nav>
 			</div>
@@ -139,36 +139,55 @@
         <div class="card border-0">
             <div class="border">   
                 <!-- START CARD BODY-->
-                <div class="card-body p-2">
-                    <div class="d-flex justify-content-end bg-white pl-2">
-                            <h5 class="mr-auto my-auto">Clients</h5>
-                        <ul class="nav nav-pills my-auto m-0" id="pills-tab" role="tablist">
-                            <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
-                                <a class="nav-link active" id="button-list-tab" data-toggle="pill" href="#button-list" role="tab" aria-controls="button-list" aria-selected="true" >
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item mr-2" data-toggle="tooltip" data-placement="top" title="Grid view">
-                                <a class="nav-link " id="button-grid-tab" data-toggle="pill" href="#button-grid" role="tab" aria-controls="button-grid" aria-selected="false">
-                                    <i class="fa fa-th-large" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="input-group my-auto w-25 mr-2">
+
+
+
+                <div class="card-body w-100 py-1 px-3 d-sm-inline-flex">
+
+
+                        <div class="d-flex justify-content-center py-2">
+                            <h5 class="my-auto">Clients</h5>
+                        </div>
+    
+                        <div class="ml-auto d-sm-inline-flex">
+                        <div class="d-flex justify-content-center py-2 px-1">
+    
+                            <div class="input-group my-auto w-100">
                                 <input type="search" placeholder="Search..." aria-describedby="button-addon5" class="form-control">
                                 <div class="input-group-append">
                                     <button id="button-addon5" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
                                 </div>
                             </div>
-                        <a href="#" class="btn btn-primary btn my-2 mr-2" id="add" role="button" aria-pressed="true" data-toggle="modal" data-target="#add_client" >Add Client&nbsp&nbsp<i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>
+    
+                        <div class="d-flex justify-content-between px-1">
+                            <ul class="nav nav-pills my-auto" id="pills-tab" role="tablist">
+                                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
+                                    <a class="nav-link active" id="button-list-tab" data-toggle="pill" href="#button-list" role="tab" aria-controls="button-list" aria-selected="true" >
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item mr-2" data-toggle="tooltip" data-placement="top" title="Grid view">
+                                    <a class="nav-link " id="button-grid-tab" data-toggle="pill" href="#button-grid" role="tab" aria-controls="button-grid" aria-selected="false">
+                                        <i class="fa fa-th-large" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary btn my-auto px-2" id="add" role="button" aria-pressed="true" data-toggle="modal" data-target="#add_client"><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Client</a>
+                        </div>
                     </div>
-                </div>
+    
+                    </div>
+
+
+
+
             </div>
             <!-- END CARD BODY-->
             <!-- START CARD TABLE-->
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="button-list" role="tabpanel" aria-labelledby="button-list-tab">
-                    <table class="table table-hover mb-0 table-responsive-md">
+                    <table class="table table-hover mb-0 table-responsive-lg text-nowrap">
                         <thead class="border-right border-left"> 
                             <tr>
                             <th scope="col"><small class="text-muted">Photo</small></th>
@@ -188,68 +207,10 @@
 
                             <tr class="border-top">
                                 <td class="align-middle">
-                                    <img src="images/avatars/9.jpg" class="rounded-circle" image height="25" width="25">
+                                    <img src="images/avatars/49.jpg" class="rounded-circle" image height="25" width="25">
                                 </td>
                                 <td class="align-middle">
-                                    <a href="user_details.html">Cherish Janette</a>
-                                </td>
-                                <td class="align-middle">
-                                    specprog@me.com
-                                </td>
-                                <th scope="row" class="align-middle">
-                                        
-                                    <span class="badge badge-pill badge-secondary">Undefined</span>
-                                        
-                                </th>
-                                <td class="align-middle">11</td>
-                                <td class="align-middle">Spouse</td>
-                                <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
-                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
-                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
-                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            
-
-                            <tr class="border-top">
-                                <td class="align-middle">
-                                    <img src="images/avatars/8.jpg" class="rounded-circle" image height="25" width="25">
-                                </td>
-                                <td class="align-middle">
-                                    <a href="user_details.html">Paulie Kortney</a>
-                                </td>
-                                <td class="align-middle">
-                                    skajan@me.com
-                                </td>
-                                <th scope="row" class="align-middle">
-                                          
-                                    <span class="badge badge-pill badge-danger">Registered</span>
-                                        
-                                </th>
-                                <td class="align-middle">12</td>
-                                <td class="align-middle">Spouse</td>
-                                <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
-                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
-                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
-                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            
-
-                            <tr class="border-top">
-                                <td class="align-middle">
-                                    <img src="images/avatars/4.jpg" class="rounded-circle" image height="25" width="25">
-                                </td>
-                                <td class="align-middle">
-                                    <a href="user_details.html">Elissa Montague</a>
+                                    <a href="user_details.html">Bristol Lindsay</a>
                                 </td>
                                 <td class="align-middle">
                                     kmself@gmail.com
@@ -259,68 +220,10 @@
                                     <span class="badge badge-pill badge-secondary">Undefined</span>
                                         
                                 </th>
-                                <td class="align-middle">13</td>
+                                <td class="align-middle">11</td>
                                 <td class="align-middle">Spouse</td>
                                 <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
-                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
-                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
-                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            
-
-                            <tr class="border-top">
-                                <td class="align-middle">
-                                    <img src="images/avatars/19.jpg" class="rounded-circle" image height="25" width="25">
-                                </td>
-                                <td class="align-middle">
-                                    <a href="user_details.html">Elenora Yasmin</a>
-                                </td>
-                                <td class="align-middle">
-                                    gozer@comcast.net
-                                </td>
-                                <th scope="row" class="align-middle">
-                                        
-                                    <span class="badge badge-pill badge-secondary">Undefined</span>
-                                        
-                                </th>
-                                <td class="align-middle">14</td>
-                                <td class="align-middle">Spouse</td>
-                                <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
-                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
-                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
-                                    </a>
-                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
-                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            
-
-                            <tr class="border-top">
-                                <td class="align-middle">
-                                    <img src="images/avatars/25.jpg" class="rounded-circle" image height="25" width="25">
-                                </td>
-                                <td class="align-middle">
-                                    <a href="user_details.html">Regan September</a>
-                                </td>
-                                <td class="align-middle">
-                                    north@optonline.net
-                                </td>
-                                <th scope="row" class="align-middle">
-                                          
-                                    <span class="badge badge-pill badge-danger">Registered</span>
-                                        
-                                </th>
-                                <td class="align-middle">15</td>
-                                <td class="align-middle">Spouse</td>
-                                <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
+                                <td class="d-flexjustify-content-center border-0">
                                     <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
                                         <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
                                     </a>
@@ -336,10 +239,126 @@
                                     <img src="images/avatars/28.jpg" class="rounded-circle" image height="25" width="25">
                                 </td>
                                 <td class="align-middle">
-                                    <a href="user_details.html">Wallace Ashlyn</a>
+                                    <a href="user_details.html">Colin Radcliff</a>
                                 </td>
                                 <td class="align-middle">
-                                    frode@aol.com
+                                    benanov@mac.com
+                                </td>
+                                <th scope="row" class="align-middle">
+                                          
+                                    <span class="badge badge-pill badge-danger">Registered</span>
+                                        
+                                </th>
+                                <td class="align-middle">12</td>
+                                <td class="align-middle">Spouse</td>
+                                <td class="align-middle">Independence High School</td>
+                                <td class="d-flexjustify-content-center border-0">
+                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
+                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
+                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            
+
+                            <tr class="border-top">
+                                <td class="align-middle">
+                                    <img src="images/avatars/9.jpg" class="rounded-circle" image height="25" width="25">
+                                </td>
+                                <td class="align-middle">
+                                    <a href="user_details.html">Shania Leopold</a>
+                                </td>
+                                <td class="align-middle">
+                                    arebenti@yahoo.com
+                                </td>
+                                <th scope="row" class="align-middle">
+                                        
+                                    <span class="badge badge-pill badge-secondary">Undefined</span>
+                                        
+                                </th>
+                                <td class="align-middle">13</td>
+                                <td class="align-middle">Spouse</td>
+                                <td class="align-middle">Independence High School</td>
+                                <td class="d-flexjustify-content-center border-0">
+                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
+                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
+                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            
+
+                            <tr class="border-top">
+                                <td class="align-middle">
+                                    <img src="images/avatars/13.jpg" class="rounded-circle" image height="25" width="25">
+                                </td>
+                                <td class="align-middle">
+                                    <a href="user_details.html">Travis Dalton</a>
+                                </td>
+                                <td class="align-middle">
+                                    enintend@att.net
+                                </td>
+                                <th scope="row" class="align-middle">
+                                        
+                                    <span class="badge badge-pill badge-secondary">Undefined</span>
+                                        
+                                </th>
+                                <td class="align-middle">14</td>
+                                <td class="align-middle">Spouse</td>
+                                <td class="align-middle">Independence High School</td>
+                                <td class="d-flexjustify-content-center border-0">
+                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
+                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
+                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            
+
+                            <tr class="border-top">
+                                <td class="align-middle">
+                                    <img src="images/avatars/29.jpg" class="rounded-circle" image height="25" width="25">
+                                </td>
+                                <td class="align-middle">
+                                    <a href="user_details.html">Bristol Lindsay</a>
+                                </td>
+                                <td class="align-middle">
+                                    dpitts@yahoo.com
+                                </td>
+                                <th scope="row" class="align-middle">
+                                          
+                                    <span class="badge badge-pill badge-danger">Registered</span>
+                                        
+                                </th>
+                                <td class="align-middle">15</td>
+                                <td class="align-middle">Spouse</td>
+                                <td class="align-middle">Independence High School</td>
+                                <td class="d-flexjustify-content-center border-0">
+                                    <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
+                                        <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#"  data-placement="bottom" data-toggle="modal" data-target="#delete_member">
+                                        <i class="fa fa-trash-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Delete Member" aria-hidden="true" data-toggle="modal" data-target="#delete_member"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            
+
+                            <tr class="border-top">
+                                <td class="align-middle">
+                                    <img src="images/avatars/7.jpg" class="rounded-circle" image height="25" width="25">
+                                </td>
+                                <td class="align-middle">
+                                    <a href="user_details.html">Elenora Yasmin</a>
+                                </td>
+                                <td class="align-middle">
+                                    smallpaul@comcast.net
                                 </td>
                                 <th scope="row" class="align-middle">
                                          
@@ -349,7 +368,7 @@
                                 <td class="align-middle">16</td>
                                 <td class="align-middle">Spouse</td>
                                 <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
+                                <td class="d-flexjustify-content-center border-0">
                                     <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
                                         <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
                                     </a>
@@ -362,13 +381,13 @@
 
                             <tr class="border-top">
                                 <td class="align-middle">
-                                    <img src="images/avatars/26.jpg" class="rounded-circle" image height="25" width="25">
+                                    <img src="images/avatars/25.jpg" class="rounded-circle" image height="25" width="25">
                                 </td>
                                 <td class="align-middle">
-                                    <a href="user_details.html">Kristi Horace</a>
+                                    <a href="user_details.html">Lennon Quinn</a>
                                 </td>
                                 <td class="align-middle">
-                                    hmbrand@icloud.com
+                                    north@optonline.net
                                 </td>
                                 <th scope="row" class="align-middle">
                                         
@@ -378,7 +397,7 @@
                                 <td class="align-middle">17</td>
                                 <td class="align-middle">Spouse</td>
                                 <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
+                                <td class="d-flexjustify-content-center border-0">
                                     <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
                                         <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
                                     </a>
@@ -391,13 +410,13 @@
 
                             <tr class="border-top">
                                 <td class="align-middle">
-                                    <img src="images/avatars/15.jpg" class="rounded-circle" image height="25" width="25">
+                                    <img src="images/avatars/39.jpg" class="rounded-circle" image height="25" width="25">
                                 </td>
                                 <td class="align-middle">
-                                    <a href="user_details.html">Bristol Lindsay</a>
+                                    <a href="user_details.html">Zinnia Mervyn</a>
                                 </td>
                                 <td class="align-middle">
-                                    srour@live.com
+                                    jacks@msn.com
                                 </td>
                                 <th scope="row" class="align-middle">
                                           
@@ -407,7 +426,7 @@
                                 <td class="align-middle">18</td>
                                 <td class="align-middle">Spouse</td>
                                 <td class="align-middle">Independence High School</td>
-                                <td class="justify-content-center border-0">
+                                <td class="d-flexjustify-content-center border-0">
                                     <a href="#" data-placement="bottom" data-toggle="modal" data-target="#edit_client">
                                         <i class="fa fa-pencil-square-o fa-fw" data-toggle="tooltip" data-placement="bottom" title="Edit Client" aria-hidden="true"></i>
                                     </a>
@@ -444,50 +463,12 @@
                             <thead> 
                                 <div class="row">
                                     
-                                    <div class="col-4 col-md-3 py-4">
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
                                         <div class="card">
                                             <div class="card-body p-0">
                                                 <div class="row">
                                                     <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/6.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-1">
-                                                        <a href="user_details.html">Kristi Horace</a>
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-1">
-                                                        benanov@mac.com
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-4">
-                                                            
-                                                        <span class="badge badge-pill badge-secondary">Undefined</span>
-                                                            
-                                                    </div>                                  
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="row">
-                                                    <div class="col p-0 ml-2">
-                                                        <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
-                                                        <a href="#" data-toggle="modal" data-target="#delete_task"> Delete</a>
-                                                    </div>
-                                                    <div class="col text-right p-0 mr-2">
-                                                        <i class="fa fa-pencil-square-o fa-fw text-muted" aria-hidden="true"></i>
-                                                        <a href="#"  data-toggle="modal" data-target="#edit_client"> Edit Client</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-4 col-md-3 py-4">
-                                        <div class="card">
-                                            <div class="card-body p-0">
-                                                <div class="row">
-                                                    <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/1.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/14.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
@@ -495,45 +476,7 @@
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
-                                                        wildfire@me.com
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-4">
-                                                              
-                                                        <span class="badge badge-pill badge-danger">Registered</span>
-                                                            
-                                                    </div>                                  
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="row">
-                                                    <div class="col p-0 ml-2">
-                                                        <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
-                                                        <a href="#" data-toggle="modal" data-target="#delete_task"> Delete</a>
-                                                    </div>
-                                                    <div class="col text-right p-0 mr-2">
-                                                        <i class="fa fa-pencil-square-o fa-fw text-muted" aria-hidden="true"></i>
-                                                        <a href="#"  data-toggle="modal" data-target="#edit_client"> Edit Client</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-4 col-md-3 py-4">
-                                        <div class="card">
-                                            <div class="card-body p-0">
-                                                <div class="row">
-                                                    <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/18.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-1">
-                                                        <a href="user_details.html">Zinnia Mervyn</a>
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-1">
-                                                        konst@verizon.net
+                                                        munjal@me.com
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-4">
@@ -543,7 +486,7 @@
                                                     </div>                                  
                                                 </div>
                                             </div>
-                                            <div class="card-footer">
+                                            <div class="card-footer ">
                                                 <div class="row">
                                                     <div class="col p-0 ml-2">
                                                         <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
@@ -558,58 +501,20 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="col-4 col-md-3 py-4">
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
                                         <div class="card">
                                             <div class="card-body p-0">
                                                 <div class="row">
                                                     <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/25.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/46.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
-                                                        <a href="user_details.html">Tyrrell Kelli</a>
+                                                        <a href="user_details.html">Paulie Kortney</a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
-                                                        kmiller@yahoo.ca
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-4">
-                                                            
-                                                        <span class="badge badge-pill badge-secondary">Undefined</span>
-                                                            
-                                                    </div>                                  
-                                                </div>
-                                            </div>
-                                            <div class="card-footer">
-                                                <div class="row">
-                                                    <div class="col p-0 ml-2">
-                                                        <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
-                                                        <a href="#" data-toggle="modal" data-target="#delete_task"> Delete</a>
-                                                    </div>
-                                                    <div class="col text-right p-0 mr-2">
-                                                        <i class="fa fa-pencil-square-o fa-fw text-muted" aria-hidden="true"></i>
-                                                        <a href="#"  data-toggle="modal" data-target="#edit_client"> Edit Client</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-4 col-md-3 py-4">
-                                        <div class="card">
-                                            <div class="card-body p-0">
-                                                <div class="row">
-                                                    <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/17.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-1">
-                                                        <a href="user_details.html">Elenora Yasmin</a>
-                                                    </div>
-                                                    <div class="w-100"></div>
-                                                    <div class="col text-center pb-1">
-                                                        sethbrown@aol.com
+                                                        smallpaul@comcast.net
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-4">
@@ -619,7 +524,7 @@
                                                     </div>                                  
                                                 </div>
                                             </div>
-                                            <div class="card-footer">
+                                            <div class="card-footer ">
                                                 <div class="row">
                                                     <div class="col p-0 ml-2">
                                                         <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
@@ -634,30 +539,30 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="col-4 col-md-3 py-4">
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
                                         <div class="card">
                                             <div class="card-body p-0">
                                                 <div class="row">
                                                     <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/12.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/5.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
-                                                        <a href="user_details.html">Shelagh Ricky</a>
+                                                        <a href="user_details.html">Erica Seward</a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
-                                                        enintend@att.net
+                                                        munjal@me.com
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-4">
-                                                             
-                                                        <span class="badge badge-pill badge-warning">Reffered</span>
+                                                            
+                                                        <span class="badge badge-pill badge-secondary">Undefined</span>
                                                             
                                                     </div>                                  
                                                 </div>
                                             </div>
-                                            <div class="card-footer">
+                                            <div class="card-footer ">
                                                 <div class="row">
                                                     <div class="col p-0 ml-2">
                                                         <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
@@ -672,12 +577,50 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="col-4 col-md-3 py-4">
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
                                         <div class="card">
                                             <div class="card-body p-0">
                                                 <div class="row">
                                                     <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/50.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/31.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-1">
+                                                        <a href="user_details.html">Marsha Denholm</a>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-1">
+                                                        hermanab@live.com
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-4">
+                                                            
+                                                        <span class="badge badge-pill badge-secondary">Undefined</span>
+                                                            
+                                                    </div>                                  
+                                                </div>
+                                            </div>
+                                            <div class="card-footer ">
+                                                <div class="row">
+                                                    <div class="col p-0 ml-2">
+                                                        <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
+                                                        <a href="#" data-toggle="modal" data-target="#delete_task"> Delete</a>
+                                                    </div>
+                                                    <div class="col text-right p-0 mr-2">
+                                                        <i class="fa fa-pencil-square-o fa-fw text-muted" aria-hidden="true"></i>
+                                                        <a href="#"  data-toggle="modal" data-target="#edit_client"> Edit Client</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <div class="row">
+                                                    <div class="col text-center p-4">
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/34.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
@@ -689,13 +632,13 @@
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-4">
-                                                            
-                                                        <span class="badge badge-pill badge-secondary">Undefined</span>
+                                                              
+                                                        <span class="badge badge-pill badge-danger">Registered</span>
                                                             
                                                     </div>                                  
                                                 </div>
                                             </div>
-                                            <div class="card-footer">
+                                            <div class="card-footer ">
                                                 <div class="row">
                                                     <div class="col p-0 ml-2">
                                                         <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
@@ -710,20 +653,96 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="col-4 col-md-3 py-4">
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
                                         <div class="card">
                                             <div class="card-body p-0">
                                                 <div class="row">
                                                     <div class="col text-center p-4">
-                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/32.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/38.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
-                                                        <a href="user_details.html">Regan September</a>
+                                                        <a href="user_details.html">Kody Stella</a>
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-1">
-                                                        hling@msn.com
+                                                        koudas@verizon.net
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-4">
+                                                             
+                                                        <span class="badge badge-pill badge-warning">Reffered</span>
+                                                            
+                                                    </div>                                  
+                                                </div>
+                                            </div>
+                                            <div class="card-footer ">
+                                                <div class="row">
+                                                    <div class="col p-0 ml-2">
+                                                        <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
+                                                        <a href="#" data-toggle="modal" data-target="#delete_task"> Delete</a>
+                                                    </div>
+                                                    <div class="col text-right p-0 mr-2">
+                                                        <i class="fa fa-pencil-square-o fa-fw text-muted" aria-hidden="true"></i>
+                                                        <a href="#"  data-toggle="modal" data-target="#edit_client"> Edit Client</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <div class="row">
+                                                    <div class="col text-center p-4">
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/46.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-1">
+                                                        <a href="user_details.html">Perlie Glenda</a>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-1">
+                                                        hmbrand@icloud.com
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-4">
+                                                            
+                                                        <span class="badge badge-pill badge-secondary">Undefined</span>
+                                                            
+                                                    </div>                                  
+                                                </div>
+                                            </div>
+                                            <div class="card-footer ">
+                                                <div class="row">
+                                                    <div class="col p-0 ml-2">
+                                                        <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
+                                                        <a href="#" data-toggle="modal" data-target="#delete_task"> Delete</a>
+                                                    </div>
+                                                    <div class="col text-right p-0 mr-2">
+                                                        <i class="fa fa-pencil-square-o fa-fw text-muted" aria-hidden="true"></i>
+                                                        <a href="#"  data-toggle="modal" data-target="#edit_client"> Edit Client</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12 col-sm-6 col-md-4 col-xl-3 py-4">
+                                        <div class="card">
+                                            <div class="card-body p-0">
+                                                <div class="row">
+                                                    <div class="col text-center p-4">
+                                                        <a href="user_details.html"><img class="rounded-circle " src="images/avatars/11.jpg"  alt="Generic placeholder" image height="100" width="100"></a>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-1">
+                                                        <a href="user_details.html">Travis Dalton</a>
+                                                    </div>
+                                                    <div class="w-100"></div>
+                                                    <div class="col text-center pb-1">
+                                                        caidaperl@live.com
                                                     </div>
                                                     <div class="w-100"></div>
                                                     <div class="col text-center pb-4">
@@ -733,7 +752,7 @@
                                                     </div>                                  
                                                 </div>
                                             </div>
-                                            <div class="card-footer">
+                                            <div class="card-footer ">
                                                 <div class="row">
                                                     <div class="col p-0 ml-2">
                                                         <i class="fa fa-trash-o fa-fw text-muted" aria-hidden="true"></i>
@@ -772,6 +791,8 @@
 						<div class="col text-center pt-3">
 
 						<p class="h3">Delete this task?</p>
+					
+						
 <!--
 							
 							<p class="h3">Delete this member?</p>
@@ -822,6 +843,8 @@
 						<div class="col text-center pt-3">
 
 						<p class="h3">Delete this member?</p>
+					
+						
 <!--
 							
 							<p class="h3">Delete this member?</p>

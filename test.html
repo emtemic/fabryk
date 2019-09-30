@@ -96,7 +96,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/20.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/37.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -134,114 +134,82 @@
 			</div>
 		<!--Start CONTENT-->
 		
-		<div class="container">
-<!--START HEADER MENU-->
-    <div class="row pt-4 pb-3">
-        <div class="col-3">
-        </div>
-        <div class="col">
-            <h1>Settings Edit</h1>
-        </div>
-    </div>
-    <div class="row pt-3">
-        <div class="col-3 d-flex justify-content-end">
-            <img class="rounded-circle " src="images/avatars/2.jpg" alt="Generic placeholder" image height="112" width="112"> 
-        </div>
-        <div class="col pl-0">
-            <div class="col d-flex d-inline-flex">
-                <a href="user_details.html"><h5>Teresa Sabdee Wilson</h5></a> / Settings Edit
+		<div class="card-body border-left border-right border-bottom w-100 py-1 px-0 d-sm-inline-flex">
+        <div class="d-flex justify-content-center">
+                <nav class="navbar navbar-light w-100 px-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="button-addon2">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="col d-flex d-inline-flex">
-                <span class="badge badge-pill badge-primary mr-2">Premium</span>
-                <span class="text-muted">Edit Your Name, Avatar, etc.</span>
-            </div>
-        </div>
-    </div>
-<!--END HEADER MENU-->
-<!--START MENU LIST-->    
-    <div class="row pt-4">
-        <div class="col-3 ">
-            <div class="list-group">
-                    <a href="edit-profile.html" class="list-group-item list-group-item-action border-0">
-                            Profile Edit
+         <!--  START TABS: Grid | List -->
+         <div class="d-flex justify-content-between px-3 ml-auto">
+                <ul class="nav nav-pills my-auto" id="pills-tab" role="tablist">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
+                        <a class="nav-link active" id="list-tasks-tab" data-toggle="pill" href="#list-tasks" role="tab" aria-controls="list-tasks" aria-selected="true" >
+                            <i class="fa fa-bars" aria-hidden="true"></i>
                         </a>
-                        <a href="edit-account.html" class="list-group-item list-group-item-action border-0">
-                            Account Edit                
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
+                        <a class="nav-link " id="grid-tasks-tab" data-toggle="pill" href="#grid-tasks" role="tab" aria-controls="grid-tasks" aria-selected="false">
+                            <i class="fa fa-th-large" aria-hidden="true"></i>
                         </a>
-                        <a href="edit-billing.html" class="list-group-item list-group-item-action border-0">
-                            Billing Edit
-                        </a>
-                        <a href="edit-settings.html" class="list-group-item list-group-item-action active border-0">
-                            Settings Edit
-                        </a>
-                        <a href="edit-sessions.html" class="list-group-item list-group-item-action border-0">
-                            Sessions Edit
-                        </a>
-            </div> 
-        </div>
-        <div class="col p-0">
-            <div class="card">
-                <div class="px-3 pt-3">
-                    <h5>Settings Edit</h5>
-                </div>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Monthly Newsletter</h5>
-                        <p class="card-text py-1">Do you want receive our monthly newsletter about new products and offers?</p>
-                        <div class="custom-control custom-checkbox my-1 mr-sm-2">
-                            <input type="checkbox" class="custom-control-input" id="customControlInline">
-                            <label class="custom-control-label" for="customControlInline">Notify Me</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Private Message</h5>
-                        <p class="card-text py-1">Do you want notify you by email whenever contacts send you a message?</p>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">Yes</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">No</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Publication Email Subscriptions</h5>
-                        <p class="card-text py-1">Control the emails that publications send to you.</p>
-                        <button type="button" class="btn btn-outline-primary">Manage Publication</button>
-                    </div>
-                </div>                
-                <div class="card border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Activity Notifications</h5>
-                        <p class="card-text py-1">Notify me via email when...</p>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio1">Someone Comments</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">Someone Mentions</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">Anyone Follows Me</label>
-                        </div>                            
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <i class="fa fa-question-circle " aria-hidden="true">&nbsp If you have trouble with the configuration, you can contact us. <a href="#">We Can Help</a></i>
-                </div>
-            </div>
-            <br><br>
-        </div>
-    </div>
-<!--END MENU LIST--> 
+                    </li>
+                </ul>
+      
+                <button class="btn btn-primary my-auto " type="submit" data-toggle="modal" data-target="#new_task">
+                    <i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Task
+                </button>
+          
 </div>
+        <!-- END TABS: Grid | List -->
+    </div>
+
+
+
+
+            <div class="card-body w-100 py-1 px-3 d-sm-inline-flex">
+
+
+                    <div class="d-flex justify-content-center py-2">
+                        <h5 class="my-auto">Clients</h5>
+                    </div>
+
+                    <div class="ml-auto d-sm-inline-flex">
+                    <div class="d-flex justify-content-center py-2 px-1">
+
+                        <div class="input-group my-auto w-100">
+                            <input type="search" placeholder="Search..." aria-describedby="button-addon5" class="form-control">
+                            <div class="input-group-append">
+                                <button id="button-addon5" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between px-1">
+                        <ul class="nav nav-pills my-auto" id="pills-tab" role="tablist">
+                            <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
+                                <a class="nav-link active" id="button-list-tab" data-toggle="pill" href="#button-list" role="tab" aria-controls="button-list" aria-selected="true" >
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item mr-2" data-toggle="tooltip" data-placement="top" title="Grid view">
+                                <a class="nav-link " id="button-grid-tab" data-toggle="pill" href="#button-grid" role="tab" aria-controls="button-grid" aria-selected="false">
+                                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn my-auto px-2" id="add" role="button" aria-pressed="true" data-toggle="modal" data-target="#add_client"><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Client</a>
+                    </div>
+                </div>
+
+                </div>
+          
 		
 		<!--End CONTENT-->
 		</main>   
