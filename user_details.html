@@ -96,7 +96,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/44.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/43.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -254,10 +254,7 @@
     <body class="bg-light">
         <!-- Start CARD -->
         <div class="card border-0">
-            <!-- START CARD HEADER tabs -->
-
-<!--d-none d-md-block-->
-
+            <!-- START CARD HEADER TABS -->
             <div class="card-header border  d-none d-md-block">
                 <ul class="nav nav-tabs card-header-tabs mr-auto">
                     <li class="nav-item">
@@ -295,24 +292,20 @@
                     </li>
                 </ul>
             </div>
-
-
-
-
-                <div class="card-header border d-md-none">
+            <!-- END CARD HEADER TABS -->
+            <!-- START CARD HEADER PILLS -->
+            <div class="card-header border d-md-none">
                 <div class="row ">
-                        <div class="col p-0">
-                          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active d-flex" id="v-pills-tasks-tab" data-toggle="pill" href="#v-pills-tasks" role="tab" aria-controls="v-pills-tasks" aria-selected="true">
-                                    <i class="fa fa-check-square-o fa-fw my-auto" aria-hidden="true"></i>
-                                    &nbsp Tasks
+                    <div class="col p-0">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active d-flex" id="v-pills-tasks-tab" data-toggle="pill" href="#v-pills-tasks" role="tab" aria-controls="v-pills-tasks" aria-selected="true">
+                                <i class="fa fa-check-square-o fa-fw my-auto" aria-hidden="true"></i>
+                                &nbsp Tasks
+                                <span class="badge badge-pill badge-secondary ml-auto my-auto">
                                     
-                                    <span class="badge badge-pill badge-secondary ml-auto my-auto">
-                                        
-                                        
-                                        5
-                                    </span>
-                                
+                                    
+                                    5
+                                </span>
                             </a>
                             <a class="nav-link d-flex" id="v-pills-media-tab" data-toggle="pill" href="#v-pills-media" role="tab" aria-controls="v-pills-media" aria-selected="false">
                                 <i class="fa fa-files-o fa-fw my-auto" aria-hidden="true"></i>
@@ -332,53 +325,11 @@
                                     3
                                 </span>
                             </a>
-                          </div>
                         </div>
-    
-                      </div>
+                    </div>
+                </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- END CARD HEADER tabs -->
+            <!-- END CARD HEADER PILLS -->
             <!-- START TABS: Tasks | Media | Notes -->
             <div class="tab-content " id="v-pills-tabContent">
                
@@ -386,40 +337,38 @@
                 <div class="tab-pane fade show active"  id="v-pills-tasks" role="tabpanel" aria-labelledby="v-pills-tasks-tab">
                     <!-- START header: search, switch: list | grid -->
                     <div class="card-body border-left border-right border-bottom w-100 py-1 px-0 d-sm-inline-flex">
-                            <div class="d-flex justify-content-center">
-                                    <nav class="navbar navbar-light px-0 w-100 px-3">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-primary" type="button" id="button-addon2">
-                                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </nav>
+                        <div class="d-flex justify-content-center">
+                            <nav class="navbar navbar-light px-0 w-100 px-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button" id="button-addon2">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                             <!--  START TABS: Grid | List -->
-                             <div class="d-flex justify-content-between px-3 ml-auto">
-                                    <ul class="nav nav-pills my-auto" id="pills-tab" role="tablist">
-                                        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
-                                            <a class="nav-link active" id="list-tasks-tab" data-toggle="pill" href="#list-tasks" role="tab" aria-controls="list-tasks" aria-selected="true" >
-                                                <i class="fa fa-bars" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
-                                            <a class="nav-link " id="grid-tasks-tab" data-toggle="pill" href="#grid-tasks" role="tab" aria-controls="grid-tasks" aria-selected="false">
-                                                <i class="fa fa-th-large" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                          
-                                    <button class="btn btn-primary my-auto " type="submit" data-toggle="modal" data-target="#new_task">
-                                        <i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Task
-                                    </button>
-                              
-                </div>
-                            <!-- END TABS: Grid | List -->
+                            </nav>
                         </div>
+                        <!--  START TABS: Grid | List -->
+                        <div class="d-flex justify-content-between px-3 ml-auto">
+                            <ul class="nav nav-pills my-auto  mr-2" id="pills-tab" role="tablist">
+                                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
+                                    <a class="nav-link active" id="list-tasks-tab" data-toggle="pill" href="#list-tasks" role="tab" aria-controls="list-tasks" aria-selected="true" >
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
+                                    <a class="nav-link " id="grid-tasks-tab" data-toggle="pill" href="#grid-tasks" role="tab" aria-controls="grid-tasks" aria-selected="false">
+                                        <i class="fa fa-th-large" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary my-auto " type="submit" data-toggle="modal" data-target="#new_task">
+                                <i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Task
+                            </button>
+                        </div>
+                            <!-- END TABS: Grid | List -->
+                    </div>
                     
                     <!-- END header: search, switch: list | grid -->
                     <!-- START Tasks Tab Content -->
@@ -892,8 +841,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/43.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Jon Benjy</span>
+                    <img class="rounded-circle " src="images/avatars/33.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Lennon Quinn</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">3 May 2014</div>
@@ -974,8 +923,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/27.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Bristol Lindsay</span>
+                    <img class="rounded-circle " src="images/avatars/18.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Travis Dalton</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">1 Dec 2014</div>
@@ -1056,8 +1005,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/48.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Kristi Horace</span>
+                    <img class="rounded-circle " src="images/avatars/1.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Colin Radcliff</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">9 Nov 2015</div>
@@ -1138,8 +1087,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/39.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Londyn Knox</span>
+                    <img class="rounded-circle " src="images/avatars/35.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Cherish Janette</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">8 Jan 2013</div>
@@ -1219,8 +1168,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/50.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Kody Stella</span>
+                    <img class="rounded-circle " src="images/avatars/15.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Adalyn Joye</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">1 Jun 2015</div>
@@ -1252,14 +1201,13 @@
                     <!-- END Tasks Tab Content -->
                 </div>
                 <!-- END TAB-content: Tasks -->
-
                 <!-- START TAB-content:: Media -->
                 <div class="tab-pane fade" id="v-pills-media" role="tabpanel" aria-labelledby="v-pills-media-tab">
                     <!-- START header: search, switch: list | grid -->
-                    <div class="card-body p-0 pt-2 border-left border-right border-bottom">
-                        <div class="d-flex">
-                            <nav class="navbar navbar-light mr-auto pb-0">
-                                <div class="input-group mb-3">
+                    <div class="card-body border-left border-right border-bottom w-100 py-1 px-0 d-sm-inline-flex">
+                        <div class="d-flex justify-content-center">
+                            <nav class="navbar navbar-light px-0 w-100 px-3">
+                                <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
                                     <div class="input-group-append">
                                         <button class="btn btn-primary" type="button" id="button-addon2">
@@ -1268,24 +1216,26 @@
                                     </div>
                                 </div>
                             </nav>
-                            <!-- START TABS: Grid | List -->
-                            <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
+                        </div>
+                        <!--  START TABS: Grid | List -->
+                        <div class="d-flex justify-content-between px-3 ml-auto">
+                            <ul class="nav nav-pills my-auto mr-2" id="pills-tab" role="tablist">
                                 <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
                                     <a class="nav-link active" id="list-media-tab" data-toggle="pill" href="#list-media" role="tab" aria-controls="list-media" aria-selected="false" >
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
                                     <a class="nav-link " id="grid-media-tab" data-toggle="pill" href="#grid-media" role="tab" aria-controls="grid-media" aria-selected="true">
-                                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                                        <i class="fa fa-th-large" aria-hidden="true"></i>
                                     </a>
                                 </li>
                             </ul>
-                            <button class="btn btn-primary my-auto mr-2" type="submit" data-toggle="modal" data-target="#add_media">
+                            <button class="btn btn-primary my-auto" type="submit" data-toggle="modal" data-target="#add_media">
                                 <i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Media
                             </button>
-                            <!-- END TABS: Grid | List -->
                         </div>
+                            <!-- END TABS: Grid | List -->
                     </div>
                     <!-- END header: search, switch: list | grid -->
                     <div class="tab-content" id="pills-tabContent">
@@ -1340,7 +1290,7 @@
             </td>
             <td class="align-middle">
                 <div class="d-flex justify-content-end">
-                    <img class="rounded-circle " src="images/avatars/2.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <img class="rounded-circle " src="images/avatars/15.jpg" alt="Generic placeholder" image height="30" width="30">
                 </div>
             </td>
             <td class="align-middle">
@@ -1382,7 +1332,7 @@
             </td>
             <td class="align-middle">
                 <div class="d-flex justify-content-end">
-                    <img class="rounded-circle " src="images/avatars/10.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <img class="rounded-circle " src="images/avatars/18.jpg" alt="Generic placeholder" image height="30" width="30">
                 </div>
             </td>
             <td class="align-middle">
@@ -1424,7 +1374,7 @@
             </td>
             <td class="align-middle">
                 <div class="d-flex justify-content-end">
-                    <img class="rounded-circle " src="images/avatars/8.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <img class="rounded-circle " src="images/avatars/29.jpg" alt="Generic placeholder" image height="30" width="30">
                 </div>
             </td>
             <td class="align-middle">
@@ -1466,7 +1416,7 @@
             </td>
             <td class="align-middle">
                 <div class="d-flex justify-content-end">
-                    <img class="rounded-circle " src="images/avatars/8.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <img class="rounded-circle " src="images/avatars/30.jpg" alt="Generic placeholder" image height="30" width="30">
                 </div>
             </td>
             <td class="align-middle">
@@ -1508,7 +1458,7 @@
             </td>
             <td class="align-middle">
                 <div class="d-flex justify-content-end">
-                    <img class="rounded-circle " src="images/avatars/21.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <img class="rounded-circle " src="images/avatars/15.jpg" alt="Generic placeholder" image height="30" width="30">
                 </div>
             </td>
             <td class="align-middle">
@@ -1578,8 +1528,8 @@
                     <span class="badge badge-pill badge-secondary">Home</span>
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/37.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Elissa Montague</span>
+                    <img class="rounded-circle " src="images/avatars/33.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Manny Tranter</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">Tuesday 12 February, 2018</div>
@@ -1617,8 +1567,8 @@
                     <span class="badge badge-pill badge-secondary">Games</span>
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/35.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Erica Seward</span>
+                    <img class="rounded-circle " src="images/avatars/7.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Allen Raelyn</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">Tuesday 11 December, 2018</div>
@@ -1656,8 +1606,8 @@
                     <span class="badge badge-pill badge-secondary">Kids</span>
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/49.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Wallace Ashlyn</span>
+                    <img class="rounded-circle " src="images/avatars/32.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Elenora Yasmin</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">Monday 12 February, 2018</div>
@@ -1695,8 +1645,8 @@
                     <span class="badge badge-pill badge-secondary">Toys</span>
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/47.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Londyn Knox</span>
+                    <img class="rounded-circle " src="images/avatars/12.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Tisha Barrie</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">Sunday 22 July, 2018</div>
@@ -1734,8 +1684,8 @@
                     <span class="badge badge-pill badge-secondary">Grocery</span>
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/2.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Jon Benjy</span>
+                    <img class="rounded-circle " src="images/avatars/7.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Calanthe Evelyn</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">Monday 31 December, 2018</div>
@@ -1765,37 +1715,42 @@
                 <!-- START TAB-content:: Notes -->
                 <div class="tab-pane fade" id="v-pills-notes" role="tabpanel" aria-labelledby="v-pills-notes-tab">
                     <!-- START header: search, switch: list | grid -->
-                    <div class="card-body p-0 pt-2 border-left border-right border-bottom">
-                        <div class="d-flex">
-                            <nav class="navbar navbar-light mr-auto pb-0">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="button" id="button-addon2">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                        </button>
+                    
+                    
+                    <div class="card-body border-left border-right border-bottom w-100 py-1 px-0 d-sm-inline-flex">
+                            <div class="d-flex justify-content-center">
+                                <nav class="navbar navbar-light px-0 w-100 px-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search for Influencers..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button" id="button-addon2">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </nav>
-                            <!-- START TABS: Grid | List -->
-                            <ul class="nav nav-pills my-auto pr-2 " id="pills-tab" role="tablist">
-                                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
+                                </nav>
+                            </div>
+                            <!--  START TABS: Grid | List -->
+                            <div class="d-flex justify-content-between px-3 ml-auto">
+                                <ul class="nav nav-pills my-automr-2" id="pills-tab" role="tablist">
+                                    <li class="nav-item" data-toggle="tooltip" data-placement="top" title="List view">
                                     <a class="nav-link active" id="list-notes-tab" data-toggle="pill" href="#list-notes" role="tab" aria-controls="list-notes" aria-selected="false" >
-                                    <i class="fa fa-bars" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
-                                    <a class="nav-link " id="grid-notes-tab" data-toggle="pill" href="#grid-notes" role="tab" aria-controls="grid-noteses" aria-selected="true">
-                                    <i class="fa fa-th-large" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <button class="btn btn-primary my-auto mr-2" type="submit" data-toggle="modal" data-target="#add_note">
-                                <i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Note
-                            </button>
-                        <!-- END TABS: Grid | List -->
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" data-toggle="tooltip" data-placement="top" title="Grid view">
+                                        <a class="nav-link " id="grid-notes-tab" data-toggle="pill" href="#grid-notes" role="tab" aria-controls="grid-noteses" aria-selected="true">
+                                            <i class="fa fa-th-large" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary my-auto" type="submit" data-toggle="modal" data-target="#add_note">
+                                    <i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add Note
+                                </button>
+                            </div>
+                                <!-- END TABS: Grid | List -->
                         </div>
-                    </div>
+
                     <!-- END header: search, switch: list | grid -->
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="list-notes" role="tabpanel" aria-labelledby="list-notes-tab">
@@ -1847,9 +1802,9 @@
         </td>
         <td class="align-middle">
             <div class="media">
-                <img src="images/avatars/47.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                <img src="images/avatars/32.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
                 <div class="media-body">
-                    <span>Tyrrell Kelli</span><br>
+                    <span>Shelagh Ricky</span><br>
                         <a class="text-muted">Project Manager</a>
                 </div>
             </div> 
@@ -1890,9 +1845,9 @@
         </td>
         <td class="align-middle">
             <div class="media">
-                <img src="images/avatars/42.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                <img src="images/avatars/36.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
                 <div class="media-body">
-                    <span>Perlie Glenda</span><br>
+                    <span>Jon Benjy</span><br>
                         <a class="text-muted">Project Manager</a>
                 </div>
             </div> 
@@ -1933,9 +1888,9 @@
         </td>
         <td class="align-middle">
             <div class="media">
-                <img src="images/avatars/44.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                <img src="images/avatars/40.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
                 <div class="media-body">
-                    <span>Bristol Lindsay</span><br>
+                    <span>Regan September</span><br>
                         <a class="text-muted">Project Manager</a>
                 </div>
             </div> 
@@ -2010,8 +1965,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/8.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Kody Stella</span>
+                    <img class="rounded-circle " src="images/avatars/38.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Marsha Denholm</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">20 Sep, Wed, 2015</div>
@@ -2060,8 +2015,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/8.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Trecia Tom</span>
+                    <img class="rounded-circle " src="images/avatars/42.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Shania Leopold</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">11 Nov, Mon, 2014</div>
@@ -2110,8 +2065,8 @@
                         
                 </div>
                 <div class="card-footer text-muted">
-                    <img class="rounded-circle " src="images/avatars/41.jpg" alt="Generic placeholder" image height="30" width="30">
-                    <span class="ml-2">Kristia Tiffany</span>
+                    <img class="rounded-circle " src="images/avatars/10.jpg" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">Mariabella Frona</span>
                 </div>
                 <div class="card-footer d-inline-flex">
                     <div class="mr-auto text-muted">25 May, Thu, 2015</div>
@@ -2153,21 +2108,21 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <div class="container">
+            <div class="container">
+                <div class="modal-body">
                     <!--START Select Photo for Client-->
                     <div class="row">
-                        <div class="col-2 p-0 text-center my-auto">
+                        <div class="col-12 col-sm-2 p-0 text-center my-auto pb-3">
                              
-                            <img class="rounded-circle " src="../images/avatars/3.jpg" alt="Generic placeholder" image height="100" width="100">
+                            <img class="rounded-circle " src="images/avatars/3.jpg" alt="Generic placeholder" image height="100" width="100">
                             
                         </div>
-                        <div class="col-9 p-0">
+                        <div class="col-12 col-sm-10 px-2">
                             <div class="row">
                                 <div class="col mb-2">Select Photo for Client:</div>
                                 <div class="w-100"></div>
                                 <div class="col">
-                                    <div class="input-group mb-3">
+                                    <div class="input-group">
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="inputGroupFile02">
                                             <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Select photo from device...</label>
@@ -2242,7 +2197,7 @@
                             </div>
                              
                             <div class="col-12 col-md-6 p-2">
-                                <div class="form-group">
+                                <div class="form-group m-0">
                                     <label for="exampleFormControlSelect1">Client Language</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -2261,17 +2216,17 @@
                         </div>
                     </form>
                     <form>
-                        <div class="form-group ">
+                        <div class="form-group mb-0">
                             <label for="exampleFormControlTextarea1">Adress</label>
                             
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="317 Willow Ave Franklin, CA 90988 Washington Country"></textarea>
+                            <textarea class="form-control p-0" id="exampleFormControlTextarea1" rows="3" placeholder="317 Willow Ave Franklin, CA 90988 Washington Country"></textarea>
                             
-                        </div>       
+                        </div>    
                     </form>
                     <form>
                         <div class="row">
                             <div class="col-12 col-md-6 p-2">
-                                <div class="form-group">
+                                <div class="form-group m-0">
                                     <label for="exampleFormControlSelect1">Family Language</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -2288,7 +2243,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 p-2">
-                                <div class="form-group">
+                                <div class="form-group m-0">
                                     <label for="exampleFormControlSelect1">Client Type</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -2326,7 +2281,7 @@
                     <form>
                         <div class="row">
                             <div class="col-12 col-md-6 p-2">
-                                <div class="form-group">
+                                <div class="form-group m-0">
                                     <label for="exampleFormControlSelect1">Contact Type</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -2341,7 +2296,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 p-2">
-                                <div class="form-group">
+                                <div class="form-group m-0">
                                     <label for="exampleFormControlSelect1">Relation to</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -2374,7 +2329,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 p-2">
-                                <div class="form-group">
+                                <div class="form-group  m-0">
                                     <label for="exampleFormControlSelect1">Resident with</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                             
@@ -2424,33 +2379,36 @@
 					</div>
 				</form>
 				<div class="row">
-					<div class="col">
-						<div class="row">
+
+
+
+
+				
+					
 							<div class="col">Assigned To:</div>
-							<div class="col">Priority:</div>
-							<div class="w-100"></div>
-							<div class="col">
-								<div class="input-group">
-									<label class="input-group-text" for="inputGroupSelect01">
-										<i class="fa fa-user" aria-hidden="true"></i>
-									</label>
-									<div class="input-group-append">
-										<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select User...</button>
-										<div class="dropdown-menu">
-											<a class="dropdown-item" href="#">
-												<i class="fa fa-user text-success" aria-hidden="true"></i>&nbsp Teresa Sabdee Wilson
-											</a>
-											<a class="dropdown-item" href="#">
-												<i class="fa fa-user text-secondary text-muted" aria-hidden="true"></i>&nbsp Marcin Tracz
-											</a>
-											<a class="dropdown-item" href="#">
-												<i class="fa fa-user text-secondary" aria-hidden="true"></i>&nbsp Tomasz Owczarczyk
-											</a>
+							<div class="col-12">
+									<div class="input-group ">
+										<label class="input-group-text" for="inputGroupSelect01">
+											<i class="fa fa-user" aria-hidden="true"></i>
+										</label>
+										<div class="input-group-append ">
+											<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select User...</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#">
+													<i class="fa fa-user text-success" aria-hidden="true"></i>&nbsp Teresa Sabdee Wilson
+												</a>
+												<a class="dropdown-item" href="#">
+													<i class="fa fa-user text-secondary text-muted" aria-hidden="true"></i>&nbsp Marcin Tracz
+												</a>
+												<a class="dropdown-item" href="#">
+													<i class="fa fa-user text-secondary" aria-hidden="true"></i>&nbsp Tomasz Owczarczyk
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col">
+							<div class="col">Priority:</div>
+							<div class="col-12">
 								<div class="input-group">
 									<label class="input-group-text" for="inputGroupSelect01">
 										<input type="radio" aria-label="Radio button for following text input">
@@ -2473,25 +2431,20 @@
 									</div>
 								</div>
 							</div>
-						</div>		
-					</div>
-					<div class="w-100"></div>
-					<div class="col">
-						<div class="row">
-							<div class="col">Start Date Task:</div>
-							<div class="col">Due Date Task:</div>
-							<div class="w-100"></div>
-							<div class="col">
-								<div class="input-group mb-3">
-									<div class="input-group-prepend">
-										<label class="input-group-text" for="inputGroupSelect01">
-											<i class="fa fa-calendar-o" aria-hidden="true"></i>
-										</label>
+					
+							<div class="col-12">Start Date Task:</div>
+							<div class="col-12">
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<label class="input-group-text" for="inputGroupSelect01">
+												<i class="fa fa-calendar-o" aria-hidden="true"></i>
+											</label>
+										</div>
+										<input type="text" class="form-control" placeholder="Select Start Date..." aria-label="Username" aria-describedby="basic-addon1">
 									</div>
-									<input type="text" class="form-control" placeholder="Select Start Date..." aria-label="Username" aria-describedby="basic-addon1">
 								</div>
-							</div>
-							<div class="col">
+							<div class="col-12">Due Date Task:</div>
+							<div class="col-12">
 								<div class="input-group mb-3">
 									<div class="input-group-prepend">
 										<label class="input-group-text" for="inputGroupSelect01">
@@ -2502,8 +2455,8 @@
 								</div>
 							</div>
 						</div>	
-					</div>
-				</div>	
+				
+					
 				<form>
 					<div class="form-group">
 						<label for="exampleFormControlTextarea1">Task Details:</label>
@@ -2566,7 +2519,7 @@
 
             </div>
             <div class="modal-footer">
-                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
+                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_tasks">Delete this Task</a>
                 <a class="btn text-primary" href="#" role="button" data-dismiss="modal">Close</a>
                 <a href="user_details.html"><button type="button" class="btn btn-primary">Add New Media</button></a>
             </div>
@@ -2605,35 +2558,32 @@
 
                  
                 
-                <div class="d-flex bd-highlight">
-                    <div class="p-2 flex-grow-1 bd-highlight">
-                        <div class="media">
-                            <span class="fa-stack fa-lg my-auto">
-                                <i class="fa fa-square fa-stack-2x text-primary"></i>
-                                <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-                            </span>
-                            <div class="media-body pl-2">
-                                <h6 class="mt-0">File-example-selected.mp3</h6>
-                                812.00Kb                    
-                            </div>
+                <div class="row">
+                        <div class="col-3 col-sm-2 my-auto">
+                            <button type="button" class="btn btn-primary">
+                                <i class="fa fa-file-word-o fa-2x" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="col-9 col-sm-6 text-left p-0 my-auto">
+                            <span><small>salad_unleash_handmade.otc
+                                    by Nels Veum - 784.00 Kb
+                            </small></span>
+                        </div>
+                        <div class="col-10 col-sm-2 text-right my-auto px-0">
+                            <span><small>18-Se-2013 09:48 PM</small></span>
+                        </div>
+                        <div class="col-2 col-sm-2 my-auto p-0 text-center">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="p-2 bd-highlight">
-                        <span class="m-0">18-Se-2013</span><br>
-                        <span class="text-right m-0">09:34 PM</span>
-                    </div>
-                    <div class="p-2 bd-highlight py-auto">
-                        <button type="button" class="btn btn-outline-secondary">
-                            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>   
 
                 
 
             </div>
             <div class="modal-footer">
-                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
+                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_tasks">Delete this Task</a>
                 <a class="btn text-primary" href="#" role="button" data-dismiss="modal">Close</a>
                 <a href="user_details.html"><button type="button" class="btn btn-primary">Edit Media</button></a>
             </div>
@@ -2715,7 +2665,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
+                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_tasks">Delete this Task</a>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <a href="user_details.html"><button type="button" class="btn btn-primary">Add New Note</button></a>
             </div>
@@ -2765,7 +2715,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
+                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_tasks">Delete this Task</a>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <a href="user_details.html"><button type="button" class="btn btn-primary">Save Changes</button></a>
             </div>
@@ -2825,7 +2775,7 @@
 						<div class="col">Assigned To:</div>
 						<div class="col">Priority:</div>
 						<div class="w-100"></div>
-						<div class="col">
+						<div class="col pr-0">
 							<div class="input-group">
 								<label class="input-group-text" for="inputGroupSelect01">
 									<i class="fa fa-user" aria-hidden="true"></i>
@@ -2846,7 +2796,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col p-0">
 							<div class="dropdown w-100">
 								<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
@@ -2885,7 +2835,7 @@
 									<input type="text" class="form-control" placeholder="Select Start Date..." aria-label="Username" aria-describedby="basic-addon1">
 							</div>
 						</div>
-						<div class="col">
+						<div class="col pl-0">
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<label class="input-group-text" for="inputGroupSelect01">
@@ -2916,82 +2866,70 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos cupiditate, nihil
 					</div>
 				</div>
 			</form>
-			<div class="card-body p-0">
-					<div class="container">
-						<!-- 1 FILE -->
-						<div class="d-flex bd-highlight">
-							<div class="p-2 flex-grow-1 bd-highlight">
-								<div class="media">
-									<span class="fa-stack fa-lg my-auto">
-										<i class="fa fa-square fa-stack-2x text-primary"></i>
-										<i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
-									</span>
-									<div class="media-body pl-2 text-left">
-										<h6 class="mt-0">salad_unleash_handmade.otc</h6>
-										784.00 Kb                    
-									</div>
-								</div>
-							</div>
-							<div class="p-2 bd-highlight">
-								<span class="m-0">18-Se-2013</span><br>
-								<span class="text-right m-0">09:48 PM</span>
-							</div>
-							<div class="p-2 bd-highlight py-auto">
-								<button type="button" class="btn btn-outline-secondary">
-									<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-								</button>
-							</div>
-						</div>  
-						<!-- 2 FILE -->
-						<div class="d-flex bd-highlight">
-							<div class="p-2 flex-grow-1 bd-highlight">
-								<div class="media">
-									<span class="fa-stack fa-lg my-auto">
-										<i class="fa fa-square fa-stack-2x text-success"></i>
-										<i class="fa fa-file-excel-o fa-stack-1x fa-inverse"></i>
-									</span>
-									<div class="media-body pl-2 text-left">
-										<h6 class="mt-0">hdd_human_unbranded.rcprofile</h6>
-										812.00 Kb                    
-									</div>
-								</div>
-							</div>
-							<div class="p-2 bd-highlight">
-								<span class="m-0">26-Jul-2014</span><br>
-								<span class="text-right m-0">03:24 PM</span>
-							</div>
-							<div class="p-2 bd-highlight py-auto">
-								<button type="button" class="btn btn-outline-secondary">
-									<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-								</button>
-							</div>
-						</div>
-						<!-- 3 FILE -->
-						<div class="d-flex bd-highlight">
-							<div class="p-2 flex-grow-1 bd-highlight">
-								<div class="media">
-									<span class="fa-stack fa-lg my-auto">
-										<i class="fa fa-square fa-stack-2x text-warning"></i>
-										<i class="fa fa-file-powerpoint-o fa-stack-1x fa-inverse"></i>
-									</span>
-									<div class="media-body pl-2 text-left">
-										<h6 class="mt-0">optimize_cotton.cil</h6>
-										165.00 Kb                    
-									</div>
-								</div>
-							</div>
-							<div class="p-2 bd-highlight">
-								<span class="m-0">10-Ap-2013</span><br>
-								<span class="text-right m-0">10:02 PM</span>
-							</div>
-							<div class="p-2 bd-highlight py-auto">
-								<button type="button" class="btn btn-outline-secondary">
-									<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
+<div class="card-body p-0">
+                        <div class="container">
+                            <div class="row pb-4">
+                                <div class="col-3 col-md-2 my-auto">
+                                    <button type="button" class="btn btn-primary">
+                                        <i class="fa fa-file-word-o fa-2x" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="col-9 col-md-7 text-left p-0 my-auto">
+                                    <span><small>salad_unleash_handmade.otc
+                                            by Nels Veum - 784.00 Kb
+                                    </small></span>
+                                </div>
+                                <div class="col-10 col-md-2 text-right my-auto">
+                                    <span><small>18-Se-2013 09:48 PM</small></span>
+                                </div>
+                                <div class="col-2 col-md-1 my-auto p-0">
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row pb-4">
+                                <div class="col-3 col-md-2 my-auto">
+                                    <button type="button" class="btn btn-success">
+                                        <i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="col-9 col-md-7 text-left p-0 my-auto">
+                                    <span><small>hdd_human_unbranded.rcprofile
+                                            by kody Witting - 812.00 Kb
+                                    </small></span>
+                                </div>
+                                <div class="col-10 col-md-2 text-right my-auto">
+                                    <span><small>26-Jul-2014 03:24 PM</small></span>
+                                </div>
+                                <div class="col-2 col-md-1 my-auto p-0">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                            </div>
+                            <div class="row pb-3">
+                                <div class="col-3 col-md-2 my-auto">
+                                    <button type="button" class="btn btn-warning my-auto">
+                                        <i class="fa fa-file-powerpoint-o fa-2x" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="col-9 col-md-7 text-left p-0 my-auto">
+                                    <span><small>optimize_cotton.cil
+                                            by Arvid McGlynn - 165.00 Kb
+                                    </small></span>
+                                </div>
+                                <div class="col-10 col-md-2 text-right my-auto">
+                                    <span><small>10-Ap-2013 10:02 PM</small></span>
+                                </div>
+                                <div class="col-2 col-md-1 my-auto p-0">
+                                        <button type="button" class="btn btn-outline-secondary">
+                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
         </div>
         <div class="modal-footer">
 			<a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_task">Delete this Task</a>
