@@ -96,7 +96,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/5.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/18.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -116,7 +116,7 @@
 			<div class="container.fluid p-0">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb bg-white border-bottom border-top">
-						<div class="container d-flex">
+						<div class=" d-flex text-nowrap text-truncate">
 							<!--BREADCRUMB LVL 0-->
 							
 							<li class="breadcrumb-item"><a href="home.html">
@@ -475,12 +475,15 @@
                         </div>
                     </form>
                     <form>
+                            <div class="col p-0">
                         <div class="form-group mb-0">
                             <label for="exampleFormControlTextarea1">Adress</label>
                             
                             <textarea class="form-control p-0" id="exampleFormControlTextarea1" rows="3" placeholder="317 Willow Ave Franklin, CA 90988 Washington Country"></textarea>
                             
-                        </div>    
+                        </div>  
+                    </div>
+                          
                     </form>
                     <form>
                         <div class="row">
@@ -689,37 +692,39 @@
 						<small id="emailHelp" class="form-text text-muted">Add tags here; separate them with a comma.</small>
 					</div>
 				</form>
-				<div class="row">
-
-
-
-
-				
-					
-							<div class="col">Assigned To:</div>
-							<div class="col-12">
-									<div class="input-group ">
-										<label class="input-group-text" for="inputGroupSelect01">
-											<i class="fa fa-user" aria-hidden="true"></i>
-										</label>
-										<div class="input-group-append ">
-											<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select User...</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item" href="#">
-													<i class="fa fa-user text-success" aria-hidden="true"></i>&nbsp Teresa Sabdee Wilson
-												</a>
-												<a class="dropdown-item" href="#">
-													<i class="fa fa-user text-secondary text-muted" aria-hidden="true"></i>&nbsp Marcin Tracz
-												</a>
-												<a class="dropdown-item" href="#">
-													<i class="fa fa-user text-secondary" aria-hidden="true"></i>&nbsp Tomasz Owczarczyk
-												</a>
-											</div>
+				<div class="col-12 col-sm py-2 px-0">
+					<div class="row">
+						<div class="col px-0">
+							<div class="col-12 col-sm pb-1">
+								Assigned To:
+							</div>
+							<div class="col-12 col-sm">
+								<div class="input-group">
+									<label class="input-group-text" for="inputGroupSelect01">
+										<i class="fa fa-user" aria-hidden="true"></i>
+									</label>
+									<div class="input-group-append">
+										<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select User...</button>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">
+												<i class="fa fa-user text-success" aria-hidden="true"></i>&nbsp Teresa Sabdee Wilson
+											</a>
+											<a class="dropdown-item" href="#">
+												<i class="fa fa-user text-secondary text-muted" aria-hidden="true"></i>&nbsp Marcin Tracz
+											</a>
+											<a class="dropdown-item" href="#">
+												<i class="fa fa-user text-secondary" aria-hidden="true"></i>&nbsp Tomasz Owczarczyk
+											</a>
 										</div>
 									</div>
 								</div>
-							<div class="col">Priority:</div>
-							<div class="col-12">
+							</div>
+						</div>
+						<div class="col-12 col-sm px-0">
+							<div class="col-12 col-sm pb-1">
+								Priority:
+							</div>
+							<div class="col-12 col-sm">
 								<div class="input-group">
 									<label class="input-group-text" for="inputGroupSelect01">
 										<input type="radio" aria-label="Radio button for following text input">
@@ -742,32 +747,9 @@
 									</div>
 								</div>
 							</div>
-					
-							<div class="col-12">Start Date Task:</div>
-							<div class="col-12">
-									<div class="input-group mb-3">
-										<div class="input-group-prepend">
-											<label class="input-group-text" for="inputGroupSelect01">
-												<i class="fa fa-calendar-o" aria-hidden="true"></i>
-											</label>
-										</div>
-										<input type="text" class="form-control" placeholder="Select Start Date..." aria-label="Username" aria-describedby="basic-addon1">
-									</div>
-								</div>
-							<div class="col-12">Due Date Task:</div>
-							<div class="col-12">
-								<div class="input-group mb-3">
-									<div class="input-group-prepend">
-										<label class="input-group-text" for="inputGroupSelect01">
-											<i class="fa fa-calendar-o" aria-hidden="true"></i>
-										</label>
-									</div>
-									<input type="text" class="form-control" placeholder="Select Due Date..." aria-label="Username" aria-describedby="basic-addon1">
-								</div>
-							</div>
-						</div>	
-				
-					
+						</div>
+					</div>
+				</div>
 				<form>
 					<div class="form-group">
 						<label for="exampleFormControlTextarea1">Task Details:</label>

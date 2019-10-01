@@ -96,7 +96,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/2.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/23.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -116,7 +116,7 @@
 			<div class="container.fluid p-0">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb bg-white border-bottom border-top">
-						<div class="container d-flex">
+						<div class=" d-flex text-nowrap text-truncate">
 							<!--BREADCRUMB LVL 0-->
 							
 							<li class="breadcrumb-item"><a href="home.html">
@@ -193,13 +193,21 @@
             <div class="card">
                 <div class="card-body">
                     <!--START HEADER-->
-                    <div class="mb-4">
-                        <h5>
-                            <span class="mr-2 text-muted">#26077</span>
-                            <a href="#">Ut ullamcorper sodales mollis. Pellentesque sit amet leo eget nulla .</a>
-                        </h5>
-                        <span class="badge badge-pill badge-secondary">Kids</span>
-                        <span class="badge badge-pill badge-secondary">Books</span>
+                    <div class="mb-4">   
+                        <div class="d-inline-flex">
+                            <td class="align-middle pr-0">
+                                <div class="custom-control custom-checkbox mx-2">
+                                    <input type="checkbox" class="custom-control-input" id="asd" checked>
+                                    <label class="custom-control-label" for="asd"></label>
+                                </div>
+                            </td>
+                            <div>
+                                <span class="h5 mr-2 text-muted">#26077</span>
+                                <span class="h5 text-primary">Ut ullamcorper sodales mollis. Pellentesque sit amet leo eget nulla .</span>
+                                <span class="badge badge-pill badge-secondary">Kids</span>
+                                <span class="badge badge-pill badge-secondary">Books</span>
+                            </div>
+                        </div>
                     </div>
                     <!--END HEADER-->
 
@@ -233,7 +241,7 @@
                                     <span><small>18-Se-2013 09:48 PM</small></span>
                                 </div>
                                 <div class="col-2 col-md-1 my-auto p-0">
-                                    <button type="button" class="btn btn-outline-secondary">
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#download">
                                         <i class="fa fa-download" aria-hidden="true"></i>
                                     </button>
                                 </div>
@@ -253,10 +261,10 @@
                                     <span><small>26-Jul-2014 03:24 PM</small></span>
                                 </div>
                                 <div class="col-2 col-md-1 my-auto p-0">
-                                        <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa fa-download" aria-hidden="true"></i>
-                                        </button>
-                                    </div>
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#download">
+                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                    </button>
+                                </div>
                             </div>
                             <div class="row pb-3">
                                 <div class="col-3 col-md-2 my-auto">
@@ -273,10 +281,10 @@
                                     <span><small>10-Ap-2013 10:02 PM</small></span>
                                 </div>
                                 <div class="col-2 col-md-1 my-auto p-0">
-                                        <button type="button" class="btn btn-outline-secondary">
-                                            <i class="fa fa-download" aria-hidden="true"></i>
-                                        </button>
-                                    </div>
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#download">
+                                        <i class="fa fa-download" aria-hidden="true"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -293,7 +301,7 @@
                         <span class="badge badge-pill badge-secondary">3</span>
                     </div>
                     <div class="media"> 
-                        <img src="images/avatars/6.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                        <img src="images/avatars/5.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
                         <div class="media-body">
                             <div class="d-inline-flex">
                                 <span class="mt-0">Chyna Becker &nbsp;&nbsp;</span>
@@ -309,7 +317,7 @@
                             </div>
                             <div class="media mt-3">
                                 <a class="" href="#">
-                                    <img src="images/avatars/43.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                                    <img src="images/avatars/41.jpg" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
                                 </a>
                                 <div class="media-body">
                                     <div class="d-inline-flex">
@@ -329,7 +337,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="input-group mt-3">
+                <div class="card-footer input-group mt-3">
                     <div class="input-group-prepend">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon1">
                             <i class="fa fa-paperclip" aria-hidden="true"></i>
@@ -347,6 +355,35 @@
 </div>
 
 
+<div class="modal fade" id="download" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center text-danger pt-4">
+						<div class="spinner-border text-primary" role="status">
+							<span class="sr-only">Loading...</span>
+						</div>
+					</div>
+					<div class="w-100"></div>
+					<div class="col text-center pt-3">
+						<h3>Downloading...</h3>
+					</div>
+					<div class="w-100"></div>
+					<div class="col text-center pt-3">
+						If the download doesn't start automatically in a few seconds, please click <a href="#">here</a> to access the download URL directly.
+					</div>
+					<div class="w-100"></div>
+					<div class="col text-center py-4">
+						<button type="button" class="btn btn-outline-danger text-center" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 		
 		<!--End CONTENT-->
