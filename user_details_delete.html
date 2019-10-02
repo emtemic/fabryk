@@ -96,7 +96,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/29.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/26.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -371,42 +371,43 @@
                 <div class="modal-body">
                     <!--START Select Photo for Client-->
                     <div class="row">
-                        <div class="col-12 col-sm-2 p-0 text-center my-auto pb-3">
+                        <div class="col-12 col-sm-2 text-center pb-3">
                              
                             <img class="rounded-circle " src="images/avatars/3.jpg" alt="Generic placeholder" image height="100" width="100">
                             
                         </div>
-                        <div class="col-12 col-sm-10 px-2">
-                            <div class="row">
-                                <div class="col mb-2">Select Photo for Client:</div>
-                                <div class="w-100"></div>
-                                <div class="col">
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="inputGroupFile02">
-                                            <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Select photo from device...</label>
-                                        </div>
+                        <div class="col-12 col-sm-10">
+                            <div class="form-group">
+                                <label for="photo">Select Photo for Client:</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="photo">
+                                        <label class="custom-file-label" for="photo" aria-describedby="inputGroupFileAddon02">Select photo from device...</label>
                                     </div>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                     </div>
                     <!--END Select Photo for Client-->
                     <form>
                         <div class="row">
-                            <div class="col-12 col-md-6 p-2">
-                                 
-                                <label for="Firstname">First Name</label>
-                                <input type="text" class="form-control" id="Firstname" placeholder="Teresa">
                                 
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                     
+                                    <label for="Firstname">First Name</label>
+                                    <input type="text" class="form-control" id="Firstname" placeholder="Teresa">
+                                    
+                                </div>
                             </div>
-                            <div class="col-12 col-md-6 p-2">
-                                 
-                                <label for="Lastname">Last Name</label>
-                                <input type="text" class="form-control" id="Lastname" placeholder="Sabdee Wilson">
-                                
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                     
+                                    <label for="Lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="Lastname" placeholder="Sabdee Wilson">
+                                    
+                                </div>
                             </div>
-                            
                         </div>
                     </form>
                     <form>
@@ -414,7 +415,8 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col p-2"> 
+                                        <div class="col"> 
+                                                <div class="form-group">
                                             <label for="tog">Gender<br></label>
                                             <div class="w-100"></div>
                                             <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
@@ -425,38 +427,43 @@
                                                     <input type="radio" name="options" id="option2" autocomplete="off"> Male
                                                 </label>
                                             </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-12 col-md-6 p-2">
+                            <div class="col-12 col-md-6">
+                                    <div class="form-group">
                                 
                                 <label for="inlineFormInputGroup">Email</label>
-                                <div class="input-group mb-2">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                                     </div>
                                     <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="juanita@alred.com">
                                 </div>
+                                </div>
                                                       
                             </div>
                         </div>
                     </form>
-                    <form class="">
+                    <form>
                         <div class="row">
                             
-                            <div class="col-12 col-md-6 p-2">
-                                <label for="inlineFormInputGroup">URL</label>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inlineFormInputGroup">URL</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="www.ress.com">
                                     </div>
-                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="www.ress.com">
-                                </div>                       
+                                </div>
                             </div>
                              
-                            <div class="col-12 col-md-6 p-2">
-                                <div class="form-group m-0">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
                                     <label for="exampleFormControlSelect1">Client Language</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -475,20 +482,19 @@
                         </div>
                     </form>
                     <form>
-                            <div class="col p-0">
-                        <div class="form-group mb-0">
-                            <label for="exampleFormControlTextarea1">Adress</label>
-                            
-                            <textarea class="form-control p-0" id="exampleFormControlTextarea1" rows="3" placeholder="317 Willow Ave Franklin, CA 90988 Washington Country"></textarea>
-                            
-                        </div>  
-                    </div>
-                          
+                        <div class="col-12 px-0">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Adress</label>
+                                
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="317 Willow Ave Franklin, CA 90988 Washington Country"></textarea>
+                                
+                            </div>  
+                        </div> 
                     </form>
                     <form>
                         <div class="row">
-                            <div class="col-12 col-md-6 p-2">
-                                <div class="form-group m-0">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
                                     <label for="exampleFormControlSelect1">Family Language</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -504,8 +510,8 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 p-2">
-                                <div class="form-group m-0">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
                                     <label for="exampleFormControlSelect1">Client Type</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -526,24 +532,28 @@
                     </form>
                     <form>
                         <div class="row">
-                            <div class="col-12 col-md-3 p-2">
+                            <div class="col-12 col-md-3">
+                                <div class="form-group">
                                 <label for="Firstname">Grade</label>
                                 
                                 <input type="text" class="form-control" id="Firstname" placeholder="11">
                                 
+                                </div>
                             </div>
-                            <div class="col-12 col-md-9 p-2">
+                            <div class="col-12 col-md-9">
+                                    <div class="form-group">
                                 <label for="Lastname">School</label>
                                 
                                 <input type="text" class="form-control" id="Lastname" placeholder="Independence High School">
                                 
+                                </div>
                             </div>
                         </div>
                     </form>
                     <form>
                         <div class="row">
-                            <div class="col-12 col-md-6 p-2">
-                                <div class="form-group m-0">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
                                     <label for="exampleFormControlSelect1">Contact Type</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -557,8 +567,8 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 p-2">
-                                <div class="form-group m-0">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
                                     <label for="exampleFormControlSelect1">Relation to</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                         
@@ -576,22 +586,24 @@
                     </form>
                     <form>
                         <div class="row">
-                            <div class="col p-2"> 
-                                <label for="tog">Legal Guardian<br></label>
-                                <div class="w-100"></div>
-                                <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
-                                    
-                                    <label class="btn btn-outline-secondary" id="tog">
-                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> True
-                                        </label>
-                                        <label class="btn btn-outline-secondary active">
-                                            <input type="radio" name="options" id="option2" autocomplete="off"> False
-                                        </label>
-                                    
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="tog">Legal Guardian<br></label>
+                                    <div class="w-100"></div>
+                                    <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                        
+                                        <label class="btn btn-outline-secondary" id="tog">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked> True
+                                            </label>
+                                            <label class="btn btn-outline-secondary active">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"> False
+                                            </label>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 p-2">
-                                <div class="form-group  m-0">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
                                     <label for="exampleFormControlSelect1">Resident with</label>
                                     <select class="custom-select" id="exampleFormControlSelect1">
                                             
@@ -608,8 +620,6 @@
             </div>
             <div class="modal-footer">
                 <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_member">Delete this client</a>
-
-
                 <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
                 <a href="clients.html"><button type="button" class="btn btn-primary">Edit Client</button></a>
             </div>
