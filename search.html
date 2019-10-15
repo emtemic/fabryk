@@ -1,9 +1,10 @@
 	<!doctype html> 
 		<head>
 			<meta charset="utf-8">
+			<title>Fabryk</title>
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-			<meta name="description" content="">
-			<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+			<meta name="description" content="Internal service portal for transport companies.">
+			<meta name="author" content="Marcin Tracz">
 			<meta name="generator" content="Jekyll v3.8.5">
 				
 					<title>Search</title>
@@ -99,7 +100,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/24.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/1.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -138,24 +139,203 @@
 		<!--Start CONTENT-->
 		
 		<div class="container">
-  	<body class="bg-light"> 
-		<div class="d-flex justify-content-center pt-5">
-			<div class="input-group w-50">
-				<input type="search" placeholder="Search..." aria-describedby="button-addon5" class="form-control">
-				<div class="input-group-append">
-					<button id="button-addon5" type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-				</div>
+	<body class="bg-light">
+		<div class="card text-center">
+			<div class="card-header bg-white pb-4">
+				<ul class="nav nav-tabs card-header-tabs">
+					
+					<div class=" mr-auto my-auto">
+						<div class="input-group">
+							<input type="text" class="form-control border-secondary" placeholder="Vitae" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+							<div class="input-group-append" id="button-addon4">
+								<button class="btn border-secondary" data-toggle="modal" data-target="#filters" type="button">
+									<i class="fa fa-sliders mx-1" aria-hidden="true"></i>
+									Filters
+								</button>
+								<button class="btn btn-primary" type="button">
+									<i class="fa fa-search mx-2" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="d-inline-flex my-auto">
+						<span class="mr-2">Show Results: &nbsp; &nbsp;</span>
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch1">
+							<label class="custom-control-label" for="customSwitch1">Clients &nbsp; &nbsp;</label>
+						</div>
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch2">
+							<label class="custom-control-label" for="customSwitch2">Tasks &nbsp; &nbsp;</label>
+						</div>
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch3">
+							<label class="custom-control-label" for="customSwitch3">Media &nbsp; &nbsp;</label>
+						</div>
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch4">
+							<label class="custom-control-label" for="customSwitch4">Notes &nbsp; &nbsp;</label>
+						</div>
+					</div>
+				</ul>
 			</div>
-			<button type="button" class="btn btn-primary ml-2" data-toggle="modal" data-target="#filters">
-				<i class="fa fa-sliders fa-fw" aria-hidden="true"></i> Filters
-			</button>
+			<div class="card-body text-left bg-light p-2">
+				<span class="badge badge-pill badge-secondary p-2">
+					Sort by: Latest &nbsp;
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</span>
+				<span class="badge badge-pill badge-secondary p-2">
+					Media: Show PDF &nbsp;
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</span>
+				<span class="badge badge-pill badge-secondary p-2">
+					Added by: Sequoia Oscar &nbsp;
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</span>
+			</div>
 		</div>
-    </body>
+
+		
+		<ul class="list-unstyled mt-4 pb-4 border-bottom">
+			<li class="media">
+				<div class="mr-4 my-auto border rounded bg-white">
+						<i class="fa fa-check-square-o fa-2x text-primary m-3 p-auto" aria-hidden="true"></i>
+				</div>
+				<div class="media-body">
+					<h6 class="mt-0 mb-1 text-primary">
+						<a href="task_view_details.html">
+							Ut ullamcorper sodales mollis. Pellentesque sit amet leo eget nulla.
+						</a>
+					</h6>
+					Nullam vitae nisl vitae nec mauris.<br>
+					<span class="form-text text-muted">
+						<small>Added by: Mariabella Frona | Assigned to: Perlie Glenda | Date Added: 12 Aug 2019, 9.34 </small>
+					</span>
+				</div>
+			</li>
+		</ul>
+		
+		<ul class="list-unstyled mt-4 pb-4 border-bottom">
+			<li class="media">
+				<div class="mr-4 my-auto border rounded bg-white">
+						<i class="fa fa-file-pdf-o fa-2x text-primary m-3 p-auto" aria-hidden="true"></i>
+				</div>
+				<div class="media-body">
+					<h6 class="mt-0 mb-1 text-primary">
+						<a href="task_view_details.html">
+							ullamcorper varius enim ultrices eget. Etiam eu ex in mi aliquam auctor.
+						</a>
+					</h6>
+					Pellentesque nunc nisi, lacinia nec<br>
+					<span class="form-text text-muted">
+						<small>Added by: Shania Leopold | Assigned to: Londyn Knox | Date Added: 21 Jun 2019, 11.32 </small>
+					</span>
+				</div>
+			</li>
+		</ul>
+		
+		<ul class="list-unstyled mt-4 pb-4 border-bottom">
+			<li class="media">
+				<div class="mr-4 my-auto border rounded bg-white">
+						<i class="fa fa-sticky-note-o fa-2x text-primary m-3 p-auto" aria-hidden="true"></i>
+				</div>
+				<div class="media-body">
+					<h6 class="mt-0 mb-1 text-primary">
+						<a href="task_view_details.html">
+							Sed pellentesque aliquam mi, vitae auctor dolor finibus vel.
+						</a>
+					</h6>
+					gravida massa quis, gravida mauris. Mauris a vulputate metus.<br>
+					<span class="form-text text-muted">
+						<small>Added by: Travis Dalton | Assigned to: Allen Raelyn | Date Added: 28 Dec 2018, 15.12 </small>
+					</span>
+				</div>
+			</li>
+		</ul>
+		
+		<ul class="list-unstyled mt-4 pb-4 border-bottom">
+			<li class="media">
+				<div class="mr-4 my-auto border rounded bg-white">
+						<i class="fa fa-check-square-o fa-2x text-primary m-3 p-auto" aria-hidden="true"></i>
+				</div>
+				<div class="media-body">
+					<h6 class="mt-0 mb-1 text-primary">
+						<a href="task_view_details.html">
+							Vestibulum suscipit, eros molestie tincidunt vestibulum, eros massa
+						</a>
+					</h6>
+					Cras vel dignissim odio.<br>
+					<span class="form-text text-muted">
+						<small>Added by: Regan September | Assigned to: Trecia Tom | Date Added: 11 Aug 2018, 6.41 </small>
+					</span>
+				</div>
+			</li>
+		</ul>
+		
+		<ul class="list-unstyled mt-4 pb-4 border-bottom">
+			<li class="media">
+				<div class="mr-4 my-auto border rounded bg-white">
+						<i class="fa fa-file-pdf-o fa-2x text-primary m-3 p-auto" aria-hidden="true"></i>
+				</div>
+				<div class="media-body">
+					<h6 class="mt-0 mb-1 text-primary">
+						<a href="task_view_details.html">
+							Etiam erat ex, fringilla hendrerit dolor ac, semper viverra est. Maecenas efficitur convallis dui
+						</a>
+					</h6>
+					Curabitur facilisis pharetra ante, in sagittis magna ultrices a.<br>
+					<span class="form-text text-muted">
+						<small>Added by: Londyn Knox | Assigned to: Zinnia Mervyn | Date Added: 31 Jan 2019, 19.44 </small>
+					</span>
+				</div>
+			</li>
+		</ul>
+		
+		<ul class="list-unstyled mt-4 pb-4 border-bottom">
+			<li class="media">
+				<div class="mr-4 my-auto border rounded bg-white">
+						<i class="fa fa-sticky-note-o fa-2x text-primary m-3 p-auto" aria-hidden="true"></i>
+				</div>
+				<div class="media-body">
+					<h6 class="mt-0 mb-1 text-primary">
+						<a href="task_view_details.html">
+							Duis et diam quis felis imperdiet elementum. Praesent iaculis at augue a tempor.
+						</a>
+					</h6>
+					Sed pretium nec turpis et consequat. Vivamus nec orci nec eros<br>
+					<span class="form-text text-muted">
+						<small>Added by: Jon Benjy | Assigned to: Haydn Taegan | Date Added: 10 Sep 2019, 14.12 </small>
+					</span>
+				</div>
+			</li>
+		</ul>
+		
+	</body>
 </div>
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--data-toggle="modal" data-target="#filters"-->
 <div class="modal fade" id="filters" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm" role="document">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Filters</h5>
@@ -167,34 +347,34 @@
 
 
 
-        <fieldset class="form-group pt-3">
-            <div class="row">
-                <legend class="col-form-label col-5 pt-0">Search in:</legend>
+        <fieldset class="form-group pt-3 border-bottom">
+            <div class="row pb-3">
+                <legend class="col-form-label col-5 pt-0">Tasks</legend>
                 <div class="col-7">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
-                        <label class="form-check-label" for="gridRadios1">
-                            Tasks
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value="option7">
+                        <label class="form-check-label" for="gridRadios7">
+                            Word File
                         </label>
                     </div>
                     <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                        <label class="form-check-label" for="gridRadios2">
-                            Media
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios8" value="option8">
+                        <label class="form-check-label" for="gridRadios8">
+                            Excel File
                         </label>
                     </div>
                     <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                        <label class="form-check-label" for="gridRadios3">
-                            Notes
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios9" value="option9">
+                        <label class="form-check-label" for="gridRadios9">
+                            PDF File
                         </label>
                     </div>
                 </div>
             </div>
             </fieldset>
-            <fieldset class="form-group pt-3">
-            <div class="row">
-                <legend class="col-form-label col-5 pt-0">Type:</legend>
+            <fieldset class="form-group border-bottom">
+            <div class="row pb-3">
+                <legend class="col-form-label col-5 pt-0">Media</legend>
                 <div class="col-7">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
@@ -214,6 +394,13 @@
                             Images
                         </label>
                     </div>
+                </div>
+            </div>
+            </fieldset>
+            <fieldset class="form-group border-bottom">
+            <div class="row pb-3">
+                <legend class="col-form-label col-5 pt-0">Notes</legend>
+                <div class="col-7">
                     <div class="form-check">
                     <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios7" value="option7">
                         <label class="form-check-label" for="gridRadios7">
@@ -235,8 +422,8 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset class="form-group pt-3">
-            <div class="row">
+        <fieldset class="form-group border-bottom">
+            <div class="row pb-3">
                 <legend class="col-form-label col-5 pt-0">Added in:</legend>
                 <div class="col-7">
                     <div class="form-check">
@@ -272,6 +459,14 @@
                 </div>
             </div>
         </fieldset>
+        <form>
+                <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-5 col-form-label">Added by:</label>
+                  <div class="col-sm-7">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Name">
+                  </div>
+                </div>
+              </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
