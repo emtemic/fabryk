@@ -100,7 +100,7 @@
                 <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="d-flex flex-nowrap">
                         <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                        <div class="order-1 px-1"> <img src="images/avatars/8.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                        <div class="order-1 px-1"> <img src="images/avatars/33.jpg" class="rounded-circle" image height="30" width="30"> </div>
                         <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                     </div>
                 </a>
@@ -141,10 +141,10 @@
 		<div class="container">
 	<body class="bg-light">
 		<div class="card text-center">
-			<div class="card-header bg-white pb-4">
+			<!-- START UL MD- -->
+			<div class="card-header bg-white pb-2 d-md-none">
 				<ul class="nav nav-tabs card-header-tabs">
-					
-					<div class=" mr-auto my-auto">
+					<div class="col-12 p-0 my-2 mr-auto my-auto">	
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Vitae" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
 							<div class="input-group-append" id="button-addon4">
@@ -158,39 +158,88 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="d-inline-flex my-auto">
-						<span class="mr-2">Show Results: &nbsp; &nbsp;</span>
-						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" id="customSwitch1">
-							<label class="custom-control-label" for="customSwitch1">Clients &nbsp; &nbsp;</label>
+					<div class="col-12 p-0 d-flex my-2">
+						<div class="col-4 p-0">
+							<div class="my-auto">
+								<span class=""><small>Show Results: </small>&nbsp; &nbsp;</span>
+							</div>
 						</div>
-						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" id="customSwitch2">
-							<label class="custom-control-label" for="customSwitch2">Tasks &nbsp; &nbsp;</label>
+						<div class="col-4 p-0">
+							<div class="custom-control custom-switch text-left">
+								<input type="checkbox" class="custom-control-input" id="customSwitch1">
+								<label class="custom-control-label" for="customSwitch1"><small>Client </small>&nbsp; &nbsp;</label>
+							</div>
+							<div class="custom-control custom-switch text-left">
+								<input type="checkbox" class="custom-control-input" id="customSwitch2">
+								<label class="custom-control-label" for="customSwitch2"><small>Tasks </small>&nbsp; &nbsp;</label>
+							</div>
 						</div>
-						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" id="customSwitch3">
-							<label class="custom-control-label" for="customSwitch3">Media &nbsp; &nbsp;</label>
-						</div>
-						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" id="customSwitch4">
-							<label class="custom-control-label" for="customSwitch4">Notes &nbsp; &nbsp;</label>
+						<div class="col-4 p-0">	
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="customSwitch3">
+								<label class="custom-control-label" for="customSwitch3"><small>Media </small>&nbsp; &nbsp;</label>
+							</div>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" id="customSwitch4">
+								<label class="custom-control-label" for="customSwitch4"><small>Notes </small>&nbsp; &nbsp;</label>
+							</div>
 						</div>
 					</div>
 				</ul>
 			</div>
-			<div class="card-body text-left bg-light">
-				<span class="badge badge-pill badge-secondary px-3">
+			<!-- END UL MD- -->
+			<!-- START UL MD+ -->
+			<div class="card-header bg-white pb-4 d-none d-md-block">
+				<ul class="nav nav-tabs card-header-tabs">
+					<div class="col-12 col-lg-6 p-0 my-2 mr-auto my-auto">	
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Vitae" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+							<div class="input-group-append" id="button-addon4">
+								<button class="btn btn-outline-secondary" data-toggle="modal" data-target="#filters" type="button">
+									<i class="fa fa-sliders mx-1" aria-hidden="true"></i>
+									Filters
+								</button>
+								<button class="btn btn-primary" type="button">
+									<i class="fa fa-search mx-2" aria-hidden="true"></i>
+								</button>
+							</div>
+						</div>
+					</div>	
+					<div class="col-12  col-lg-6 p-0 d-flex my-2 justify-content-center justify-content-lg-end">	
+						<div class="my-auto">
+							<span class=""><small>Show Results: </small>&nbsp; &nbsp;</span>
+						</div>
+						<div class="custom-control custom-switch text-left">
+							<input type="checkbox" class="custom-control-input" id="customSwitch1">
+							<label class="custom-control-label" for="customSwitch1"><small>Client </small>&nbsp; &nbsp;</label>
+						</div>
+						<div class="custom-control custom-switch text-left">
+							<input type="checkbox" class="custom-control-input" id="customSwitch2">
+							<label class="custom-control-label" for="customSwitch2"><small>Tasks </small>&nbsp; &nbsp;</label>
+						</div>
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch3">
+							<label class="custom-control-label" for="customSwitch3"><small>Media </small>&nbsp; &nbsp;</label>
+						</div>
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch4">
+							<label class="custom-control-label" for="customSwitch4"><small>Notes </small>&nbsp; &nbsp;</label>
+						</div>	
+					</div>
+				</ul>
+			</div>
+			<!-- END UL MD+ -->	
+			<div class="card-body text-left bg-light px-3">
+				<span class="badge badge-pill badge-secondary">
 					Sort by: Latest &nbsp;
 					<i class="fa fa-times-circle" aria-hidden="true"></i>
 				</span>
-				<span class="badge badge-pill badge-secondary px-3">
+				<span class="badge badge-pill badge-secondary">
 					Media: Show PDF &nbsp;
 					<i class="fa fa-times-circle" aria-hidden="true"></i>
 				</span>
-				<span class="badge badge-pill badge-secondary px-3">
-					Added by: Jon Benjy &nbsp;
+				<span class="badge badge-pill badge-secondary">
+					Added by: Perlie Glenda &nbsp;
 					<i class="fa fa-times-circle" aria-hidden="true"></i>
 				</span>
 			</div>
@@ -210,7 +259,7 @@
 					</h6>
 					Nullam vitae nisl vitae nec mauris.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Travis Dalton • Assigned to: Travis Dalton • Date Added: 11 Aug 2018,  </small>
+						<small>Added by: Marsha Denholm • Assigned to: Winifred Kassy • Date Added: 17 Apr 2019,  </small>
 					</span>
 				</div>
 			</li>
@@ -229,7 +278,7 @@
 					</h6>
 					Pellentesque nunc nisi, lacinia nec<br>
 					<span class="form-text text-muted">
-						<small>Added by: Kristi Horace • Assigned to: Tyrrell Kelli • Date Added: 28 Jun 2018,  </small>
+						<small>Added by: Skyla Rosamond • Assigned to: Calanthe Evelyn • Date Added: 10 Sep 2018,  </small>
 					</span>
 				</div>
 			</li>
@@ -248,7 +297,7 @@
 					</h6>
 					gravida massa quis, gravida mauris. Mauris a vulputate metus.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Paulie Kortney • Assigned to: Kristia Tiffany • Date Added: 3 Jul 2018,  </small>
+						<small>Added by: Haydn Taegan • Assigned to: Mariabella Frona • Date Added: 27 Mar 2018,  </small>
 					</span>
 				</div>
 			</li>
@@ -267,7 +316,7 @@
 					</h6>
 					Cras vel dignissim odio.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Kody Stella • Assigned to: Trecia Tom • Date Added: 10 Sep 2018,  </small>
+						<small>Added by: Skyla Rosamond • Assigned to: Holden Alecia • Date Added: 13 Jul 2019,  </small>
 					</span>
 				</div>
 			</li>
@@ -286,7 +335,7 @@
 					</h6>
 					Curabitur facilisis pharetra ante, in sagittis magna ultrices a.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Trecia Tom • Assigned to: Kristia Tiffany • Date Added: 26 Dec 2018,  </small>
+						<small>Added by: Holden Alecia • Assigned to: Marsha Denholm • Date Added: 3 Apr 2019,  </small>
 					</span>
 				</div>
 			</li>
@@ -305,7 +354,7 @@
 					</h6>
 					Sed pretium nec turpis et consequat. Vivamus nec orci nec eros<br>
 					<span class="form-text text-muted">
-						<small>Added by: Kody Stella • Assigned to: Vikki Phebe • Date Added: 3 Apr 2019,  </small>
+						<small>Added by: Lennon Quinn • Assigned to: Wallace Ashlyn • Date Added: 17 Apr 2019,  </small>
 					</span>
 				</div>
 			</li>
