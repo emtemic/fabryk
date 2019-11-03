@@ -98,7 +98,7 @@
                     <a class="nav-link d-flex my-auto" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="d-flex flex-nowrap">
                             <div class="order-2 order-lg-1 my-auto mr-2">&nbsp;Mark Hohmann</div> 
-                            <div class="order-1 px-1"> <img src="images/avatars/42.jpg" class="rounded-circle" image height="30" width="30"> </div>
+                            <div class="order-1 px-1"> <img src="images/avatars/12.jpg" class="rounded-circle" image height="30" width="30"> </div>
                             <div class="order-3 px-1 my-auto"><i class="fa fa-caret-down" aria-hidden="true"></i></div> 
                         </div>
                     </a>
@@ -138,54 +138,146 @@
 		
 		<div class="container">
 	<body class="bg-light">
-		<div class="card text-center">
+		<div class="card">
+
+
+
 			<!-- START UL MD- -->
 			<div class="card-header bg-white pb-2 d-md-none">
-				<ul class="nav nav-tabs card-header-tabs">
-					<div class="col-12 p-0 my-2 mr-auto my-auto">	
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Vitae" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
-							<div class="input-group-append" id="button-addon4">
-								<button class="btn btn-outline-secondary" data-toggle="modal" data-target="#filters" type="button">
-									<i class="fa fa-sliders mx-1" aria-hidden="true"></i>
-									Filters
-								</button>
-								<button class="btn btn-primary" type="button">
-									<i class="fa fa-search mx-2" aria-hidden="true"></i>
-								</button>
+					<ul class="nav nav-tabs card-header-tabs">
+						<div class="col-12 p-0 my-2 mr-auto my-auto">	
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Vitae" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+								<div class="input-group-append" id="button-addon4">
+									<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+										<i class="fa fa-sliders mx-1" aria-hidden="true"></i>	
+										Filters
+									</button>
+									<button class="btn btn-primary" type="button">
+										<i class="fa fa-search mx-2" aria-hidden="true"></i>
+									</button>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-12 p-0 d-flex my-2">
-						<div class="col-4 p-0">
-							<div class="my-auto">
-								<span class=""><small>Show Results: </small>&nbsp; &nbsp;</span>
+						<div class="col-12 p-0 d-flex my-2">
+							<div class="col-4 p-0">
+								<div class="my-auto">
+									<span class=""><small>Show Results: </small>&nbsp; &nbsp;</span>
+								</div>
+							</div>
+							<div class="col-4 p-0">
+								<div class="custom-control custom-switch text-left">
+									<input type="checkbox" class="custom-control-input" id="customSwitch1">
+									<label class="custom-control-label" for="customSwitch1"><small>Client </small>&nbsp; &nbsp;</label>
+								</div>
+								<div class="custom-control custom-switch text-left">
+									<input type="checkbox" class="custom-control-input" id="customSwitch2">
+									<label class="custom-control-label" for="customSwitch2"><small>Tasks </small>&nbsp; &nbsp;</label>
+								</div>
+							</div>
+							<div class="col-4 p-0">	
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch3">
+									<label class="custom-control-label" for="customSwitch3"><small>Media </small>&nbsp; &nbsp;</label>
+								</div>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="customSwitch4">
+									<label class="custom-control-label" for="customSwitch4"><small>Notes </small>&nbsp; &nbsp;</label>
+								</div>
 							</div>
 						</div>
-						<div class="col-4 p-0">
-							<div class="custom-control custom-switch text-left">
-								<input type="checkbox" class="custom-control-input" id="customSwitch1">
-								<label class="custom-control-label" for="customSwitch1"><small>Client </small>&nbsp; &nbsp;</label>
-							</div>
-							<div class="custom-control custom-switch text-left">
-								<input type="checkbox" class="custom-control-input" id="customSwitch2">
-								<label class="custom-control-label" for="customSwitch2"><small>Tasks </small>&nbsp; &nbsp;</label>
+					</ul>
+					<div class="collapse" id="collapseExample">
+							<div class="card card-body border-0 px-0 mt-3">
+								<div class="row">
+									<div class="col-6 col-sm">
+										<span class="text-left">Sort Results:</span>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+											<label class="custom-control-label" for="customRadio1">Most Relevant</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+											<label class="custom-control-label" for="customRadio2">Most Recent</label>
+										</div>
+									</div>
+									<div class="col-6 col-sm mb-3">
+										<span class="text-left">Search in Clients:</span>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input">
+											<label class="custom-control-label" for="customRadio3">Everyone</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
+											<label class="custom-control-label" for="customRadio4">Only Womens</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="customRadio5" name="customRadio2" class="custom-control-input">
+											<label class="custom-control-label" for="customRadio5">Only Mens</label>
+										</div>
+									</div>
+									<div class="col-6 col-sm-3">
+										<span class="text-left">Search in Media:</span>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck1">
+											<label class="custom-control-label" for="customCheck1">Show All File Types</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck2">
+											<label class="custom-control-label" for="customCheck2">Images</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck3">
+											<label class="custom-control-label" for="customCheck3">Videos</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck4">
+											<label class="custom-control-label" for="customCheck4">PDF Files</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck5">
+											<label class="custom-control-label" for="customCheck5">Spreadsheets</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck6">
+											<label class="custom-control-label" for="customCheck6">Presentations</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck7">
+											<label class="custom-control-label" for="customCheck7">Documents</label>
+										</div>
+									</div>
+									<div class="col-6 col-sm">
+										<span class="text-left">Search in Tasks:</span>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck8">
+											<label class="custom-control-label" for="customCheck8">In Open</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck9">
+											<label class="custom-control-label" for="customCheck9">In Closed</label>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck10">
+											<label class="custom-control-label" for="customCheck10">With Attached Files</label>
+										</div>
+									</div>
+									<div class="col-sm text-right">
+										<button class="btn btn-outline-primary text-right" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">		
+											Close Filters
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-4 p-0">	
-							<div class="custom-control custom-switch">
-								<input type="checkbox" class="custom-control-input" id="customSwitch3">
-								<label class="custom-control-label" for="customSwitch3"><small>Media </small>&nbsp; &nbsp;</label>
-							</div>
-							<div class="custom-control custom-switch">
-								<input type="checkbox" class="custom-control-input" id="customSwitch4">
-								<label class="custom-control-label" for="customSwitch4"><small>Notes </small>&nbsp; &nbsp;</label>
-							</div>
-						</div>
-					</div>
-				</ul>
-			</div>
-			<!-- END UL MD- -->
+				</div>
+				<!-- END UL MD- -->
+
+
+
+
+
+
 			<!-- START UL MD+ -->
 			<div class="card-header bg-white pb-4 d-none d-md-block">
 				<ul class="nav nav-tabs card-header-tabs">
@@ -193,8 +285,8 @@
 						<div class="input-group">
 							<input type="text" class="form-control" placeholder="Vitae" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
 							<div class="input-group-append" id="button-addon4">
-								<button class="btn btn-outline-secondary" data-toggle="modal" data-target="#filters" type="button">
-									<i class="fa fa-sliders mx-1" aria-hidden="true"></i>
+								<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+									<i class="fa fa-sliders mx-1" aria-hidden="true"></i>	
 									Filters
 								</button>
 								<button class="btn btn-primary" type="button">
@@ -208,23 +300,106 @@
 							<span class=""><small>Show Results: </small>&nbsp; &nbsp;</span>
 						</div>
 						<div class="custom-control custom-switch text-left">
-							<input type="checkbox" class="custom-control-input" id="customSwitch1">
-							<label class="custom-control-label" for="customSwitch1"><small>Client </small>&nbsp; &nbsp;</label>
+							<input type="checkbox" class="custom-control-input" id="customSwitch100">
+							<label class="custom-control-label" for="customSwitch100"><small>Client </small>&nbsp; &nbsp;</label>
 						</div>
 						<div class="custom-control custom-switch text-left">
-							<input type="checkbox" class="custom-control-input" id="customSwitch2">
-							<label class="custom-control-label" for="customSwitch2"><small>Tasks </small>&nbsp; &nbsp;</label>
+							<input type="checkbox" class="custom-control-input" id="customSwitch200">
+							<label class="custom-control-label" for="customSwitch200"><small>Tasks </small>&nbsp; &nbsp;</label>
 						</div>
 						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" id="customSwitch3">
-							<label class="custom-control-label" for="customSwitch3"><small>Media </small>&nbsp; &nbsp;</label>
+							<input type="checkbox" class="custom-control-input" id="customSwitch300">
+							<label class="custom-control-label" for="customSwitch300"><small>Media </small>&nbsp; &nbsp;</label>
 						</div>
 						<div class="custom-control custom-switch">
-							<input type="checkbox" class="custom-control-input" id="customSwitch4">
-							<label class="custom-control-label" for="customSwitch4"><small>Notes </small>&nbsp; &nbsp;</label>
+							<input type="checkbox" class="custom-control-input" id="customSwitch400">
+							<label class="custom-control-label" for="customSwitch400"><small>Notes </small>&nbsp; &nbsp;</label>
 						</div>	
 					</div>
 				</ul>
+				<div class="collapse" id="collapseExample">
+					<div class="card card-body border-0 px-0 mt-3">
+						<div class="row">
+							<div class="col-3 col-lg-2">
+								<span class="text-left">Sort Results:</span>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio1">Most Relevant</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio2">Most Recent</label>
+								</div>
+							</div>
+							<div class="col-3 col-lg-2">
+								<span class="text-left">Search in Clients:</span>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio3" name="customRadio2" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio3">Everyone</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio4" name="customRadio2" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio4">Only Womens</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="customRadio5" name="customRadio2" class="custom-control-input">
+									<label class="custom-control-label" for="customRadio5">Only Mens</label>
+								</div>
+							</div>
+							<div class="col-3 col-lg-3">
+								<span class="text-left">Search in Media:</span>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck1">
+									<label class="custom-control-label" for="customCheck1">Show All File Types</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck2">
+									<label class="custom-control-label" for="customCheck2">Images</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck3">
+									<label class="custom-control-label" for="customCheck3">Videos</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck4">
+									<label class="custom-control-label" for="customCheck4">PDF Files</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck5">
+									<label class="custom-control-label" for="customCheck5">Spreadsheets</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck6">
+									<label class="custom-control-label" for="customCheck6">Presentations</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck7">
+									<label class="custom-control-label" for="customCheck7">Documents</label>
+								</div>
+							</div>
+							<div class="col-3 col-lg-2">
+								<span class="text-left">Search in Tasks:</span>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck8">
+									<label class="custom-control-label" for="customCheck8">In Open</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck9">
+									<label class="custom-control-label" for="customCheck9">In Closed</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck10">
+									<label class="custom-control-label" for="customCheck10">With Attached Files</label>
+								</div>
+							</div>
+							<div class="col-sm text-right">
+								<button class="btn btn-outline-primary text-right" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">		
+									Close Filters
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- END UL MD+ -->	
 			<div class="card-body text-left bg-light px-3">
@@ -237,7 +412,7 @@
 					<i class="fa fa-times-circle" aria-hidden="true"></i>
 				</span>
 				<span class="badge badge-pill badge-secondary">
-					Added by: Kristia Tiffany &nbsp;
+					Added by: Sequoia Oscar &nbsp;
 					<i class="fa fa-times-circle" aria-hidden="true"></i>
 				</span>
 			</div>
@@ -257,7 +432,7 @@
 					</h6>
 					Nullam vitae nisl vitae nec mauris.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Kristi Horace • Assigned to: Zinnia Mervyn • Date Added: 24 Aug 2019,  </small>
+						<small>Added by: Lennon Quinn • Assigned to: Tyrrell Kelli • Date Added: 16 Oct 2019,  </small>
 					</span>
 				</div>
 			</li>
@@ -276,7 +451,7 @@
 					</h6>
 					Pellentesque nunc nisi, lacinia nec<br>
 					<span class="form-text text-muted">
-						<small>Added by: Vikki Phebe • Assigned to: Tisha Barrie • Date Added: 29 Mar 2018,  </small>
+						<small>Added by: Paulie Kortney • Assigned to: Sequoia Oscar • Date Added: 21 Jun 2019,  </small>
 					</span>
 				</div>
 			</li>
@@ -295,7 +470,7 @@
 					</h6>
 					gravida massa quis, gravida mauris. Mauris a vulputate metus.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Regan September • Assigned to: Perlie Glenda • Date Added: 24 Aug 2019,  </small>
+						<small>Added by: Manny Tranter • Assigned to: Wallace Ashlyn • Date Added: 29 Jul 2019,  </small>
 					</span>
 				</div>
 			</li>
@@ -314,7 +489,7 @@
 					</h6>
 					Cras vel dignissim odio.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Manny Tranter • Assigned to: Allen Raelyn • Date Added: 30 Mar 2019,  </small>
+						<small>Added by: Mariabella Frona • Assigned to: Bristol Lindsay • Date Added: 26 Feb 2019,  </small>
 					</span>
 				</div>
 			</li>
@@ -333,7 +508,7 @@
 					</h6>
 					Curabitur facilisis pharetra ante, in sagittis magna ultrices a.<br>
 					<span class="form-text text-muted">
-						<small>Added by: Paulie Kortney • Assigned to: Shania Leopold • Date Added: 26 Mar 2019,  </small>
+						<small>Added by: Skyla Rosamond • Assigned to: Marsha Denholm • Date Added: 3 Nov 2018,  </small>
 					</span>
 				</div>
 			</li>
@@ -352,7 +527,7 @@
 					</h6>
 					Sed pretium nec turpis et consequat. Vivamus nec orci nec eros<br>
 					<span class="form-text text-muted">
-						<small>Added by: Zinnia Mervyn • Assigned to: Shania Leopold • Date Added: 17 Sep 2019,  </small>
+						<small>Added by: Holden Alecia • Assigned to: Kody Stella • Date Added: 18 Mar 2019,  </small>
 					</span>
 				</div>
 			</li>
