@@ -1,0 +1,133 @@
+
+- file_name_icon_grid: <div class="py-5 bg-secondary"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-secondary"></i><i class="fa fa-file-video-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-secondary"></i><i class="fa fa-file-video-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: My record from games
+  file_name_text2: stream_record.vid
+  file_name_size: 59.62 Mb
+  date_added: Tuesday 12 February, 2018
+  tag1: Kids
+  tag2: Books
+  tag3: Home
+  added_by: Jessica Jones
+
+
+- file_name_icon_grid: <div class="py-5 bg-danger"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-danger"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-danger"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Health
+  file_name_text2: my_health.vid
+  file_name_size: 628.50 Mb
+  date_added: Tuesday 11 December, 2018
+  tag1: Garden
+  tag2: Baby
+  tag3: Games
+  added_by: Jessica Mones
+
+- file_name_icon_grid: <div class="py-5 bg-info"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-info"></i><i class="fa fa-file-word-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-info"></i><i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Beauty
+  file_name_text2: beauty.pdf
+  file_name_size: 87.58 Mb
+  date_added: Monday 12 February, 2018
+  tag1: Sports
+  tag2: Games
+  tag3: Kids
+  added_by: Jessica Gones
+
+- file_name_icon_grid: <div class="py-5 bg-success"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-success"></i><i class="fa fa-file-excel-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-success"></i><i class="fa fa-file-excel-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Sea
+  file_name_text2: sea.jpg
+  file_name_size: 3 Mb
+  date_added: Sunday 22 July, 2018
+  tag1: Garden
+  tag2: Electronics
+  tag3: Toys
+  added_by: Messica Gones
+
+- file_name_icon_grid: <div class="py-5 bg-warning"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-warning"></i><i class="fa fa-file-audio-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-warning"></i><i class="fa fa-file-audio-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Music
+  file_name_text2: Music_from_cd.mp3
+  file_name_size: 110.70 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Health
+  tag2: Clothing
+  tag3: Grocery
+  added_by: Messica Fones
+
+- file_name_icon_grid: <div class="py-5 bg-secondary"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-secondary"></i><i class="fa fa-file-video-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-secondary"></i><i class="fa fa-file-video-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: My record from travel
+  file_name_text2: kenia.mp4
+  file_name_size: 440.70 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Health
+  tag2: Travel
+  tag3: Kids
+  added_by: Messica Fones
+
+- file_name_icon_grid: <div class="py-5 bg-secondary"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-secondary"></i><i class="fa fa-file-video-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-secondary"></i><i class="fa fa-file-video-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Gym exercises
+  file_name_text2: gym.vid
+  file_name_size: 80.70 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Health
+  tag2: Gym
+  tag3: Fun
+  added_by: Messica Fones
+
+- file_name_icon_grid: <div class="py-5 bg-warning"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-warning"></i><i class="fa fa-file-audio-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-warning"></i><i class="fa fa-file-audio-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Retro music
+  file_name_text2: Music_from_cd.mp3
+  file_name_size: 120.70 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Music
+  tag2: Fun
+  tag3: Retro
+  added_by: Messica Fones
+
+- file_name_icon_grid: <div class="py-5 bg-primary"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-primary"></i><i class="fa fa-file-image-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-primary"></i><i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: London by night
+  file_name_text2: london.jpg
+  file_name_size: 5 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Travel
+  tag2: Garden
+  tag3: Fun
+  added_by: Messica Fones
+
+- file_name_icon_grid: <div class="py-5 bg-primary"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-primary"></i><i class="fa fa-file-image-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-primary"></i><i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Mountains
+  file_name_text2: tatry.jpg
+  file_name_size: 9.70 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Travel
+  tag2: Garden
+  tag3: Fun
+  added_by: Messica Fones
+
+- file_name_icon_grid: <div class="py-5 bg-success"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-success"></i><i class="fa fa-file-excel-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-success"></i><i class="fa fa-file-excel-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: Calculation from India
+  file_name_text2: india.xslx
+  file_name_size: 22.10 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Money
+  tag2: Excel
+  tag3: Work
+  added_by: Messica Fones
+
+- file_name_icon_grid: <div class="py-5 bg-danger"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-danger"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse fa-3x"></i></span></div>
+  file_name_icon_list: <span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-danger"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></span>
+  file_name_text: PDF
+  file_name_text2: random_pdf.pdf
+  file_name_size: 31.12 Mb
+  date_added: Monday 31 December, 2018
+  tag1: Money
+  tag2: Excel
+  tag3: Work
+  added_by: Messica Fones

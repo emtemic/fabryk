@@ -1,0 +1,27 @@
+<div class="modal fade" id="{{include.idModal}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog" role="document">
+      	<div class="modal-content">
+			<div class="modal-body">
+				<div class="container">
+					<div class="row">
+						<div class="col text-center text-danger pt-4">
+							<i class="fa fa-exclamation-triangle fa-5x" aria-hidden="true"></i>
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center pt-3">
+							<p class="h3">{{include.idtitle}}</p>
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center pt-3">
+							<span>{{include.modaltext}}<br> Note, you cannot undo this change.</span>
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-center py-4">
+							<a href="{{include.button}}"><button type="button" class="btn btn-danger text-center">Delete</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+      	</div>
+    </div>
+</div>

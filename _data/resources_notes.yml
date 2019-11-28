@@ -1,0 +1,35 @@
+- description: Morbi mi lacus, bibendum porttitor tristique. 
+  added_by_function: Project Manager
+  badge1: Wine
+  badge2: Books
+  info: primary
+
+- description: Class aptent taciti sociosqu ad litora torquent per.
+  added_by_function: Project Manager
+  badge1: Kids
+  badge2: Foto
+  info: danger
+
+- description: Nulla suscipit nisl ac lorem auctor cursus taciti sociosqu.
+  added_by_function: Project Manager
+  badge1: Travel
+  badge2: IT
+  info:
+
+- description: Vivamus in dictum neque, eget efficitur urna.
+  added_by_function: Project Manager
+  badge1: Travel
+  badge2: IT
+  info:
+
+- description: Nunc aliquam velit id dui lobortis, quis auctor eros egestas.
+  added_by_function: Project Manager
+  badge1: Travel
+  badge2: Books
+  info: primary
+
+- description: Mauris pulvinar luctus quam, nec elementum odio pharetra eget.
+  added_by_function: Project Manager
+  badge1: Travel
+  badge2: Wine
+  info: danger

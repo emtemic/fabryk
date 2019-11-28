@@ -1,0 +1,96 @@
+<table class="table table-hover mb-0 table-responsive-lg text-nowrap border">
+    <thead> 
+        <tr>
+            <th scope="col" class="align-middle">
+            </th>
+            <th scope="col" class="align-middle">
+                <small class="text-muted">
+                    Description
+                </small>
+            </th>
+            <th scope="col" class="text-right">
+                <small class="text-muted">
+                    Data Added
+                </small>
+            </th>
+            <th scope="col" class="align-middle">
+                <small class="text-muted">
+                    Added by
+                </small>
+            </th>
+            <th scope="col" class="text-right">
+                <small class="text-muted">
+                    Actions
+                </small>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for note in site.data.resources_notes %}
+        <th scope="row" class="align-middle text-center">
+            {% if note.info == 'primary' %} 
+            <i class="fa fa-info-circle text-primary fa-lg" aria-hidden="true"></i>
+            {% elsif note.info == 'danger' %}  
+            <i class="fa fa-info-circle text-danger fa-lg" aria-hidden="true"></i>
+            {% else %}
+            <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+            {% endif %}
+        </th> 
+        <td>
+            <a href="#" data-toggle="modal" data-target="#view_note">{{note.description}}</a><br>
+                {% if note.badge1 == 'Kids' %}
+            <span class="badge badge-pill badge-secondary">Kids</span>
+                {% elsif note.badge1 == 'Books' %}
+            <span class="badge badge-pill badge-secondary">Books</span>
+                {% elsif note.badge1 == 'Travel' %}
+            <span class="badge badge-pill badge-secondary">Travel</span>
+                {% elsif note.badge1 == 'IT' %}
+            <span class="badge badge-pill badge-secondary">IT</span>
+                {% elsif note.badge1 == 'Foto' %}
+            <span class="badge badge-pill badge-secondary">Foto</span>
+                {% elsif note.badge1 == 'Wine' %}
+            <span class="badge badge-pill badge-secondary">Wine</span>
+                {% endif %}
+            
+                {% if note.badge2 == 'Kids' %}
+            <span class="badge badge-pill badge-secondary">Kids</span>
+                {% elsif note.badge2 == 'Books' %}
+            <span class="badge badge-pill badge-secondary">Books</span>
+                {% elsif note.badge2 == 'Travel' %}
+            <span class="badge badge-pill badge-secondary">Travel</span>
+                {% elsif note.badge2 == 'IT' %}
+            <span class="badge badge-pill badge-secondary">IT</span>
+                {% elsif note.badge2 == 'Foto' %}
+            <span class="badge badge-pill badge-secondary">Foto</span>
+                {% elsif note.badge2 == 'Wine' %}
+            <span class="badge badge-pill badge-secondary">Wine</span>
+                {% endif %}
+        </td>
+        <td class="text-right">
+            <a class="text-muted">{{ site.data.dates | sample }}</a>
+        </td>
+        <td class="align-middle">
+            <div class="media">
+                <img src="{{ site.data.avatars | sample }}" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                <div class="media-body">
+                    <span>{{ site.data.names | sample }}</span><br>
+                </div>
+            </div> 
+        </td>
+        <td class="align-middle text-right">
+            <div class="btn-group">
+                <div class="dropdown dropdown-menu-right">
+                    <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#view_note">View Note</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_note">Edit this note</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_resources_note">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </td></tr>
+        {% endfor %}
+    </tbody>
+</table>

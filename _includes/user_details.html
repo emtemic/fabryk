@@ -1,0 +1,138 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-md-2">
+            <div class="d-flex justify-content-center justify-content-md-end">
+                    {% if include.show_img %}
+                <img class="rounded-circle " src="{{include.img}}" alt="Generic placeholder" image height="100" width="100">
+                    {% else %}
+                    <i class="fa fa-user-circle-o text-muted fa-4x" aria-hidden="true"></i>
+                    {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-10 d-flex">
+            <div class="row">
+                <div class="col-12 col-md-6 d-inline-flex justify-content-center justify-content-md-start">
+                    {% if include.show_name %}
+                    <h3>{{include.name}}</h3>
+                    {% else %}
+                    undefined
+                    {% endif %}
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end my-auto">
+                    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#edit_client">
+                    <i class="fa fa-pencil" aria-hidden="true"></i> Edit User</button>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-12 col-md-3 mt-3">
+                    <address class="mt-2 text-center text-md-left">
+
+                        {% if include.show_address %}
+
+                        {{include.address}}
+
+                    </address>
+                    
+                        {% else %}
+                        undefined
+                        {% endif %}
+                        
+                    <dl class="row justify-content-center justify-content-md-start" data-toggle="modal" data-target="#nologinmodal">
+                        <dd class="col-5 col-md-3 text-muted">Gender:</dd>
+                        {% if include.show_gender %}
+                        <dd class="col-5 col-md-9">{{include.gender}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-7">undefined</dd>
+                        {% endif %}
+
+                        <dd class="col-5 col-md-3 text-muted">Email:</dd>
+                        {% if include.show_mail %}
+                        <dd class="col-5 col-md-9"><a href="mailto:{{ include.mail}}">{{include.mail}}</a></dd>
+                        {% else %}
+                        <dd class="col-5 col-md-7">undefined</dd>
+                        {% endif %}
+                
+                        <dd class="col-5 col-md-3 text-muted">URL:</dd>
+                        {% if include.show_url %}
+                        <dd class="col-5 col-md-9"><a href="{{ include.url}}">{{include.url}}</a></dd>
+                        {% else %}
+                        <dd class="col-5 col-md-7">undefined</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+                <div class="col-12 col-md-4 mt-3">
+                    <dl class="row justify-content-center justify-content-md-start">
+                        <dd class="col-5 col-md-6 text-muted">Client Language:</dd>
+                        {% if include.show_client_language %}
+                        <dd class="col-5 col-md-6">{{include.client_language}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-6">undefined</dd>
+                        {% endif %}
+                        
+                        <dd class="col-5 col-md-6 text-muted">Family Language:</dd>
+                        {% if include.show_family_language %}
+                        <dd class="col-5 col-md-6">{{include.family_language}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-6">undefined</dd>
+                        {% endif %}
+                        
+                        <dd class="col-5 col-md-6 text-muted">Client Type:</dd>
+                        {% if include.show_client_type %}
+                        <dd class="col-5 col-md-6">{{include.client_type}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-6">undefined</dd>
+                        {% endif %}
+                        
+                        <dd class="col-5 col-md-6 text-muted">Grade: </dd>
+                        {% if include.show_grade %}
+                        <dd class="col-5 col-md-6">{{include.grade}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-6">undefined</dd>
+                        {% endif %}
+                    
+                        <dd class="col-5 col-md-6 text-muted">School:</dd>
+                        {% if include.show_school %}
+                        <dd class="col-5 col-md-6">{{include.school}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-6">undefined</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+                <div class="col-12 col-md-5 mt-3">
+                    <dl class="row justify-content-center justify-content-md-start">
+            
+                        <dd class="col-5 col-md-5 text-muted">Contact Type:</dd>
+                        {% if include.show_contact_type %}
+                        <dd class="col-5 col-md-7">{{include.contact_type}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-7">undefined</dd>
+                        {% endif %}
+                    
+                        <dd class="col-5 col-md-5 text-muted">Relation to:</dd>
+                        {% if include.relation_to %}
+                        <dd class="col-5 col-md-7">{{include.relation_to}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-7">undefined</dd>
+                        {% endif %}
+                    
+                        <dd class="col-5 col-md-5 text-muted">Legal Guardian:</dd>
+                        {% if include.legal_guardian %}
+                        <dd class="col-5 col-md-7">{{include.legal_guardian}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-7">undefined</dd>
+                        {% endif %}
+                    
+                        <dd class="col-5 col-md-5 text-muted">Resident with:</dd>
+                        {% if include.resident_with %}
+                        <dd class="col-5 col-md-7">{{include.resident_with}}</dd>
+                        {% else %}
+                        <dd class="col-5 col-md-7">undefined</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    

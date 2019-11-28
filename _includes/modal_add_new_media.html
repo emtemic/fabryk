@@ -1,0 +1,65 @@
+<div class="modal fade" id="{{include.idModal}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{include.modalTitle}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Enter Title</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title for this file">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Enter Tags</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter tags for this file">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Upload</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Select media from device</label>
+                            <small id="emailHelp" class="form-text text-muted pt-2">You can add various files such as images, sounds, music, documents and movies. You cannot exceed 50 Mb. Allowed files are: png, gif, jpg, doc, mp3 etc.</small>
+                        </div>
+                    </div>
+                </form>
+
+                {% if include.idModal == "edit_media" %} 
+                
+                <div class="row">
+                    <div class="col-3 col-sm-2 my-auto">
+                        <button type="button" class="btn btn-primary">
+                            <i class="fa fa-file-word-o fa-2x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="col-9 col-sm-6 text-left p-0 my-auto">
+                        <span><small>salad_unleash_handmade.otc
+                                by Nels Veum - 784.00 Kb
+                        </small></span>
+                    </div>
+                    <div class="col-10 col-sm-2 text-right my-auto px-0">
+                        <span><small>18-Se-2013 09:48 PM</small></span>
+                    </div>
+                    <div class="col-2 col-sm-2 my-auto p-0 text-center">
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#download">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+                {% else %}
+                
+                {% endif %}
+
+            </div>
+            <div class="modal-footer px-4">
+                <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="{{include.modalTarget}}">{{include.deleteText}}</a>
+                <a class="btn text-primary" href="#" role="button" data-dismiss="modal">Close</a>
+                <a href="{{include.button}}"><button type="button" class="btn btn-primary">{{include.modalTitle}}</button></a>
+            </div>
+        </div>
+    </div>
+</div>

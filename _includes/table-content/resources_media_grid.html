@@ -1,0 +1,46 @@
+<div class="card-body px-0 py-4 bg-light">
+    <div class="row">
+        {% for med in site.data.resources_media %} 
+        <div class="col-12 col-md-4">
+            <div class="card mb-3">
+                <div class="card-header text-center p-0">
+                        {% if med.file_name_icon_grid %}
+                        {{med.file_name_icon_grid}}
+                        {% else %}
+                            Undefined
+                        {% endif %}
+                </div>
+                <div class="card-body">
+                    <span>{{med.file_name_text}}</span><br>
+                    <a class="text-muted">{{med.file_name_text2}}</a><BR>
+                    <a class="text-muted">{{med.file_name_size}}</a>
+                </div>
+                <div class="card-footer text-muted">
+                    <span class="badge badge-pill badge-secondary">{{med.tag1}}</span>
+                    <span class="badge badge-pill badge-secondary">{{med.tag2}}</span>
+                    <span class="badge badge-pill badge-secondary">{{med.tag3}}</span>
+                </div>
+                <div class="card-footer text-muted">
+                    <img class="rounded-circle " src="{{ site.data.avatars | sample }}" alt="Generic placeholder" image height="30" width="30">
+                    <span class="ml-2">{{ site.data.names | sample }}</span>
+                </div>
+                <div class="card-footer d-inline-flex">
+                    <div class="mr-auto text-muted">{{ site.data.dates | sample }}</div>
+                    <div class="btn-group">
+                        <div class="dropdown dropdown-menu-right">
+                            <button class="btn btn-sm dropdown-toggle btn-link p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_media">Edit this media</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#download">Download</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_resources_media">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

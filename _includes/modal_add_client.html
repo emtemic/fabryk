@@ -1,0 +1,321 @@
+<div class="modal fade" id="{{include.idModal}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{include.modalTitle}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="modal-body">
+                    <!--START Select Photo for Client-->
+                    <div class="row">
+                        <div class="col-12 col-sm-2 text-center pb-3">
+                            {% if include.idModal == "edit_client" %} 
+                            <img class="rounded-circle " src="images/avatars/3.jpg" alt="Generic placeholder" image height="100" width="100">
+                            {% else %}
+                            <i class="fa fa-user-circle-o text-muted fa-4x" aria-hidden="true"></i>
+                            {% endif %}
+                        </div>
+                        <div class="col-12 col-sm-10">
+                            <div class="form-group">
+                                <label for="photo">Select Photo for Client:</label>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="photo">
+                                        <label class="custom-file-label" for="photo" aria-describedby="inputGroupFileAddon02">Select photo from device...</label>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--END Select Photo for Client-->
+                    <form>
+                        <div class="row">  
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    {% if include.idModal == "edit_client" %} 
+                                    <label for="Firstname">First Name</label>
+                                    <input type="text" class="form-control" id="Firstname" placeholder="Teresa">
+                                    {% else %}
+                                    <label for="Firstname">First Name</label>
+                                    <input type="text" class="form-control" id="Firstname" placeholder="Enter First Name...">
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    {% if include.idModal == "edit_client" %} 
+                                    <label for="Lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="Lastname" placeholder="Sabdee Wilson">
+                                    {% else %}
+                                    <label for="Lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="Lastname" placeholder="Enter Last Name...">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6"> 
+                                <div class="form-group">
+                                    <label for="tog">Gender<br></label>
+                                    <div class="w-100"></div>
+                                    <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                        <label class="btn btn-outline-secondary active" id="tog">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Female
+                                        </label>
+                                        <label class="btn btn-outline-secondary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> Male
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            {% if include.idModal == "edit_client" %}
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inlineFormInputGroup">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="juanita@alred.com">
+                                    </div>
+                                </div>
+                            </div>
+                            {% else %}
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inlineFormInputGroup">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Email...">
+                                    </div> 
+                                </div>
+                            </div>
+                            {% endif %}                      
+                        </div> 
+                    </form>
+                    <form>
+                        <div class="row">
+                            {% if include.idModal == "edit_client" %}
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inlineFormInputGroup">URL</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="www.ress.com">
+                                    </div>
+                                </div>
+                            </div>
+                            {% else %}
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inlineFormInputGroup">URL</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter Url...">
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %} 
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Client Language</label>
+                                    <select class="custom-select" id="exampleFormControlSelect1">
+                                        {% if include.idModal == "edit_client" %}
+                                        <option selected>English (United States)</option>
+                                        {% else %}
+                                        <option selected>Open this select menu</option>
+                                        {% endif %}
+                                        <option>English (United States)</option>
+                                        <option>English (United Kingdom)</option>
+                                        <option>German (Germany)</option>
+                                        <option>French (France)</option>
+                                        <option>Spanish (Spain)</option>
+                                        <option>Polish (Poland)</option>
+                                        <option>Russian (Russia)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="col-12 px-0">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Adress</label>
+                                {% if include.idModal == "edit_client" %}
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="317 Willow Ave Franklin, CA 90988 Washington Country"></textarea>
+                                {% else %}
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Adress Here..."></textarea>                                
+                                {% endif %}
+                            </div>  
+                        </div> 
+                    </form>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Family Language</label>
+                                    <select class="custom-select" id="exampleFormControlSelect1">
+                                        {% if include.idModal == "edit_client" %}
+                                        <option selected>Russian (Russia)</option>
+                                        {% else %}
+                                        <option selected>Open this select menu</option>
+                                        {% endif %}
+                                        <option>English (United States)</option>
+                                        <option>English (United Kingdom)</option>
+                                        <option>German (Germany)</option>
+                                        <option>French (France)</option>
+                                        <option>Spanish (Spain)</option>
+                                        <option>Polish (Poland)</option>
+                                        <option>Russian (Russia)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Client Type</label>
+                                    <select class="custom-select" id="exampleFormControlSelect1">
+                                        {% if include.idModal == "edit_client" %}
+                                        <option selected>Financial</option>
+                                        {% else %}
+                                        <option selected>Open this select menu</option>
+                                        {% endif %}
+                                        <option>Architects, Engineers, Construction</option>
+                                        <option>Development, Property Management</option>
+                                        <option>Consulting</option>
+                                        <option>Financial</option>
+                                        <option>Hospitality & Retail</option>
+                                        <option>Organizations & Institutions</option>
+                                        <option>Technology</option>
+                                        <option>Media</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                <div class="form-group">
+                                    <label for="Firstname">Grade</label>
+                                    {% if include.idModal == "edit_client" %}
+                                    <input type="text" class="form-control" id="Firstname" placeholder="11">
+                                    {% else %}
+                                    <input type="text" class="form-control" id="Firstname" placeholder="Enter Grade...">
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-9">
+                                <div class="form-group">
+                                    <label for="Lastname">School</label>
+                                    {% if include.idModal == "edit_client" %}
+                                    <input type="text" class="form-control" id="Lastname" placeholder="Independence High School">
+                                    {% else %}
+                                    <input type="text" class="form-control" id="Lastname" placeholder="Enter School...">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Contact Type</label>
+                                    <select class="custom-select" id="exampleFormControlSelect1">
+                                        {% if include.idModal == "edit_client" %}
+                                        <option selected>Spouse</option>
+                                        {% else %}
+                                        <option selected>Open this select menu</option>
+                                        {% endif %}
+                                        <option>Spouse</option>
+                                        <option>Family member</option>
+                                        <option>Friend</option>
+                                        <option>Neighbor</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Relation to</label>
+                                    <select class="custom-select" id="exampleFormControlSelect1">
+                                        {% if include.idModal == "edit_client" %}
+                                        <option selected>Program Supervisior</option>
+                                        {% else %}
+                                        <option selected>Open this select menu</option>
+                                        {% endif %}
+                                        <option>Chief</option>
+                                        <option>Manager</option>
+                                        <option>Program Supervisior</option>
+                                        <option>Executive</option>
+                                        <option>Principal</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="tog">Legal Guardian<br></label>
+                                    <div class="w-100"></div>
+                                    <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" >
+                                        {% if include.idModal == "edit_client" %}
+                                        <label class="btn btn-outline-secondary" id="tog">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked> True
+                                            </label>
+                                            <label class="btn btn-outline-secondary active">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"> False
+                                            </label>
+                                        {% else %}
+                                        <label class="btn btn-outline-secondary active" id="tog">
+                                                <input type="radio" name="options" id="option1" autocomplete="off" checked> True
+                                            </label>
+                                            <label class="btn btn-outline-secondary">
+                                                <input type="radio" name="options" id="option2" autocomplete="off"> False
+                                            </label>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Resident with</label>
+                                    <select class="custom-select" id="exampleFormControlSelect1">
+                                            {% if include.idModal == "edit_client" %}
+                                            <option selected>False</option>
+                                            {% else %}
+                                            <option selected>Open this select menu</option>
+                                            {% endif %}
+                                        <option>True</option>
+                                        <option>False</option>
+                                    </select>
+                                </div>                     
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer px-4">
+                    {% if include.idModal == "edit_client" %}
+                    <a class="text-danger mr-auto" href="#" data-toggle="modal" data-target="#delete_member">Delete this client</a>
+                    {% else %}
+                    {% endif %}
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+                <a href="{{include.button}}"><button type="button" class="btn btn-primary">{{include.modalTitle}}</button></a>
+            </div>
+        </div>
+    </div>
+</div>

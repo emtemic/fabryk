@@ -1,0 +1,82 @@
+<table class="table table-hover mb-0 table-responsive-lg text-nowrap border">
+    <thead> 
+        <tr>
+            <th scope="col" class="align-middle">
+                <small class="text-muted">
+                    File Name
+                </small>
+            </th>
+            <th scope="col" class="align-middle text-right">
+                <small class="text-muted">
+                    Date Added
+                </small>
+            </th>
+            <th scope="col" class="align-middle">
+                <small class="text-muted  pr-3">
+                 Added by
+                </small>
+            </th>
+            <th scope="col" class="align-middle">
+                <small class="text-muted">
+                    Tags
+                </small>
+            <th scope="col" class="align-middle text-right">
+                <small class="text-muted">
+                    Actions
+                </small>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for med in site.data.resources_media %} 
+        <tr>
+            <td scope="row" class="align-middle p-0 pl-2">
+                <div class="d-flex">
+                    <div class="p-2 my-auto">
+                        {{med.file_name_icon_list}}
+                    </div>
+                    <div class="p-2 flex-shrink-1">
+                        <span>{{med.file_name_text}}</span> <br>
+                        <a class="text-muted">{{med.file_name_size}}</a>                        
+                    </div>
+                </div>
+            </td>
+            <td class="align-middle text-right">
+                <span class="text-muted">{{ site.data.dates | sample }}</span>
+            </td>
+            <td class="align-middle">
+                <div class="media">
+                    <img src="{{ site.data.avatars | sample }}" class="mr-3 rounded-circle" alt="Generic placeholder" image height="30" width="30">
+                    <div class="media-body">
+                        <span>{{ site.data.names | sample }}</span><br>
+                    </div>
+                </div> 
+            </td>
+            <td class="align-middle">
+                <span class="badge badge-pill badge-secondary">{{med.tag1}}</span>
+                <span class="badge badge-pill badge-secondary">{{med.tag2}}</span>
+                <span class="badge badge-pill badge-secondary">{{med.tag3}}</span>
+            </td>
+            <td class="align-middle text-right">
+                <div class="btn-group">
+                    <div class="dropdown dropdown-menu-right">
+                        <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#edit_media">Edit this media</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#download">Download</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_resources_media">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+

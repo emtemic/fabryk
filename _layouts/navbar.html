@@ -1,0 +1,95 @@
+	<!doctype html> 
+		<head>
+			<meta charset="utf-8">
+			<title>Fabryk</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<meta name="description" content="Internal service portal for transport companies.">
+			<meta name="author" content="Marcin Tracz">
+			<meta name="generator" content="Jekyll v3.8.5">
+				{% if page.breadcrumb_name %}
+					<title>{{ page.page_name }}:&nbsp{{ page.full_name }}</title>
+				{% else %}
+					<title>{{ page.page_name }}</title>
+				{% endif %}
+
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+			<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+			
+			<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+			@media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+				}
+			}
+			</style>
+		</head>
+		<body>
+	  	<main role="main" class="container.fluid bg-light">
+		
+			{% include navbar.html
+				%}
+			
+			<div class="container.fluid p-0">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb bg-white border-bottom border-top">
+						<div class="container d-flex text-nowrap text-truncate">
+							<!--BREADCRUMB LVL 0-->
+							{% if page.navbar-right-buttons %}
+							<li class="breadcrumb-item"><a href="index.html">
+									<i class="fa fa-home" aria-hidden="true"></i></a>
+							</li>
+								{% else %}
+							<li class="breadcrumb-item"><a href="home.html">
+								<i class="fa fa-home" aria-hidden="true"></i></a>
+							</li>
+								{% endif %}
+						
+							<!--BREADCRUMB LVL 3-->
+							{% if page.details %}
+							<li class="breadcrumb-item text-capitalize"><a href="{{ page.title }}.html">{{ page.title }}</a></li>
+							<li class="breadcrumb-item text-capitalize"><a href="user_details.html">{{ page.full_name }}</a></li>
+							<li class="breadcrumb-item text-capitalize">{{ page.details }}</li>
+							
+							<!--BREADCRUMB LVL 2-->
+							{% elsif page.breadcrumb_name %}
+							<li class="breadcrumb-item text-capitalize"><a href="{{ page.title }}.html">{{ page.title }}</a></li>
+							<li class="breadcrumb-item text-capitalize">{{ page.full_name }}</li>
+							
+							<!--BREADCRUMB LVL 1-->
+							{% else %}
+							<li class="breadcrumb-item text-capitalize" aria-current="page">{{ page.title }}</li>
+							{% endif %}
+						</div>
+					</ol>
+				</nav>
+			</div>
+		<!--Start CONTENT-->
+		
+		{{content}}
+		
+		<!--End CONTENT-->
+		</main>   
+	</body>
+</html>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script>   
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})	
+
+	$(function () {
+		$('#myTab li:last-child a').tab('show')
+	})
+	</script>

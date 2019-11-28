@@ -1,0 +1,23 @@
+- icon: <div class="p-2 bg-primary rounded"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-primary"></i><i class="fa fa-check-square-o fa-stack-1x fa-inverse fa-1x"></i></span></div>
+  text1: Ut ullamcorper sodales mollis. Pellentesque sit amet leo eget nulla.
+  text2: Nullam vitae nisl vitae nec mauris.
+
+- icon: <div class="p-2 bg-danger rounded"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-danger"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse fa-1x"></i></span></div>
+  text1: ullamcorper varius enim ultrices eget. Etiam eu ex in mi aliquam auctor. 
+  text2: Pellentesque nunc nisi, lacinia nec 
+
+- icon: <div class="p-2 bg-info rounded"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-info"></i><i class="fa fa-sticky-note-o fa-stack-1x fa-inverse fa-1x"></i></span></div>
+  text1: Sed pellentesque aliquam mi, vitae auctor dolor finibus vel.
+  text2: gravida massa quis, gravida mauris. Mauris a vulputate metus.
+
+- icon: <div class="p-2 bg-primary rounded"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-primary"></i><i class="fa fa-check-square-o fa-stack-1x fa-inverse fa-1x"></i></span></div>
+  text1: Vestibulum suscipit, eros molestie tincidunt vestibulum, eros massa 
+  text2: Cras vel dignissim odio.
+
+- icon: <div class="p-2 bg-danger rounded"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-danger"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse fa-1x"></i></span></div>
+  text1: Etiam erat ex, fringilla hendrerit dolor ac, semper viverra est. Maecenas efficitur convallis dui
+  text2: Curabitur facilisis pharetra ante, in sagittis magna ultrices a.
+
+- icon: <div class="p-2 bg-info rounded"><span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x text-info"></i><i class="fa fa-sticky-note-o fa-stack-1x fa-inverse fa-1x"></i></span></div>
+  text1: Duis et diam quis felis imperdiet elementum. Praesent iaculis at augue a tempor.
+  text2: Sed pretium nec turpis et consequat. Vivamus nec orci nec eros

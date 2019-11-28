@@ -1,0 +1,27 @@
+- description: Morbi mi lacus, bibendum porttitor tristique. 
+  added_by_photo: {{ site.data.avatars | sample }}
+  added_by: Jessica Jones
+  added_by_function: Project Manager
+  last_update: 20 Sep, Wed, 2015
+  badge1: Wine
+  badge2: Books
+  info: primary
+
+- description: Class aptent taciti sociosqu ad litora torquent per.
+  added_by_photo: {{ site.data.avatars | sample }}
+  added_by: Jessica Jones
+  added_by_function: Project Manager
+  last_update: 11 Nov, Mon, 2014
+  badge1: Kids
+  badge2: Foto
+  info: danger
+
+- description: Nulla suscipit nisl ac lorem auctor cursus taciti sociosqu.
+  added_by_photo: {{ site.data.avatars | sample }}
+  added_by: Jessica Jones
+  added_by_function: Project Manager
+  last_update: 25 May, Thu, 2015
+  badge1: Travel
+  badge2: IT
+  info:
+

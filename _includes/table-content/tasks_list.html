@@ -1,0 +1,209 @@
+<!-- START Table -->
+
+<table class="table table-hover mb-0 border table-responsive-xl text-nowrap">
+    <thead> 
+        <tr>
+            <th scope="col" class="align-middle">
+                <small class="text-muted">
+                </small>
+            </th>
+            <th scope="col" class="align-middle">
+                <small class="text-muted">
+                    Priority
+                </small>
+            </th>
+            <th scope="col" class="align-middle">
+                <small class="text-muted">
+                    Task
+                </small>
+            </th>
+            <th scope="col" class="align-middle text-right">
+                <small class="text-muted">
+                    Last Update
+                </small>
+            </th>
+            <th scope="col" class="align-middle text-right">
+                <small class="text-muted">
+                    Actions
+                </small>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {% for schedul in site.data.tasks %}
+            <td class="align-middle pr-0">
+                {% if schedul.priority == 'High' %}
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="{{schedul.id}}" checked>
+                    <label class="custom-control-label" for="{{schedul.id}}"></label>
+                </div>
+                {% else %}
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="{{schedul.id}}">
+                    <label class="custom-control-label" for="{{schedul.id}}"></label>
+                </div>
+                {% endif %}
+            </td>
+            
+            {% if schedul.priority == 'High' %} 
+            
+            <th scope="row" class="align-middle">
+                <div class="dropdown">
+                    <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+                        </a>
+                    </div>
+                </div>
+            </th>
+
+            {% elsif schedul.priority == 'Medium' %} 
+
+            <th scope="row" class="align-middle">
+                <div class="dropdown">
+                    <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+                        </a>
+                    </div>
+                </div>
+            </th>
+
+            {% elsif schedul.priority == 'Small' %} 
+
+            <th scope="row" class="align-middle">
+                <div class="dropdown">
+                    <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+                        </a>
+                    </div>
+                </div>
+            </th>
+
+            {% else %}
+
+            <th scope="row" class="align-middle">
+                <div class="dropdown">
+                    <button class="btn btn-link btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-success mr-1" aria-hidden="true"></i> Small
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-warning mr-1" aria-hidden="true"></i> Medium
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle text-danger mr-1" aria-hidden="true"></i> High
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-circle-o text-secondary mr-1 text-muted" aria-hidden="true"></i> Non
+                        </a>
+                    </div>
+                </div>
+            </th>
+            {% endif %}
+
+            <td class="align-middle">
+                <span>
+                    <a class="text-muted">#{{schedul.number}} </a>
+                    
+                    {% if schedul.check == 'done' %}
+                    <a class="text-muted">
+                    <s>{{schedul.link-text}}</s>				
+                    </a>
+                    {% else %}
+                    <a href="task_view_details.html">
+                    {{schedul.link-text}}				
+                    </a>
+                    {% endif %}
+
+                    <br>
+                    {{schedul.text}}
+                    {% if schedul.badge1 == 'Kid' %}
+                    <span class="badge badge-pill badge-secondary">Kids</span>
+                    {% elsif schedul.badge1 == 'Books' %}
+                    <span class="badge badge-pill badge-secondary">Books</span>
+                    {% elsif schedul.badge1 == 'Travel' %}
+                    <span class="badge badge-pill badge-secondary">Travel</span>
+                    {% elsif schedul.badge1 == 'IT' %}
+                    <span class="badge badge-pill badge-secondary">IT</span>
+                    {% elsif schedul.badge1 == 'Foto' %}
+                    <span class="badge badge-pill badge-secondary">Foto</span>
+                    {% elsif schedul.badge1 == 'Wine' %}
+                    <span class="badge badge-pill badge-secondary">Wine</span>
+                    {% endif %}
+                
+                    {% if schedul.badge2 == 'Kid' %}
+                    <span class="badge badge-pill badge-secondary">Kids</span>
+                    {% elsif schedul.badge2 == 'Books' %}
+                    <span class="badge badge-pill badge-secondary">Books</span>
+                    {% elsif schedul.badge2 == 'Travel' %}
+                    <span class="badge badge-pill badge-secondary">Travel</span>
+                    {% elsif schedul.badge2 == 'IT' %}
+                    <span class="badge badge-pill badge-secondary">IT</span>
+                    {% elsif schedul.badge2 == 'Foto' %}
+                    <span class="badge badge-pill badge-secondary">Foto</span>
+                    {% elsif schedul.badge2 == 'Wine' %}
+                    <span class="badge badge-pill badge-secondary">Wine</span>
+                    {% endif %}
+                </span>
+            </td>
+            <td class="align-middle text-right">{{schedul.last_update}}</td>
+            <td class="align-middle">
+                <div class="btn-group">
+                    <div class="dropdown dropdown-menu-right">
+                        <button class="btn btn-sm dropdown-toggle btn-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="task_view_details.html" >View details</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#edit_task_user_details" href="#">Edit this task</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#delete_tasks" href="#">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
